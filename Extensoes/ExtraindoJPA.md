@@ -55,7 +55,7 @@ Download
 https://www.akeeba.com/download.html
 
 Arquivo de tradução para pt-br
-https://github.com/cyberalpha/GarbageSocial/blob/master/pt-BR.kickstart.ini
+https://raw.githubusercontent.com/ribafs/kickstart/development/translations/kickstart/pt-BR.kickstart.ini
 
 Minha estrutura
 ```php
@@ -84,16 +84,16 @@ E aguarde a extração dos arquivos
 
 ## Restauração e Organização
 
-Clique em
-Executar o instalador Veja que ele abriu uma outra aba e manteve a atual aberta.
+Clique em Executar o instalador
+Veja que ele abriu uma outra aba e manteve a atual aberta.
 
-## Pre-installation check
+## Pre-installation check (este já vem do instalador do Akeeba)
 
 Verifique se tem algum problema. Caso não tenha clique em Next
 
 ## Restoration of site's main database
 
-É prudente indicar um banco diferente do atual, mas pode manter o mesmo
+É prudente indicar um banco diferente do atual, pois o do site pode estar danificado
 
 Confira e Next
 
@@ -115,7 +115,7 @@ Clique em Organizar
 
 ## Acesse o front-end do seu site   Acesse o back-end do seu site
 
-Caso algo não tenha funcionado veja esta página
+Algo não está funcionando após a restauração? Clique aqui para obter instruções de solução de problemas:
 
 https://www.akeeba.com/documentation/akeeba-kickstart-documentation/post-restoration.html
 
