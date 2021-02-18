@@ -30,7 +30,11 @@ Na pasta /var/www/html/site coloco o kickstart.php e o arquivo de backup gerado 
 Download
 https://www.akeeba.com/download.html
 
-Arquivo de tradução para pt-br, veja arqui as várias alternativas de idioma
+Arquivo de tradução para pt-br, 
+
+[pt-BR.kickstart.ini](pt-BR.kickstart.ini)
+
+Veja abaixo o original, mas até a última vez que vi estava incompleto:
 https://joomlatranslate.com/project/26-akeeba-kickstart
 
 Minha estrutura
