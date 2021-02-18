@@ -4,30 +4,6 @@ JPA - Joomla Pack Archive
 
 Por default o Akeeba Backup gera os backups no formato JPA. Também existe a opção de gerar em ZIP, mas JPA é o método recomendado. Ele dá um pouco mais de trabalho que usando zip, mas nada demais quando entendemos.
 
-## Sobre a tradução para o pt-BR
-
-Fiz um fork do original
-
-https://github.com/akeeba/kickstart
-
-Que traz apenas o arquivo de tradução para en-BR
-
-Encontrei este
-
-https://github.com/cyberalpha/GarbageSocial/blob/master/pt-BR.kickstart.ini
-
-Que já traz parte da tradução.
-
-Então completei a tradução e enviei para o fork criado em
-
-https://github.com/ribafs/kickstart
-
-O arquivo pt-BR.kickstart.ini está na pasta
-
-translations/kickstart
-
-Uma estrutura como o GitHub é algo muito importante para a nossa área.
-
 ## Restaurar o backup de um site feito com o Akeeba
 
 O Kickstart não é um instalador. É uma ferramenta de extração de arquivos. O instalador real foi colocado dentro do arquivo no momento do backup.
@@ -54,8 +30,8 @@ Na pasta /var/www/html/site coloco o kickstart.php e o arquivo de backup gerado 
 Download
 https://www.akeeba.com/download.html
 
-Arquivo de tradução para pt-br
-https://raw.githubusercontent.com/ribafs/kickstart/development/translations/kickstart/pt-BR.kickstart.ini
+Arquivo de tradução para pt-br, veja arqui as várias alternativas de idioma
+https://joomlatranslate.com/project/26-akeeba-kickstart
 
 Minha estrutura
 ```php
