@@ -62,7 +62,44 @@ Entao se esta desenvolvendo para um cliente, cuidado aqui.
 
 ![](images/akeeba-user.jpg)
 
-Chame pelo navegador (supondo no localhost)
+Server-scpecif configuration files
+Aqui existe outra configuração importante, pois o akeeba pode ou não subsittuir os arquivos htaccess ou php.ini pelos originais
+Hospedagem como LOUCAweb inserem no htaccess os handlers quando se altera as versões do php. Alias a versão php padrao da LOUCAweb é a 5.6 ....
+
+![](images/akeeba-server.jpg)
+
+Site Parameters
+Existe um check importante aqui...
+Override tmp and logs path
+Marque sempre este item aqui, pois ele corrige eventuais mudanças de caminho para a pasta TMP e LOG
+Lembre-se que o akeeba vai usar o site root completo...
+No meu caso /var/www/vhosts/meusite.com.br
+Se seu site estiver numa pasta ou subdominio este caminho errado pode dar problemas
+
+![](images/akeeba-site.jpg)
+
+Restoration of site's main database
+Existe uma função que vc pode deletar dados do banco de dados que deseja usar antes de migrar os dados do backup. USE COM CUIDADO
+Aqui voce tambem pode corrigir eventuais erros de codificação
+utf8-general-ci é o padrao
+mas utf8mb4 e o mais novo. Pode não funcionar com todas extensoes, principalmente as mais antigas
+
+![](images/akeeba-restoration.jpg)
+
+O kickstart.php é um descompactador tanto para JPA quanto para ZIP
+Em alguns paineis de servidores que não possuem a função descompactar, é bem util.
+Dica: em alguns casos, se voce upar o arquivo kickstart.php via ftp. O sistema não irá deixar vc acessa-lo por medidas de segurança.
+Basta voce mudar o nome para qualquer coisa que queira... tipo
+kickstart.php -> qualquercoisa.php
+E ai acessar o seusite.com.br/qualquercoisa
+Vai funcionar
+
+Ultima dica...
+Se estiver restaurando o backup para testes em outra pasta ou subdominio, altere em configurações globais, i ndex e follow.
+Se nao fizer isso.. vc pode estar indexando o conteudo em duplicidade
+
+
+## Chame pelo navegador (supondo no localhost)
 
 http://localhost/site/kickstart.php
 
