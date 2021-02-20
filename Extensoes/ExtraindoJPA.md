@@ -46,6 +46,22 @@ Minha estrutura
 ```	
 A pasta /var/www/html/site precisa dar permissão de escrita para o servidor web
 
+## Importante
+
+Antes de executar pelo navegador, leia as informações abaixo
+
+Dicas do Kazuo Gomi Filho
+Do grupo Joomla Brasil do Facebook
+
+Super User Settings
+Realmente vc pode manter os usuarios super users antigos... mas se vc nao lançar os dados novamente, principalmente a senha, o acesso nao será possivel.
+o Akeeba vai llimpar a senha do banco de dados.
+Dica: o usuario que for setado aqui será o usuario super super super master...
+Varias extensoes usam este usuario como parametros.
+Entao se esta desenvolvendo para um cliente, cuidado aqui.
+
+![](images/akeeba-user.jpg)
+
 Chame pelo navegador (supondo no localhost)
 
 http://localhost/site/kickstart.php
