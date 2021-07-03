@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Instalador do Joomla</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+
+<h1 align="center">Instalador do Joomla</h1>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+          <div><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dica:</b> Todos os campos com <b>-backup</b> estão no configuration.php do site ou no arquivo zip do backup.</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+<br><br>
+            <form class="form-horizontal" action="install.php" method="POST" name="frmInstalar">
+              <div class="form-group">
+                <label for="host" class="col-sm-3 control-label">host-backup*</label>
+                <div class="col-sm-9">
+                    <input type="text" name="host1" class="form-control" id="host" value="localhost">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="user" class="col-sm-3 control-label">user-backup*</label>
+                <div class="col-sm-9">
+                    <input type="text" name="user1" class="form-control" id="user" value="" placeholder="Usuário do banco do backup">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="pass" class="col-sm-3 control-label">pass-backup*</label>
+                <div class="col-sm-9">
+                    <input type="password" name="pass1" class="form-control" id="pass" value="" placeholder="Senha do usuário do banco do backup">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="banco" class="col-sm-3 control-label">db-backup*</label>
+                <div class="col-sm-9">
+                    <input type="text" name="db1" class="form-control" id="banco" value="" placeholder="Nome do banco de dados do backup">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="logs" class="col-sm-3 control-label">log-backup*</label>
+                <div class="col-sm-9">
+                    <input type="text" name="log1" class="form-control" id="logs" value="" placeholder="Path completo para o diretório logs do backup">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="tmp" class="col-sm-3 control-label">tmp-backup*</label>
+                <div class="col-sm-9">
+                    <input type="text" name="tmp1" class="form-control" id="tmp" value="" placeholder="Path completo para o diretório tmp do backup">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="host" class="col-sm-3 control-label">host-atual*</label>
+                <div class="col-sm-9">
+                    <input type="text" name="host2" class="form-control" id="host" value="localhost">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="user" class="col-sm-3 control-label">user-atual*</label>
+                <div class="col-sm-9">
+                    <input type="text" name="user2" class="form-control" id="user" value="root" placeholder="Usuário do banco de dados atual">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="pass" class="col-sm-3 control-label">pass-atual*</label>
+                <div class="col-sm-9">
+                    <input type="password" name="pass2" class="form-control" id="pass" value="" placeholder="Senha do usuário do banco atual">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="banco" class="col-sm-3 control-label">db-atual*</label>
+                <div class="col-sm-9">
+                    <input type="text" name="db2" class="form-control" id="banco" value="" placeholder="Nome do banco de dados atual">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="diri" class="col-sm-3 control-label">Pasta*</label>
+                <div class="col-sm-9">
+                    <input type="text" name="folder" class="form-control" id="diri" value="" placeholder="/var/www/html/site2 ou c:\xampp\htdocs\site2 ou outra">
+                </div>
+              </div>
+              <label style="color:#f00;" for="tmp" class="col-sm-3 control-label"></label>
+              <div class="col-sm-9">
+                  <div><b>*<span style="color:#f00;"> Todos os campos são obrigatórios.</span></b></div>
+              </div>
+
+              <div class="col-sm-10">
+              </div>
+              <div class="col-sm-2">
+                  <input type="submit" name="enviar" class="btn btn-default" value="Enviar">
+              </div>
+            </form>
+        </div>
+        <div class="col-md-5">
+            <h3 align="center">Ajuda sobre o Instalador do Joomla</h3>
+                <p><b>Este instalador requer dois arquivos, o .zip contendo todos os arquivos do site em Joomla e o .sql contendo todo o banco de dados. Eu usei o componente <a href="https://github.com/ribafs/com_simplebackup">SimpleBackup</a> para criar estes arquivos mas pode ser qualquer outro, desde que crie estes dois arquivos.</b></p>
+                <div align="center"><strong>Instalação Local</strong></div>
+                <p>Criação do Banco de dados - desnecessária se usar o root</p>
+                <br>
+                <div align="center"><strong>Instalação num Servidor Remoto</strong></div>
+                <p>Se não lembra os dados do banco então abra o configuration.php do site e anote host, user, password, db, log_path, tmp_path</p>
+                <p>É recomendado que este software esteja no mesmo servidor onde o joomla será instalado e idealmente proteja seu diretório para que seja usado somente por você ou o remova após a instalação.</p>
+                <h3>Obrigatório:</h3>
+                <p>Criar o banco de dados, criar o usuário e dar privilégios ao usuário sobre o banco de dados</p>
+                <p>Renomeie o arquivo.sql do backup para site.sql</p>
+                <p>E renomeie o arquivo.zip para site.zip</p>
+                <p>Então os copie para a pasta do <strong>joomla_install</strong></p>
+                <p><b>Pasta</b> - é onde será instalado o site atual. Caso não exista será criada.</p>
+                <p><a href="form.png">Veja um exemplo de form preenchido</a></p>
+                <p style="font-size:9px;"><b><i>Colaboração de </b><a href="http://ribafs.org">Ribamar FS</a></i></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

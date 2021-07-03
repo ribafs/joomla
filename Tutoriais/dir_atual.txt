@@ -1,0 +1,3 @@
+echo dirname(__FILE__).'<br>';  // /var/www/html/main
+echo basename(__DIR__).'<br>';  // main
+

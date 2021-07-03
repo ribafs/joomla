@@ -1,0 +1,111 @@
+ Translation
+How to create translation for Joomla! extensions
+Navigation
+• •
+ 
+For translating extensions for Joomla! 1.6, 1.7, 2.5 (partially for Joomla! 3.5) see this article: Creating language packs for extensions in Joomla 2.5
+
+This article describes how to create translation for Joomla! specific extension. As example we will build Czech language for Phoca Gallery component.
+
+1) We will prepare folder structure for the new created translation. Create the following folders on your disc:
+
+    lang/admin
+    lang/site
+
+Open text editor and paste there the following content:
+
+<html><body bgcolor="#FFFFFF"></body></html>
+
+ 
+
+Save it as index.html in both folders (as lang/admin/index.html and lang/site/index.html).
+
+2) Unzip the Phoca Gallery component ZIP file somewhere on your disc. Go to:
+
+    language/en-GB/ folder (which is included in the unzipped Phoca Gallery structure)
+
+and open both files:
+
+    en-GB.com_phocagallery.ini
+    en-GB.com_phocagallery.menu.ini
+
+in text editor. Translate the strings to your langauge and save them as (in our example we use Czech prefixes):
+
+    lang/admin/cs-CZ.com_phocagallery.ini
+    lang/admin/cs-CZ.com_phocagallery.menu.ini
+    lang/site/cs-CZ.com_phocagallery.ini
+    lang/site/cs-CZ.com_phocagallery.menu.ini
+
+Files should be saved as UTF-8 without BOM encoding.
+
+3) Open text editor and paste there the following content:
+
+<install type="language" version="3" client="both" method="upgrade">
+	<name>cs-CZ.com_phocagallery</name>
+	<tag>cs-CZ</tag>
+	<creationDate>17/05/2018</creationDate>
+	<author>Jan Pavelka</author>
+	<authorEmail></authorEmail>
+	<authorUrl>https://www.phoca.cz</authorUrl>
+	<copyright>(C) 2018 Jan Pavelka</copyright>
+	<license>https://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>Czech language pack for Phoca Gallery</description>
+
+<administration>
+    <files folder="admin">
+  		<filename>cs-CZ.com_phocagallery.ini</filename>
+  		<filename>cs-CZ.com_phocagallery.menu.ini</filename>		
+  		<filename>index.html</filename>
+    </files>
+  </administration>
+  
+  <site>
+    <files folder="site">
+  		<filename>cs-CZ.com_phocagallery.ini</filename>
+  		<filename>cs-CZ.com_phocagallery.menu.ini</filename>		
+  		<filename>index.html</filename>
+  	</files>
+  </site>
+</install>
+
+Edit it and ave it as :
+
+    lang/install.xml file.
+
+So now you should have the following folder structure in the folder lang:
+
+ 
+
+    install.xml
+    admin/index.html
+    admin/cs-CZ.com_phocagallery.ini
+    admin/cs-CZ.com_phocagallery.menu.ini
+    site/index.html
+    site/cs-CZ.com_phocagallery.ini
+    site/cs-CZ.com_phocagallery.menu.ini
+
+Select all files included in lang folder and add them into ZIP file called lang-prefix-LANG-PREFIX.com_phocagallery.zip (in our example the file will have the following name: cs-CZ.com_phocagallery.zip)
+
+Now the translation is ready and can be installed via standard Joomla! installation procedure.
+• •
+
+ 
+How to install language pack in Joomla!
+Navigation
+• •
+
+Some component language packs cannot be installed in Extension Manager (e.g. because they don't include XML setup file). In such case, they need to be installed manually.
+
+See the following example (German language pack for Phoca Gallery component), how to install language pack manually:
+
+Download German language ZIP pack and unzip it. You should get two files:
+
+    de-DE.com_phocagallery.ini
+    de-DE.com_phocagallery.menu.ini
+
+Copy both files into the following destination:
+
+    administrator/language/de-DE/ folder and
+    language/de-DE/ folder on your server.
+
+If the German language is active (admin, front) on your Joomla! site, then the Phoca Gallery component will be translated to German.

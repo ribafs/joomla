@@ -1,0 +1,1264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+  <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>O Futuro de PHP</title>
+<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))'/>
+<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/"/>
+<link rel="SHORTCUT ICON" href="http://www.ibm.com/favicon.ico"/>
+  <meta name="Owner" content="dWbr@br.ibm.com"/>
+  <meta name="DC.Language" scheme="rfc1766" content="pt-BR" />
+  <meta name="IBM.Country" content="BR" />
+<meta name="Security" content="Public"/>
+<meta name="IBM.SpecialPurpose" content="SP001"/>
+<meta name="IBM.PageAttributes" content="sid=1003,1004"/>
+<meta name="Source" content="v16 Template Generator"/>
+<meta name="Robots" content="index,follow"/>
+<meta name="Abstract" content="A próxima edição do PHP, a V6, inclui novos recursos e aprimoramentos de sintaxe que facilitarão o uso de um ponto de vista orientado a objetos. Outros recursos importantes, como suporte a Unicode em muitas das funções principais, significam que o PHP V6 está em posição para melhor suporte internacional e robustez."/>
+<meta name="Description" content="A próxima edição do PHP, a V6, inclui novos recursos e aprimoramentos de sintaxe que facilitarão o uso de um ponto de vista orientado a objetos. Outros recursos importantes, como suporte a Unicode em muitas das funções principais, significam que o PHP V6 está em posição para melhor suporte internacional e robustez."/>
+<meta name="Keywords" content="PHP, PHP6, Nate Good, open source, unicode, namespaces, soap, xml, XMLReader, XMLWriter, tttosca"/>
+<meta name="DC.Date" scheme="iso8601" content="2008-05-06"/>
+<meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="CT316"/>
+<meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="TT400"/>
+<meta scheme="IBM_WTMCategory" name="IBM.WTMCategory" content="SOFDCOSRBR" />
+<meta name="DC.Rights" content="© Copyright IBM Corporation 2008"/>
+<meta name="IBM.Effective" scheme="W3CDTF" content="2008-05-06"/>
+<meta name="title" content="O Futuro de PHP"/>
+
+<!-- HEADER_SCRIPTS_AND_CSS_INCLUDE -->
+<link href="//dw1.s81c.com/common/v16/css/all.css" media="all" rel="stylesheet" title="www" type="text/css"/>
+<link href="//dw1.s81c.com/common/v16/css/screen.css" media="screen,projection" rel="stylesheet" title="www" type="text/css"/>
+<link href="//dw1.s81c.com/common/v16/css/screen-uas.css" media="screen,projection" rel="stylesheet" title="www" type="text/css"/>
+<link href="//dw1.s81c.com/common/v16/css/br/pt/screen-fonts.css" media="screen,projection" rel="stylesheet" title="www" type="text/css"/>
+<link href="//dw1.s81c.com/common/v16/css/handheld.css" media="handheld" rel="stylesheet" title="www" type="text/css"/>
+<link href="//dw1.s81c.com/common/v16/css/print.css" media="print" rel="stylesheet" title="www" type="text/css"/>
+<link href="//dw1.s81c.com/common/v16/css/overlay.css" media="screen,projection" rel="stylesheet" title="www" type="text/css"/>
+<!-- dW-specific CSS -->
+<link href="//dw1.s81c.com/developerworks/css/dw-screen.css" media="screen,projection" rel="stylesheet" title="www" type="text/css"/>
+<link href="//dw1.s81c.com/developerworks/css/dw-local-site.css" media="screen,projection" rel="stylesheet" title="www" type="text/css"/>
+<link href="//dw1.s81c.com/developerworks/css/dw-screen-comments-ratings-signin.css" media="screen,projection" rel="stylesheet" title="www" type="text/css"/>
+<link href="//dw1.s81c.com/developerworks/js/jquery/cluetip98/jquery.cluetip.css" media="screen,projection" rel="stylesheet"  title="www" type="text/css" />
+<!-- JPP: LOCAL URL FOR TESTING V16 DEFIANT MASTHEAD/FOOTER -->
+<link href="//dw1.s81c.com/developerworks/css/dw-mf/dw-mf2013-03.css" rel="stylesheet" title="www" type="text/css"/>
+<link href="//dw1.s81c.com/developerworks/css/dw-mf/dw-mf-br.css" rel="stylesheet" title="www" type="text/css"/>
+<script src="//dw1.s81c.com/common/js/ibmcommon.js" type="text/javascript">//</script>
+<script src="//dw1.s81c.com/common/js/dynamicnav.js" type="text/javascript">//</script>
+
+<!-- dW functional JS -->
+<script language="JavaScript" src="//dw1.s81c.com/developerworks/js/urltactic.js" type="text/javascript"></script>
+<!-- Rating_START -->
+
+<script language="JavaScript" type="text/javascript">
+  // <![CDATA[
+
+ dwr = {};
+  dwr.clickhere = 'Clicar para classificar';
+  dwr.starIntro = ''; 
+  dwr.stars = 'estrelas';
+  dwr.star = 'estrela'; 
+  dwr.avgRatingOf = 'Média de classificação de';
+  dwr.youRated = 'Você classificou';
+  dwr.basedOnVote = 'baseada em {1} voto'; // {1} to be substitue by code
+  dwr.basedOnVotes = 'baseada em {1} votos';
+  dwr.avgRating = 'Média de classificação';
+  dwr.leftParen = '('; 
+  dwr.rightParen = ')'; 
+  dwr.space = ' '; 
+  dwr.yourRating = 'Sua classificação';
+dwr.avgRating2 = 'Classificação média de {1} votos';
+dwr.avgRating3 = 'A classificação média do usuário é de {1} estrelas';
+dwr.rateThisArticle = 'Classificar este artigo';
+dwr.votes = '{1} votos';
+dwr.vote = '{1} voto';
+dwr.submitErr = 'Erro: O envio falhou. Tente novamente.';
+dwr.noRatingErr = 'Erro: Selecione uma classificação e envie novamente.';
+dwr.submit = 'Enviar';
+// ]]>
+</script>
+<!-- Rating_START -->
+<script language="JavaScript" src="//dw1.s81c.com/developerworks/js/artrating/showrating.js" type="text/javascript"></script>
+<style type="text/css">
+  .metavalue {
+  display: none;
+  }
+</style>
+<!-- Rating_END --><!-- RESERVED_HEADER_INCLUDE -->
+<script language="javascript" src="//dw1.s81c.com/developerworks/js/ajax1.js" type="text/javascript"></script>
+<script language="javascript" src="//dw1.s81c.com/developerworks/js/search_counter-maverick.js" type="text/javascript"></script>
+<script language="javascript" src="//dw1.s81c.com/developerworks/js/request_referer_capture-maverick.js" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript">
+ <!--
+ setDefaultQuery('dwbrazil');
+ //-->
+</script>
+<script language="JavaScript" type="text/javascript">
+ <!--
+ function openNewWindow(url,tar,arg){window.open(url,tar,arg);}
+ //-->
+</script>
+  <!-- Include file support -->
+  <script language="JavaScript" type="text/javascript">
+    (function($) {
+    jQuery.extend({
+    getInc: function(u,d){
+    if(u==null)return;
+    jQuery.ajax({
+    type: "GET",
+    url: u,
+    dataType: "text",
+    success: function(t) {
+    jQuery(d).html(t);
+    ibmCommon.initShowHide(jQuery(d).children()[0]);	
+    },
+    async: true
+    });
+    }
+    });
+    })(jQuery);
+  </script>
+</head>
+
+<body id="ibm-com">
+<div id="ibm-top" class="ibm-landing-page">
+
+<!-- MASTHEAD_BEGIN -->
+<!-- MASTHEAD_BEGIN -->
+<div class="ibm-access"><a href="#ibm-content">Avançar para a área de conteúdo</a></div>
+<div id="ibm-masthead-dw">
+  
+    <!-- TOP ROW -->    
+    <div id="dw-masthead-top-row">
+    	<ul id="ibm-mast-options-dw" class="br">
+        	<li id="dw-mast-top-0"> 
+				<a class="dw-mf-noscript" href="#" title="Conecte (ou Registre-se) Necessário JavaScript">Conecte-se (ou Registrar)</a>
+			</li>
+        	<li id="dw-mast-top-1" class="dw-mast-top-1-br">
+		    	<a href="#SELECTLANG">Português (Brasil)</a><img class="dw-preload" src="//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif" width="8" height="7" alt="" />
+			</li>
+        	<li id="dw-mast-top-2" class="dw-mf-hide">
+				<a href="#"><img src="/developerworks/community/profiles/photo.do?userid=[uid]" alt="PHOTO" class="dw-mast-profimg" width="20" height="20"/> [userid]</a>
+			</li>
+			<li id="dw-mast-top-3">
+				<a href="#"><img src="//dw1.s81c.com/developerworks/i/mf/ibm-smlogo.gif" width="44" height="16" alt="IBM®" /></a>
+			</li>
+		</ul>
+	</div>
+    
+    <!-- TOP ROW SLIDER -->
+    <div id="ibm-my-menu-dw">    
+        <div class="ibm-ribbon-pane-dw">
+            <div class="ibm-ribbon-section-dw">
+                <!-- Sign-in -->
+                <div class="dw-mast-columns">                
+					<div class="dw-mast-col-1-1">
+						<div id="dw-mast-sso">
+							<!--<div id="dw-mast-sso-reg">
+								<p>Bem-vindo ao developerWorks. Se você não possui um ID IBM e senha, <a href="#" onclick="(function () {window.location='/developerworks/dwwi/DWAuthRouter?m=reg&amp;lang=pt_br&amp;d='+encodeURIComponent(location.href);})();">Registre-se aqui</a>.</p>
+							</div>-->
+							<div id="signin_error_mf" class="dw-mf-hide"></div>
+							<div id="dw-mast-sso-form">
+								<form id="sForm_mf" action="" method="post" name="sForm_name_mf" onsubmit="return false;">
+									<div id="dw-mast-sso-id" class="dw-mast-sso-id-br">
+										<label for="ibmid_mf">ID IBM:</label>
+										<input id="ibmid_mf" type="text" value="" name="ibmid_name_mf" maxlength="100" onkeypress="handleEP(event,this.form,'mf');"/>
+									</div>
+									<div id="dw-mast-sso-pw" class="dw-mast-sso-pw-br">
+										<label for="pw_mf">Senha:</label>
+										<input id="pw_mf" type="password" value="" name="pw_name_mf" maxlength="100" onkeypress="handleEP(event,this.form,'mf');"/>
+									</div>
+									<div id="dw-mast-sso-target" class="dw-mast-sso-target-br">
+										<p class="dw-mf-perm-box">
+											<input id="perm_mf" type="checkbox" name="perm_name_mf"/><label for="perm_mf"> Mantenha-me conectado.</label>
+										</p>
+									</div>
+									<div id="dw-mast-sso-terms">
+										<p class="dw-mast-sso-terms-br">Ao clicar em <strong>Enviar</strong>, você concorda com os <a href="/developerworks/community/terms?lang=pt_br">termos e condições do developerWorks</a>.</p>
+									</div>
+									<div>
+										<input class="dw-mf-submit-btn-br" name="ibm_submit_name_mf" value="Enviar" onclick="signin('mf');return false;" type="submit" />
+									</div>
+								</form>
+							</div>
+							<div id="dw-mast-sso-update">
+								<div id="dw-mast-sso-update-id">
+									<ul>
+										<li><a class="ibm-forward-link" href="#" onclick="(function () {window.location='/developerworks/dwwi/DWAuthRouter?m=reg&amp;lang=pt_BR&amp;d='+encodeURIComponent(location.href);})();">Precisa de um ID IBM?</a></li>
+										
+									<li><a class="ibm-forward-link" href="/developerworks/dwwi/jsp/WSHelp.jsp?lang=pt_BR">Esqueceu seu ID IBM?</a></li>
+									</ul>
+								</div>
+								<div id="dw-mast-sso-update-pw">
+								<ul class="dw-mf-pwupdate">
+									<li><a class="ibm-forward-link" href="#" onclick="(function () {window.location='https://www.ibm.com/account/profile?page=forgot&amp;lang=pt_BR&amp;appname=ibm&amp;required=null&amp;d='+encodeURIComponent(getAuthUrl())+'%3Fm%3Dloginpage%26lang%3Dpt_BR%26d%3D'+encodeURIComponent(location.href);})();">Esqueceu sua senha?</a></li>
+									<li><a class="ibm-forward-link" href="#" onclick="(function () {window.location='https://www.ibm.com/account/profile?page=chpw&amp;lang=pt_BR&amp;appname=ibm&amp;required=null&amp;d='+encodeURIComponent(location.href);})();">Alterar sua senha</a></li>
+								</ul>
+							</div>
+							</div>
+							<div id="dw-mast-sso-text-br">
+								<p>A primeira vez que acessar o developerWorks, um perfil será criado para você. <strong>Informações do seu perfil (tais como: nome, país / região, e empresa) estarão disponíveis ao público, que poderá acompanhar qualquer conteúdo que você publicar.</strong> Seu perfil no developerWorks pode ser atualizado a qualquer momento.</p>	
+								
+								<p class="dw-mf-secure-br">Todas as informações enviadas são seguras.</p>
+							</div>
+							<div class="dw-mast-close">
+								<ul>
+									<li><div class="dw-mast-close-sign-br"><a href="#"><img src="//dw1.s81c.com/i/c.gif" alt="Fechar [x]" width="20" height="10" border="0"/></a></div></li>
+								</ul>
+							</div>
+						</div>						
+						<div id="dw-mast-dname" class="dw-mf-hide">
+							<p>Ao se conectar ao developerWorks pela primeira vez, é criado um perfil para você e é necessário selecionar um nome de exibição. O nome de exibição acompanhará o conteúdo que você postar no developerWorks.</p>
+							<p><strong>Escolha um nome de exibição de 3 - 31 caracteres.</strong> Seu nome de exibição deve ser exclusivo na comunidade do developerWorks e não deve ser o seu endereço de email por motivo de privacidade. </p>			
+							<div id="signin_dname_error_mf" class="dw-mf-hide"></div>
+							<div id="dw-mast-dname-form">
+								<form id="dForm_mf" action="" method="post" name="dForm_name_mf" onsubmit="return false;">
+									<div id="dw-mast-dname-mf">
+										<label for="dname_mf">Nome de exibição:</label>
+										<input id="dname_mf" name="dname_name_mf" maxlength="31" size="25" value="" type="text" onkeypress="handleEP(event,this.form,'mf');" />
+									</div>
+									<div id="dw-mast-dname-terms">
+										<p class="dw-mast-dname-terms-br">Ao clicar em <strong>Enviar</strong>, você concorda com os <a href="/developerworks/community/terms?lang=pt_br">termos e condições do developerWorks</a>.</p>
+									</div>
+									<div>
+										<input class="dw-mf-submit-btn-br" name="dname_submit_name_mf" value="Enviar" onclick="signin('mf');return false;" type="submit" />
+									</div>
+								</form>								
+							</div>
+							<div id="dw-mast-dname-secure">
+								<p class="dw-mf-secure-br">Todas as informações enviadas são seguras.</p>
+							</div>
+							<div class="dw-mast-close">
+								<ul>
+									<li><div class="dw-mast-close-sign-br"><a href="#"><img src="//dw1.s81c.com/i/c.gif" alt="Fechar [x]" width="20" height="10" border="0"/></a></div></li>
+								</ul>
+							</div>
+						</div>						
+						<div id="dw-mast-auth" class="dw-mf-hide">
+							<div>
+								<h2>My developerWorks:</h2>
+								<ul>
+									<li><a id="dw-mast-top-0-0" href="/developerworks/community/homepage?lang=pt_br">Minha homepage</a></li>
+									
+									<li><a href="/developerworks/community/profiles/html/myProfileView.do?lang=pt_br">Meu perfil</a></li>
+									<li><a href="/developerworks/community/groups/service/html/mycommunities?lang=pt_br">Minhas Comunidades</a></li>
+									<li><a href="/developerworks/community/news/?lang=pt_br">Configurações</a></li>
+								</ul>     
+							</div>
+							<div id="dw-mast-notify" class="dw-mf-hide">
+								<h2>Minhas notificações:</h2>
+								<ul>
+									<li><a id="new_notify" href="/developerworks/community/homepage?lang=pt_br">{[num_notify] as novas notificações}([num_notify] nova notificação)</a></li>
+									<li><a id="new_invite" href="/developerworks/community/profiles/html/wc.do?action=in&requireAuth=true&widgetId=friends&lang=[lang]">{[num_invite] solicitações de rede}([num_invite] solicitação de contato)</a></li>  
+								</ul>
+							</div>
+							<div class="dw-mast-more">
+								<ul class="ibm-link-list">
+									<li><a class="dw-more-link" href="#" onclick="signOut(); return false;"><strong>Sair</strong></a></li>
+								</ul>
+							</div>
+							<div class="dw-mast-close">
+								<ul>
+									<li><div class="dw-mast-close-sign"><a href="#"><img src="//dw1.s81c.com/i/c.gif" alt="Fechar [x]" width="20" height="10" border="0"/></a></div></li>
+								</ul>
+							</div>	
+						</div>						
+					</div>                 	
+                </div>
+                <!-- Site selector --> 
+				<div class="dw-mast-columns">
+					<div class="dw-mast-col-2-1">
+						<h2>Selecione um idioma:</h2>
+						<ul>
+							<li><a id="dw-mast-top-1-0" href="http://www.ibm.com/developerworks/">English</a></li>
+							<li><a href="http://www.ibm.com/developerworks/cn/">中文</a></li>
+							<li><a href="http://www.ibm.com/developerworks/jp/">日本語</a></li>
+						    <li><a href="http://www.ibm.com/developerworks/ru/">Русский</a></li>
+						</ul>
+					</div>
+					<div class="dw-mast-col-2-2">
+						<ul>
+							<li><a href="http://www.ibm.com/developerworks/br/">Português (Brasil)</a></li>
+							<li><a href="http://www.ibm.com/developerworks/ssa/">Español</a></li>
+							<li><a href="http://www.ibm.com/developerworks/vn/">Việt</a></li>
+						</ul>
+					</div>
+					<div class="dw-mast-close">
+						<ul>
+							<li><div class="dw-mast-close-lang"><a href="#"><img src="//dw1.s81c.com/i/c.gif" alt="Fechar [x]" width="20" height="10" border="0"/></a></div></li>
+						</ul>
+                    </div>
+                </div>
+                <div class="dw-mast-columns"><!-- Authenticated --></div>
+                <!-- IBM -->
+				<div class="dw-mast-columns">
+					<div class="dw-mast-col-2-1">
+						<ul>
+							<li><a id="dw-mast-top-3-0" href="http://www.ibm.com/br/pt/">Página inicial da IBM</a></li>
+							<li><a href="http://www.ibm.com/solutions/br/pt/">Soluções</a></li>
+							<li><a href="http://www.ibm.com/software/br/">Software IBM</a></li>
+							<li><a href="http://www.ibm.com/software/br/sw-services/">Serviços</a></li>
+						</ul>
+					</div>
+					<div class="dw-mast-col-2-2 dw-mast-ibm">
+						<ul>
+							<li><a href="http://www.ibm.com/support/br/pt/">Suporte &amp; Downloads</a></li>
+							<li><a href="http://www.ibm.com/support/documentation/br/pt/">Suporte &amp; Downloads<br />(Documentação)</a></li>
+							<li><a href="http://www.ibm.com/redbooks/">Redbooks (Inglês)</a></li>
+						</ul>
+					</div>
+					<div class="dw-mast-close">
+						<ul>
+							<li><div class="dw-mast-close-ibm"><a href="#"><img src="//dw1.s81c.com/i/c.gif" alt="Fechar [x]" width="20" height="10" border="0"/></a></div></li>
+						</ul>
+                    </div> 
+				</div>
+			</div>
+        </div>
+    </div>
+
+    <!-- BOTTOM ROW -->
+    <div id="ibm-universal-nav-dw">
+        <ul id="ibm-unav-links-dw">
+            <li id="ibm-unav-home-dwlogo">
+				<a href="http://www.ibm.com/developerworks/br/"><img src="//dw1.s81c.com/developerworks/i/mf/dw-wordmark.gif" width="218" height="32" alt="developerWorks®" /></a>
+            </li>
+        </ul>
+    	<ul id="ibm-menu-links-dw" class="ibm-menu-links-dw-br">
+        	<li id="dw-mast-nav-0"><a href="http://www.ibm.com/developerworks/br/topics/">Itens Técnicos</a></li>
+        	<li id="dw-mast-nav-1"><a href="http://www.ibm.com/developerworks/br/downloads/">Downloads e Trials</a></li>
+        	<li id="dw-mast-nav-2"><a href="/developerworks/community/?lang=pt_br">Comunidade</a></li>
+        	<!-- <li id="dw-mast-nav-3"><a href="REPLACE-E.HTML">Events</a></li> -->
+        </ul>       
+			<form id="ibm-search-form" action="//www.ibm.com/search/csass/search/" method="get" name="form1">
+				<input type="hidden" name="sn" value="dw" />
+				<input type="hidden" name="lang" value="pt" />
+				<input type="hidden" name="cc" value="BR" />
+				<input type="hidden" name="en" value="utf" />
+				<input type="hidden" name="hpp" value="20" />
+				<input type="hidden" name="dws" value="ptdw" />
+			    <input type="hidden" name="lo" value="pt" />
+				<p>
+				<label for="q"><img alt="Pesquisar por:" height="1" width="1" src="//dw1.s81c.com/i/c.gif" /></label>
+				<input type="text" value="Pesquisa developerWorks" name="q" maxlength="100" id="q"/>
+					<input type="submit" id="ibm-search" class="ibm-btn-search ibm-btn-search-br" name="Pesquisar" value="Search" />
+				</p>
+			</form>
+    </div>
+    
+    <!-- BOTTOM ROW SLIDER -->
+    <div id="ibm-common-menu-dw">
+        <div class="ibm-ribbon-pane-dw">
+            <div class="ibm-ribbon-section-dw">
+				<!-- Technical topics category -->
+                <div class="dw-mast-columns">
+                	<div class="dw-mast-col-4-1">
+						<h2><a id="dw-mast-nav-0-0" href="http://www.ibm.com/developerworks/br/topics/">Itens Técnicos</a></h2>
+						<ul>
+							<li><a id="dw-mast-nav-0-0" href="http://www.ibm.com/developerworks/br/cloud/">Cloud computing</a></li>
+							<li><a href="http://www.ibm.com/developerworks/br/mobile/">Desenvolvimento móvel</a></li>
+							<li><a href="http://www.ibm.com/developerworks/br/data/">Information management</a></li>
+							<li><a
+								href="http://www.ibm.com/developerworks/br/java/">Tecnologia Java</a></li>
+							<li><a href="http://www.ibm.com/developerworks/br/linux/">Linux</a></li>
+						</ul>     
+                    </div>
+                	<div class="dw-mast-col-4-2">
+						<ul>
+							<li><a href="http://www.ibm.com/developerworks/br/lotus/">Lotus</a></li> 
+							<li><a href="http://www.ibm.com/developerworks/br/opensource/">Open source</a></li>
+							<li><a href="http://www.ibm.com/developerworks/br/rational/">Rational</a></li>
+							<!--<li><a href="http://www.ibm.com/developerworks/br/industry/">Segmentos de indústrias</a></li>-->
+							<li><a href="http://www.ibm.com/developerworks/br/tivoli/">Tivoli</a></li>
+						</ul>
+                	</div>
+                    <div class="dw-mast-col-4-3">
+						<ul>
+							<li><a href="http://www.ibm.com/developerworks/br/websphere/">WebSphere</a></li>
+						</ul>
+                    </div>
+                	<div class="dw-mast-col-4-4">
+						<ul>
+							<li><a href="http://www.ibm.com/developerworks/br/views/global/libraryview.jsp"><strong>Biblioteca técnica</strong></a></li>
+							<li><a href="http://www.ibm.com/developerworks/br/products/"><strong>Produtos de software de A a Z para desenvolvedores</strong></a></li>
+						</ul>
+                    </div>
+                    <div class="dw-mast-close">
+						<ul>
+							<li><div class="dw-mast-close-tech-br"><a href="#"><img src="//dw1.s81c.com/i/c.gif" alt="Fechar [x]" width="20" height="10" border="0"/></a></div></li>
+						</ul>
+                    </div>
+				</div>
+				<!-- Evaluation software category -->
+                <div class="dw-mast-columns">
+					<div class="dw-mast-col-2-1">
+						<h2><a id="dw-mast-nav-1-0" href="http://www.ibm.com/developerworks/br/downloads/">Downloads e Trials</a></h2>
+						<ul>
+							<li><a href="http://www.ibm.com/developerworks/br/downloads/#db2">Information management</a></li>
+							<li><a href="http://www.ibm.com/developerworks/br/downloads/#lotus">Lotus</a></li>
+							<li><a href="http://www.ibm.com/developerworks/br/downloads/#rational">Rational</a></li>
+						</ul>					   
+                    </div>
+					<div class="dw-mast-col-2-2">
+						<ul>
+							<li><a href="http://www.ibm.com/developerworks/br/downloads/#tivoli">Tivoli</a></li>
+							<li><a href="http://www.ibm.com/developerworks/br/downloads/#websphere">WebSphere</a></li>
+							<!--<li><a href="http://www.ibm.com/developerworks/br/downloads/#sandbox">Sandboxes de avaliação</a></li>-->
+						</ul>					   
+                    </div>
+                    <div class="dw-mast-close">
+						<ul>
+							<li><div class="dw-mast-close-eval-br"><a href="#"><img src="//dw1.s81c.com/i/c.gif" alt="Fechar [x]" width="20" height="10" border="0"/></a></div></li>
+						</ul>
+                    </div>
+				</div>
+				<!-- Community category -->
+                <div class="dw-mast-columns">
+					<div class="dw-mast-col-2-1">
+						<h2><a id="dw-mast-nav-2-0" href="/developerworks/community/?lang=pt_br">Comunidade</a></h2>
+						<ul>
+							<li><a href="/developerworks/community/homepage/?lang=pt_br">Minha homepage</a></li>
+							<li><a href="/developerworks/community/profiles/?lang=pt_br">Perfis</a></li>
+							<li><a href="/developerworks/community/groups/?lang=pt_br">Comunidades</a></li>		
+							<li><a href="/developerworks/community/blogs/?lang=pt_br">Blogs</a></li>							</ul>     
+                    </div>
+					<div class="dw-mast-col-2-2">
+						<ul>
+							<li><a
+								href="/developerworks/community/forums/?lang=pt_br">Fóruns</a></li>
+							<li><a
+								href="/developerworks/community/wikis/?lang=pt_br">Wikis</a></li>
+							<li><a
+								href="/developerworks/community/activities/?lang=pt_br">Atividades</a></li>
+						</ul>
+                    </div>
+                    <div class="dw-mast-close">
+						<ul>
+							<li><div class="dw-mast-close-comm-br"><a href="#"><img src="//dw1.s81c.com/i/c.gif" alt="Fechar [x]" width="20" height="10" border="0"/></a></div></li>
+						</ul>
+                    </div>
+				</div>
+				<!-- Events category -->
+                <div class="dw-mast-columns">
+			</div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div id="fdiv" class="ibm-access"></div>
+<!-- MASTHEAD_END --><!-- MASTHEAD_END -->
+
+<div id="ibm-pcon">
+
+<!-- CONTENT_BEGIN -->
+<div id="ibm-content">
+
+<!-- Navigation_Trail_BEGIN -->
+<!-- &nbsp; -->
+        <div id="ibm-content-head"><ul id="ibm-navigation-trail"><li class="ibm-first"><a href="http://www.ibm.com/developerworks/br/">developerWorks Brasil</a></li><li><a href="http://www.ibm.com/developerworks/br/opensource/">Software livre</a></li><li><a href="http://www.ibm.com/developerworks/br/views/opensource/libraryview.jsp">Biblioteca técnica</a></li></ul></div>
+<!-- Navigation_Trail_END -->
+
+<!-- dW_Summary Area_START -->
+<div id="dw-summary-article">
+
+<div class="dw-content-head">
+<h1>O Futuro de PHP</h1><p><em>Saiba quais mudanças estão armazenadas para o PHP V6 e como seus scripts irão mudar </em></p>
+</div>
+
+<div class="ibm-container-body ibm-two-column">
+
+<div class="ibm-column ibm-first">
+<div class="author"><a class="dwauthor" rel="#authortip1" href="#author1">Nathan A. Good</a>, Senior Information Engineer, Freelance Developer</div><div id="authortip1" class="dwauthor-onload-state ibm-no-print">Nathan A. Good mora na área Twin Cities em Minnesota. Profissionalmente, ele realiza desenvolvimento de software, arquitetura de software e administração de sistemas. Quando ele não está desenvolvendo software, ele gosta de montar PCs e servidores, ler sobre e trabalhar com novas tecnologias e tentar convencer seus amigos de começarem a usar software livre. Ele escreveu e coescreveu muitos livros e artigos, incluindo Professional Red Hat Enterprise Linux 3, Regular Expression Recipes: A Problem-Solution Approach, Regular Expression Recipes for Windows Developers: A Problem-Solution Approach, PHP 5 Recipes: A Problem-Solution Approach e Foundations of PEAR: Rapid PHP Development.</div>
+<p></p>
+  <p><strong>Resumo:</strong>&nbsp; A próxima edição do PHP, a V6, inclui novos recursos e aprimoramentos de sintaxe que
+facilitarão o uso de um ponto de vista orientado a objetos.
+Outros recursos importantes, como suporte a Unicode em muitas das funções principais, significam que o PHP V6
+está em posição para melhor suporte internacional e robustez.</p>
+
+
+</div>
+
+<div class="ibm-column ibm-second">
+
+<p class="leading"><b>Data:</b>&nbsp; 06/Mai/2008
+  
+<br /><b>Nível: </b>&nbsp;Intermediário
+    
+
+<br /><strong>Atividade:</strong>&nbsp; 3207 visualizações
+ <br /><strong>Comentários:</strong> &nbsp; <span id="nCmts"><img alt="" src="//dw1.s81c.com/developerworks/i/circle-preloader.gif" height="12" width="50" /><img alt="" src="//dw1.s81c.com/i/c.gif" height="14" width="1" /></span> 
+  <!-- Rating_Area_Begin -->
+  <div id="art-rating-summary"></div>
+  <!-- Rating_Area_End -->
+  <br />
+</p>
+</div>
+
+</div>
+</div>
+<!-- dW_Summary_Area_END -->
+
+<!-- CONTENT_BODY -->
+<div id="ibm-content-body">
+
+<!-- MAIN_COLUMN_BEGIN -->
+<div id="ibm-content-main">
+
+<!-- Related_Searches_Area_And_Overlays_Begin -->
+
+<!-- MAIN_COLUMN_CONTAINER_BEGIN -->
+<div class="ibm-container">
+
+<!-- MAIN_COLUMN_CONTENT_BEGIN -->
+<p>PHP já é popular, usado em milhões de domínios (de acordo com Netcraft), suportado pela
+maioria dos ISPs e usado por empresas da Web muito conhecidas, como a Yahoo! As próximas versões do PHP tem
+como meta somar a esse sucesso, introduzindo novos recursos que tornam PHP mais útil em alguns casos e mais
+seguro em outros.
+Você está pronto para o PHP V6? Se você fosse fazer upgrade amanhã, seus scripts seriam bem executados ou
+haveria trabalho a ser feito?
+Este artigo foca as mudanças para o PHP V6 &#8212; algumas delas back-ported para as versões PHP V5.x &#8212; 
+que podem requerer alguns ajustes em seus scripts atuais. </p>
+            <p>Se ainda não estava usando PHP e anda pensando sobre isso, dê uma olhada em seus recursos mais
+recentes.
+Esses recursos, de suporte a Unicode até as funções principais para XML, facilitam ainda mais escrever
+aplicativos PHP cheios de recursos.
+</p>
+            <p><a name="N1005B"><span class="atitle">Novos Recursos do PHP V6 </span></a></p>
+
+            <p>O PHP V6 está atualmente disponível como uma captura instantânea para o desenvolvedor,
+portanto, você pode fazer download e testar muitos dos recursos e mudanças listados neste artigo.
+Para recursos que foram implementados na captura instantânea atual, consulte
+<a href="#resources">Recursos</a>. </p>
+            <p><a name="N10069"><span class="smalltitle">Suporte Aprimorado a Unicode</span></a></p>
+            <p>Muito aprimorado no PHP V6 está o suporte para strings Unicode em muitas das principais
+funções.
+  Esse novo recurso tem um grande impacto, pois permitirá que o PHP suporte um conjunto mais amplo de
+caracteres para suporte internacional.
+Portanto, se você for um desenvolvedor ou arquiteto usando uma linguagem diferente, como a linguagem de
+programação Java&#8482; , porque possui melhor suporte à internacionalização (i18n) do que PHP, será a hora
+de dar outra olhada em PHP quando o suporte melhorar. </p>
+
+            <p>Como você pode fazer download e usar uma versão para desenvolvedor do PHP V6 hoje, você verá
+algumas funções que já suportam as strings Unicode.
+Para obter uma lista de funções que foram testadas e verificadas para manipular Unicode, consulte
+<a href="#resources">Recursos</a>. </p>
+            <div class="ibm-container ibm-alt-header dw-container-sidebar"><h2>O que É Unicode?</h2><div class="ibm-container-body">
+                
+Unicode é um conjunto de caracteres, codificação de caracteres e metodologias de codificação padrão de
+mercado que têm como principal meta ativar i18n e localização (i10n). O Unicode Transformation Format (UTF)
+especifica uma maneira de codificar caracteres para Unicode. Para obter informações adicionais sobre Unicode
+e UTF, consulte <a href="#resources">Recursos</a>.</div></div>
+            <p><a name="N10089"><span class="smalltitle">Espaços de Nomes</span></a></p>
+            <p>
+                <i>Espaços de Nomes</i> são uma maneira de evitar conflitos de nomes entre funções e classes
+sem usar prefixos nas convenções de nomenclatura que tornam os nomes de seus métodos e classes ilegíveis.
+Usando espaços de nomes, você pode ter nomes de classes que outra pessoa pode usar, mas agora você não
+precisa se preocupar com nenhum problema.
+A Lista 1 fornece um exemplo de um namespace no PHP. </p>
+            <p>Não é necessário atualizar nem alterar nada em seu código, pois qualquer código PHP que você
+escrever que não inclua espaços de nomes será bem executado.
+Como o recurso de espaços de nomes parece ser back-ported para a V5.3 do PHP, quando for disponibilizado,
+será possível começar a introduzir espaços de nomes em seus próprios aplicativos PHP.
+</p>
+            <br /><a name="list1"><b>Lista 1. Exemplo de um Namespace</b></a><br /><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="code-outline"><pre class="displaycode">
+                
+&lt;?php // Não tenho certeza porque eu implementaria meu próprio XMLWriter, mas pelo menos // o nome deste
+não entrará em conflito com o construído no PHP namespace NathanAGood; class XMLWriter {
+    // Implementação aqui... }
+$writer = new NathanAGood::XMLWriter();
+?&gt;
+</pre></td></tr></table><br />
+            <p><a name="N100A3"><span class="atitle">Recursos do Web 2.0</span></a></p>
+            <p>Dependendo de como você usa o PHP e da aparência de seus scripts agora, as diferenças de
+linguagem e sintaxe no PHP V6 podem ou não afetá-lo tanto quanto os próximos recursos, que são aqueles que
+permitem introduzir diretamente os recursos do Web 2.0 em seu aplicativo PHP.
+</p>
+            <p><a name="N100AD"><span class="smalltitle">SOAP</span></a></p>
+            <p>SOAP é um dos protocolos que os serviços da Web "falam" e é suportado diversas outras
+linguagens, como a linguagem de programação Java e Microsoft&#174; .NET. Apesar de haver outras maneiras de
+consumir e expor serviços da Web, como Representational State
+  Transfer (REST), SOAP permanece uma maneira comum de permitir que diferentes plataformas tenham
+interoperabilidade.
+Além dos módulos SOAP na biblioteca PHP Extension and Application
+  Repository (PEAR), uma extensão SOAP para PHP foi introduzida na V5. Essa extensão não estava ativada por
+padrão, portanto, você deve ativar a extensão ou esperar que seu ISP o tenha feito.
+Além disso, os pacotes PEAR disponíveis permitem construir clientes e servidores SOAP, como o pacote SOAP. </p>
+            <p>A menos que você altere o padrão, a extensão SOAP estará ativada para você na V6. Essas
+extensões fornecem uma maneira fácil de implementar clientes SOAP e servidores SOAP, permitindo que você
+construa aplicativos PHP que consomem e fornecem serviços da Web.
+</p>
+            <p>Se as extensões SOAP estiverem ativadas por padrão, isso significa que você não precisará
+configurá-las no PHP.
+Se você desenvolver aplicativos PHP e publicá-los em um ISP, pode ser necessário verificar com seu ISP se as
+extensões SOAP estarão ativadas para você quando fizerem o upgrade. </p>
+            <p><a name="N100BF"><span class="smalltitle">XML</span></a></p>
+            <p>Desde o PHP V5.1, XMLReader e XMLWriter fazem parte das funções principais de PHP, que
+facilita trabalhar com XML em seus aplicativos PHP.
+Como as extensões SOAP, essa pode ser uma boa notícia se você usar SOAP ou XML, pois o PHP V6 será mais
+adequado para você do que a V4 pronta.
+</p>
+            <p>XMLWriter e XMLReader são classes orientadas a objetos baseadas em fluxo que permitem que você
+leia e escreva XML sem precisar se preocupar com os detalhes de XML.
+</p>
+            <div class="ibm-alternate-rule"><hr/></div><p class="ibm-ind-link ibm-back-to-top"><a href="#ibm-pcon" class="ibm-anchor-up-link">Voltar para parte superior</a></p><p><a name="N100CB"><span class="atitle">Coisas Removidas</span></a></p>
+
+            <p>Além de ter novos recursos, o PHP V6 não terá algumas outras funções e recursos que faziam
+parte de versões anteriores.
+A maioria dessas coisas, como <code>register_globals</code> e <code>safe_mode</code>, são
+amplamente consideradas "quebradas" no PHP atual, já que podem expor a segurança a riscos.
+Em um esforço para limpar o PHP, as funções e recursos listados na seção a seguir serão removidos ou
+reprovados no PHP.
+Opositores dessa remoção mais provavelmente citarão problemas com scripts existentes sendo interrompidos após
+ISPs ou empresas fazerem upgrade para o PHP V6, mas aqueles que propuseram esse esforço de limpeza ficarão
+felizes de a equipe do PHP estar tapando alguns buracos e fornecendo uma implementação mais limpa e mais
+segura.
+</p>
+            <p>Recursos que serão removidos da versão PHP incluem:</p>
+            <ul>
+                <li>
+                    <code>magic_quotes</code>
+                </li>
+                <li>
+                    <code>register_globals</code>
+                </li>
+                <li>
+                    <code>register_long_arrays</code>
+                </li>
+                <li>
+                    <code>safe_mode</code>
+                </li>
+            </ul>
+            <p><a name="N100FF"><span class="smalltitle">
+                <code>magic_quotes</code>
+            </span></a></p>
+
+            <p>Citando portabilidade, desempenho e inconveniência, a documentação do PHP desestimula o uso de
+<code>magic_quotes</code>. É tão desestimulado que está sendo removido do PHP V6
+de forma definitiva, portanto, antes de fazer upgrade para o PHP V6, certifique-se de que todo o seu código
+evite usar
+<code>magic_quotes</code>. Se você estiver usando
+  <code>magic_quotes</code>  para escapar strings para chamadas de banco de dados,
+use as consultas parametrizadas da implementação de seu banco de dados, se forem suportadas.
+Caso contrário, use a função de escape da implementação de seu banco de dados, como
+<code>mysql_escape_string</code> para MySQL ou <code>pg_escape_string</code> para PostgreSQL. A Lista 2 mostra um exemplo do
+uso de <code>magic_quotes</code> . </p>
+            <br /><a name="list2"><b>Lista 2. Usando <code>magic_quotes</code> (Desestimulado)</b></a><br /><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="code-outline"><pre class="displaycode">
+                
+&lt;?php // Supondo que magic_quotes esteja ativado... $sql = "INSERT INTO USERS (USERNAME) VALUES
+$_GET['username']"; ?&gt;
+</pre></td></tr></table><br />
+            <p>Após preparar seu código PHP para as novas versões de PHP, seu código deve ter a aparência da
+Lista 3.</p>
+            <br /><a name="list3"><b>Lista 3. Usando Consultas Parametrizadas
+(Recomendado) </b></a><br /><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="code-outline"><pre class="displaycode">
+                
+&lt;?php // Usando o método de consulta parametrizada apropriado para MySQL, como um exemplo $statement =
+$dbh-&gt;prepare("INSERT INTO USERS (USERNAME) VALUES ?"); $statement-&gt;execute(array($_GET['username']));
+?&gt;
+</pre></td></tr></table><br />
+            <p>Agora que o suporte para <code>magic_quotes</code> será completamente removido, a função
+<code>get_magic_quotes_gpc()</code>  não estará mais disponível.
+Isso pode afetar alguns dos scripts PHP mais antigos, portanto, antes da atualização, certifique-se de que
+você corrija quaisquer locais em que essas funções existem.
+</p>
+            <p><a name="N1014A"><span class="smalltitle">
+                <code>register_globals</code>
+            </span></a></p>
+            <p>A chave de configuração <code>register_globals</code> já estava desativada como padrão no PHP V4.2, o que
+era controverso na época. Quando <code>register_globals</code> está ativado, era fácil usar variáveis que poderiam
+ser injetadas com valores de formulários HTML.
+Essas variáveis não requerem mesmo inicialização em seus scripts, portanto, é fácil escrever scripts com
+buracos na segurança.
+A documentação de <code>register_globals</code> (consulte <a href="#resources">Recursos</a>) fornece muito mais informações sobre <code>register_globals</code>. Consulte a Lista 4 para obter um exemplo de
+como usar <code>register_globals</code>. </p>
+            <br /><a name="list4"><b>Lista 4. Usando <code>register_globals</code> 
+(Desestimulado)</b></a><br /><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="code-outline"><pre class="displaycode">
+                
+&lt;?php // Um buraco na segurança, porque se register_globals estiverem ativados, o valor para
+user_authorized // pode ser configurado por um usuário enviando-os na string de consulta // (ou seja,
+http://www.example.com/myscript.php?user_authorized=true) if ($user_authorized) {
+    // Mostrar a eles os dados sigilosos de todos... } ?&gt;
+</pre></td></tr></table><br />
+            <p>Se seu código PHP usa variáveis globais, você deve atualizá-lo. Se você não atualizar seu
+código para estar preparado para versões mais novas do PHP, considere atualizá-lo por questões de segurança.
+Quando tiver concluído, ser código deve ter a aparência da Lista 5. </p>
+            <br /><a name="list5"><b>Lista 5. Em Vez disso Sendo Específico (Recomendado)</b></a><br /><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="code-outline"><pre class="displaycode">
+                
+&lt;?php function is_authorized() {
+    if (isset($_SESSION['user'])) {
+        return true;
+    } else {
+        return false;
+    } }
+$user_authorized = is_authorized(); ?&gt;
+</pre></td></tr></table><br />
+            <p><a name="N1018A"><span class="smalltitle">register_long_arrays</span></a></p>
+            <p>A configuração <code>register_long_arrays</code> , quando ativada, registra as variáveis
+predefinidas
+<code>$HTTP_*_VARS</code>  . Se você estiver usando as variáveis mais longas,
+atualize agora para usar as variáveis mais curtas.
+Essa configuração foi introduzida no PHP V5
+&#8212; presumivelmente para compatibilidade com versões anteriores&#8212; e o pessoal do PHP recomenda
+desativá-la por motivos de desempenho.
+A Lista 6 mostra um exemplo de uso de <code>register_long-arrays</code> . </p>
+            <br /><a name="list6"><b>Lista 6. Usando Arrays Registradas Reprovadas
+(Desestimulado) </b></a><br /><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="code-outline"><pre class="displaycode">
+                
+&lt;?php
+    // Echo é o nome do valor do usuário fornecido na string de consulta, como
+    // http://www.example.com/myscript.php?username=ngood
+    echo "Welcome, $HTTP_GET_VARS['username']!";
+?&gt;
+</pre></td></tr></table><br />
+
+            <p>Se seu código PHP tiver a aparência do mostrado na Lista 6, atualize-o para parecer com a
+Lista 7. Desative a configuração
+<code>register_long_arrays</code> se estiver ativada e teste seus scripts novamente.
+</p>
+            <br /><a name="list7"><b>Lista 7. Usando <code>$_GET</code> (Recomendado)</b></a><br /><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="code-outline"><pre class="displaycode">
+                
+&lt;?php
+    // Em vez disso usando a array $_GET suportada.
+    echo "Welcome, $_GET['username']!";
+?&gt;
+</pre></td></tr></table><br />
+            <p><a name="N101C2"><span class="smalltitle">
+                <code>safe_mode</code>
+            </span></a></p>
+            <p>A chave de configuração <code>safe_mode</code> , quando ativada, assegura que o proprietário de um
+arquivo que está sendo operado corresponda ao proprietário do script que está em execução.
+Originalmente era uma maneira de tentar manipular a segurança quando operando em um ambiente de servidor
+compartilhado, como muitos ISPs fariam.
+(Para obter um link com uma lista de funções afetadas por essa mudança do
+<code>safe_mode</code> , consulte <a href="#resources">Recursos</a>.) Seu código PHP não será afetado por essa mudança, mas é
+bom estar ciente disso caso você esteja configurando PHP no futuro ou contando com
+  <code>safe_mode</code> em seus scripts. </p>
+            <p><a name="N101DF"><span class="smalltitle">Tags do PHP</span></a></p>
+
+            <p>Tags estilo Microsoft Active Server Pages (ASP)&#8212; a versão mais curta das tags PHP
+&#8212; não são mais suportadas. Para assegurar que isso não seja um problema para seus scripts, verifique
+se você não está usando as tags
+<code>&lt;%</code> ou <code>%&gt;</code> em seus arquivos PHP. Substitua-as por <code>&lt;?php
+</code> e <code>?&gt;</code>. </p>
+            <p><a name="N101FD"><span class="smalltitle">FreeType 1 e GD 1</span></a></p>
+
+            <p>A equipe do PHP está removendo o suporte para FreeType 1 e GD 1, alegando como motivo a idade e a falta de
+desenvolvimentos contínuos de ambas as bibliotecas como o motivo.
+Versões mais novas de ambas as bibliotecas estão disponíveis, fornecendo melhor funcionalidade.
+Para obter informações adicionais sobre FreeType e GD, consulte <a href="#resources">Recursos</a>. </p>
+            <p><a name="N1020B"><span class="smalltitle">
+                <code>ereg</code>
+            </span></a></p>
+            <p>A extensão <code>ereg</code> , que suporta as expressões regulares Portable Operating System
+  Interface (POSIX), está sendo removida do suporte às principais funções do PHP. Se estiver usando qualquer
+uma das funções regex POSIX, essa alteração afetará-lo, a menos que você inclua a funcionalidade
+<code>ereg</code> . Se estiver usando regex POSIX hoje em dia, considere gastar
+algum tempo atualizando suas funções regex para usar as funções
+  Perl-Compatible Regular Expression (PCRE), pois fornecem mais recursos e têm melhor desempenho.
+A Tabela 1 fornece uma lista de funções regex POSIX que não estarão disponíveis após
+<code>ereg</code> ser removida. Suas substituições PCRE também são mostradas. </p>
+            <br /><a name="table1"><b>Tabela 1. Funções <code>ereg()</code> e suas
+Equivalentes em PCRE</b></a><br />
+            <table border="0" cellpadding="0" cellspacing="0" class="ibm-data-table" summary="Listing of functions that will not be available without ereg" width=""><tr><th scope="col">Função ereg()</th><th scope="col">Função preg() semelhante</th></tr><tr><td>
+                        <code>ereg()</code>, <code>eregi()</code>
+                    </td><td>
+                        <code>preg_match()</code>
+                    </td></tr><tr><td>
+                        <code>ereg_replace()</code>, <code>ereg_replacei()</code>
+                    </td><td>
+                        <code>preg_replace()</code>
+                    </td></tr></table>
+            <div class="ibm-alternate-rule"><hr/></div><p class="ibm-ind-link ibm-back-to-top"><a href="#ibm-pcon" class="ibm-anchor-up-link">Voltar para parte superior</a></p><p><a name="N1026D"><span class="atitle">PHP V5.3</span></a></p>
+            <p>Alguns dos recursos mencionados aqui também foram portados para o PHP V5.3, que está planejado
+para ser liberado durante o primeiro trimestre de 2008.
+Você pode querer atualizar para a V5.3 e começar a usar esses recursos agora, de forma que ao ir para a V6 do
+PHP, será um salto menor.
+A lista de recursos a seguir foi back-ported para a V5.3: </p>
+            <ul>
+                <li>Espaços de Nomes</li>
+                <li>XMLReader e XMLWriter nas funções principais, por padrão</li>
+            </ul>
+            <div class="ibm-alternate-rule"><hr/></div><p class="ibm-ind-link ibm-back-to-top"><a href="#ibm-pcon" class="ibm-anchor-up-link">Voltar para parte superior</a></p><p><a name="N1027F"><span class="atitle">Resumo</span></a></p>
+
+            <p>O PHP V6 oferecerá muitos aprimoramentos e limpará parte da funcionalidade que estava em
+versões mais antigas do PHP.
+Para tirar proveito dos novos recursos e da limpeza, leia a lista NOVIDADES (consulte
+<a href="#resources">Recursos</a>), já que conterá as informações mais atualizadas sobre o que está incluído
+(ou não incluído) no PHP V6. Você pode fazer download de versões do desenvolvedor do PHP V6 hoje e começar a
+assegurar que seus aplicativos não sejam afetados pelas mudanças.
+Você também pode usar essa oportunidade para limpar seus próprios scripts, removendo qualquer uma das funções
+reprovadas mencionadas neste artigo ou atualizando sua sintaxe para assegurar que seus aplicativos sejam
+suportados.
+</p>
+        <!-- CMA ID: 382646 --> <!-- Site ID: 80 --> <!-- XSLT stylesheet used to transform this file:  dw-article-6.0-beta.xsl -->
+<br />
+<p><a name="resources"><span class="atitle">Recursos</span></a></p><p><b>Aprender</b></p><ul><li>
+Leia o <a href="http://cvs.php.net/viewvc.cgi/php-src/NEWS?view=markup">arquivo NOVIDADES</a>
+para o PHP V6 para obter as atualizações mais recentes dessa versão. <br /><br /></li><li>
+  Verifique o <a href="http://blog.libssh2.org/">blog de Sara Golemon</a>. <br /><br /></li><li>
+  Navegue pela lista de novidades <a href="http://news.php.net/php.internals">Internos do PHP</a> para ver os
+tipos de mudanças que os desenvolvedores estão fazendo no PHP.
+<br /><br /></li><li>
+  Revise as <a href="http://www.php.net/~derick/meeting-notes.html">notas de reunião de PHP</a>
+ para obter informações adicionais sobre o que foi alterado e o que não vai mudar para o PHP V6. <br /><br /></li><li>
+  Visualize os detalhes sobre quais <a href="http://www.php.net/~scoates/unicode/render_func_data.php">
+funções principais do PHP</a>
+foram atualizadas para suporte a Unicode. <br /><br /></li><li>
+  Leia mais sobre <a href="http://en.wikipedia.org/wiki/Unicode">Unicode na Wikipedia</a>. <br /><br /></li><li>
+                <a href="http://www.libgd.org/">GD</a> é uma biblioteca de código de software livre para a
+criação dinâmica de imagens por programadores. <br /><br /></li><li>
+                <a href="http://www.freetype.org">FreeType 2</a> é um mecanismo de fonte de software
+projetado para ser pequeno, eficiente, altamente customizável e portátil. <br /><br /></li><li>
+                <a href="http://www.php.net">PHP.net</a> é o recurso central para desenvolvedores de PHP. <br /><br /></li><li>
+Verifique a "<a href="http://www.ibm.com/developerworks/library/os-php-read" onmouseover="linkQueryAppend(this)">
+Lista de Leitura Recomendada de PHP</a>." <br /><br /></li><li>
+Navegue por todo o <a href="http://www.ibm.com/developerworks/views/opensource/libraryview.jsp?search_by=php">
+conteúdo de PHP</a> em developerWorks.<br /><br /></li><li>
+Expanda suas qualificações em PHP verificando, no IBM developerWorks, <a href="http://www.ibm.com/developerworks/opensource/top-projects/php.html" onmouseover="linkQueryAppend(this)">
+Recursos de Projeto PHP</a>.<br /><br /></li><li>
+Para ouvir entrevistas e discussões interessantes para desenvolvedores de software, verifique os <a href="http://www.ibm.com/developerworks/podcast/" onmouseover="linkQueryAppend(this)">
+podcasts do developerWorks</a>.<br /><br /></li><li>
+  Usando um banco de dados com PHP? Verifique <a href="http://www-306.ibm.com/software/data/info/zendcore/">
+Zend Core para IBM</a>, um ambiente de desenvolvimento e produção de PHP pronto, transparente e de fácil
+instalação que suporta o IBM DB2 V9.<br /><br /></li><li>
+Mantenha-se atualizado com <a href="http://www.ibm.com/developerworks/offers/techbriefings/" onmouseover="linkQueryAppend(this)">
+Eventos Técnicos e Webcasts do developerWorks</a>.<br /><br /></li><li>
+Verifique conferências, feiras comerciais, webcasts e outros <a href="http://www.ibm.com/developerworks/views/opensource/events.jsp" onmouseover="linkQueryAppend(this)">
+Eventos</a> futuros no mundo que sejam de interesse de desenvolvedores de software livre da IBM.<br /><br /></li><li>
+Visite <a href="http://www.ibm.com/developerworks/opensource" onmouseover="linkQueryAppend(this)">
+Zona de Software Livre</a> do developerWorks para obter informações extensivas sobre como executar ações, sobre ferramentas e atualizações de projetos para ajudá-lo a se desenvolver com tecnologias de software livre e
+usá-las com produtos IBM.<br /><br /></li><li>
+Assista e aprenda sobre as tecnologias IBM e de software livre e funções de produtos gratuitamente com os <a href="http://www.ibm.com/developerworks/offers/lp/demos/" onmouseover="linkQueryAppend(this)">
+Demos On Demand do developerWorks</a>.<br /><br /></li></ul><p><b>Obter produtos e tecnologias</b></p><ul><li>
+Faça download do <a href="http://www.phpunit.de/">PHPUnit</a> e comece a incluir testes de unidades para seus
+scripts PHP que podem ser usados para testes de upgrades.
+<br /><br /></li><li>
+Inove seu próximo projeto de desenvolvimento de software livre com <a href="http://www.ibm.com/developerworks/downloads/" onmouseover="linkQueryAppend(this)">
+software de avaliação da IBM</a>, disponível para download ou em DVD.<br /><br /></li><li>
+Faça download do <a href="http://www.ibm.com/developerworks/downloads/" onmouseover="linkQueryAppend(this)">
+versões de avaliação de produtos IBM</a>e entre em contato com ferramentas de desenvolvimento de aplicativos
+e produtos de middleware do DB2&#174;, Lotus&#174;, Rational&#174;, Tivoli&#174;e WebSphere&#174;.<br /><br /></li></ul><p><b>Discutir</b></p><ul><li>
+Participe de <a href="http://www.ibm.com/developerworks/blogs" onmouseover="linkQueryAppend(this)">Blogs
+do developerWorks</a> e envolva-se na comunidade developerWorks. <br /><br /></li><li>
+Participe do <a href="http://www.ibm.com/developerworks/forums/dw_forum.jsp?forum=992&amp;cat=51" onmouseover="linkQueryAppend(this)">
+PHP Forum: Developing PHP applications with IBM Information Management products (DB2, IDS) do developerWorks</a>.<br /><br /></li></ul>
+<p><a name="author"><span class="atitle">Sobre o autor</span></a></p><div class="ibm-container ibm-portrait-module ibm-alternate-two"><div class="ibm-container-body"><p><a name="author1"></a>Nathan A. Good mora na área Twin Cities em Minnesota. Profissionalmente, ele realiza desenvolvimento de software, arquitetura de software e administração de sistemas. Quando ele não está desenvolvendo software, ele gosta de montar PCs e servidores, ler sobre e trabalhar com novas tecnologias e tentar convencer seus amigos de começarem a usar software livre. Ele escreveu e coescreveu muitos livros e artigos, incluindo Professional Red Hat Enterprise Linux 3, Regular Expression Recipes: A Problem-Solution Approach, Regular Expression Recipes for Windows Developers: A Problem-Solution Approach, PHP 5 Recipes: A Problem-Solution Approach e Foundations of PEAR: Rapid PHP Development.</p></div></div>
+<!-- MAIN_COLUMN_CONTENT_END -->
+
+  <!-- OVERLAYS_START -->
+  <!-- Report_Abuse_Start -->
+  <div class="ibm-common-overlay ibm-no-print" id="reportabuseoverlay">
+    <div class="ibm-head"><p><a class="ibm-common-overlay-close" href="#">Fechar [x]</a></p></div>
+    <div class="ibm-body">
+      <div class="ibm-main">
+        <a class="ibm-access" name="reportabuseoverlay">Ajuda para Relatar Abuso</a>   
+        <div class="ibm-title"><h1>Relatar abuso</h1></div>
+        <div class="ibm-container ibm-alternate">
+          <p><strong>Obrigado.</strong>  Esta entrada foi sinalizada para atenção do moderador.</p>
+          <div class="ibm-overlay-rule"><hr /></div>
+          <div class="ibm-buttons-row">
+            <input type="button" onclick="ibmCommon.Overlays.hide('reportabuseoverlay');return false;" class="ibm-btn-cancel-sec dw-btn-cancel-sec" name="ibm-cancel" value="Fechar" />
+          </div>
+        </div>
+      </div> 
+    </div>
+    <div class="ibm-footer"></div>
+  </div>
+  <!-- Report_Abuse_Error_Start -->
+  <div class="ibm-common-overlay ibm-no-print" id="reportabuseoverlayerror">
+    <div class="ibm-head"><p><a class="ibm-common-overlay-close" href="#">Fechar [x]</a></p></div>
+    <div class="ibm-body">
+      <div class="ibm-main">
+        <a class="ibm-access" name="reportabuseoverlayerror">Ajuda para Relatar Abuso</a>   
+        <div class="ibm-title"><h1>Relatar abuso</h1></div>
+        <div class="ibm-container ibm-alternate">
+          <p class="ibm-ind-error"><strong>Falha no envio do Relatório de abuso.  Tente novamente mais tarde.</strong></p>
+          <div class="ibm-overlay-rule"><hr /></div>
+          <div class="ibm-buttons-row">
+            <input type="button" onclick="ibmCommon.Overlays.hide('reportabuseoverlayerror');return false;" class="ibm-btn-cancel-sec dw-btn-cancel-sec" name="ibm-cancel" value="Fechar" />
+          </div>
+        </div>
+      </div> 
+    </div>
+    <div class="ibm-footer"></div>
+  </div>
+  <!-- Sign in OVERLAY STARTS HERE --> 
+  <div class="ibm-common-overlay" id="signin_overlay">
+    <div class="ibm-head">
+      <p><a class="ibm-common-overlay-close" href="#" onclick="clearForm();">Fechar [x]</a></p>
+    </div>
+    <div class="ibm-body">
+      <div class="ibm-main">
+        <div class="ibm-title ibm-subtitle">
+          <h1>developerWorks: Registre-se</h1>
+          <div id="ibm-overlay-error-signin" class="no-display"></div>
+        </div>
+        
+        <div class="ibm-container ibm-alternate ibm-buttons-last">
+          <div class="ibm-container-body">
+            <form class="ibm-column-form" id="sFormId" action="" method="post" name="sForm" onsubmit="return false;">
+              <p><label for="ibmid">IBM ID:</label><span><input name="ibm-id" id="ibmid" size="25" value="" class="required" type="text" onkeypress="handleEP(event,this.form);" />
+                <br /><a class="ibm-forward-link" href="#" onclick="(function () {window.location='/developerworks/dwwi/DWAuthRouter?m=reg&amp;lang=pt_BR&amp;d='+encodeURIComponent(location.href);})();">Precisa de um ID IBM?</a>
+                <br /><a class="ibm-forward-link" href="/developerworks/dwwi/jsp/WSHelp.jsp?lang=pt_BR">Esqueceu seu ID IBM?</a></span>   
+              </p> 
+              <p><label for="password">Senha:</label><span><input name="password" id="password" size="25" value="" class="required" type="password" onkeypress="handleEP(event,this.form);" /><br /><a class="ibm-forward-link" href="#" onclick="(function () {window.location='https://www.ibm.com/account/profile?page=forgot&amp;lang=pt_BR&amp;appname=ibm&amp;required=null&amp;d='+encodeURIComponent(getAuthUrl())+'%3Fm%3Dloginpage%26lang%3Dpt_BR%26d%3D'+encodeURIComponent(location.href);})();">Esqueceu sua senha?</a><br /><a class="ibm-forward-link" href="#" onclick="(function () {window.location='https://www.ibm.com/account/profile?page=chpw&amp;lang=pt_BR&amp;appname=ibm&amp;required=null&amp;d='+encodeURIComponent(location.href);})();">Alterar sua senha</a></span></p> 
+
+              <p class="dw-perm-box">
+                <span><input id="perm" type="checkbox" name="perm_name"/><label for="perm"> Mantenha-me conectado.</label></span>
+              </p>
+ 
+              <p>Ao clicar em <strong>Enviar</strong>, você concorda com os <a href="https://www.ibm.com/developerworks/community/terms?lang=pt_br">termos de uso do developerWorks</a>.</p>
+              <div class="ibm-buttons-row">
+                <p><input class="ibm-btn-arrow-pri" name="ibm-submit" value="Enviar" onclick="signin();return false;" type="submit" /><span class="ibm-sep">&nbsp;</span>
+                  <input value="Cancelar" type="button" name="ibm-cancel" class="ibm-btn-cancel-sec" onclick="clearForm();ibmCommon.Overlays.hide('signin_overlay');return false;"/></p>
+              </div>
+            </form>
+            <div class="ibm-overlay-rule"><hr /></div>
+            <p>Na primeira vez que você efetua sign in no developerWorks, um perfil é criado para você. <strong>Informações selecionadas do seu perfil developerWorks são exibidas ao público, mas você pode editá-las a qualquer momento.</strong> Seu primeiro nome, sobrenome (a menos que escolha ocultá-los), e seu nome de exibição acompanharão o conteúdo que postar.</p>
+            <div class="dw-overlay-legal"><p>Todas as informações enviadas são seguras.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ibm-footer"></div>
+  </div>
+  <!-- Sign in OVERLAY ENDS HERE --> 
+  
+  
+  <!-- Display name OVERLAY STARTS HERE --> 
+  <div class="ibm-common-overlay" id="displayname_overlay">
+    <div class="ibm-head">
+      <p><a class="ibm-common-overlay-close" href="#" onclick="clearForm();">Fechar [x]</a></p>
+    </div>
+    <div class="ibm-body">
+      <div class="ibm-main">
+        <div class="ibm-title ibm-subtitle">
+          <h1>Selecione seu nome de exibição</h1>
+          <div id="ibm-overlay-error-dname" class="no-display"></div>
+        </div>
+        <div class="ibm-container ibm-alternate ibm-buttons-last">
+          <div class="ibm-container-body">
+            <p class="ibm-overlay-intro">Ao se conectar ao developerWorks pela primeira vez, é criado um perfil para você e é necessário selecionar um nome de exibição. O nome de exibição acompanhará o conteúdo que você postar no developerWorks.</p>
+            <p><strong>Escolha um nome de exibição de 3 - 31 caracteres.</strong> Seu nome de exibição deve ser exclusivo na comunidade do developerWorks e não deve ser o seu endereço de email por motivo de privacidade.</p>
+            <form id="dFormId" method="post" action="" name="dForm" onsubmit="return false;" class="ibm-column-form">
+              <p><label for="displayname">Nome de exibição:</label><span><input name="displayname" id="displayname" size="25" value="" type="text" onkeypress="handleEP(event,this.form);" /></span><span class="ibm-form-note">(Deve possuir de 3 a 31 caracteres.)</span>
+              </p>
+              
+              <div class="ibm-overlay-rule"><hr />
+              </div>
+              <p>Ao clicar em <strong>Enviar</strong>, você concorda com os <a href="https://www.ibm.com/developerworks/community/terms?lang=pt_br">termos de uso do developerWorks</a>.</p>
+              <div class="ibm-buttons-row">
+                <p><input class="ibm-btn-arrow-pri" name="ibm-submit" value="Enviar" onclick="signin();return false;" type="submit" /><span class="ibm-sep">&nbsp;</span>
+                  <input value="Cancelar" type="button" name="ibm-cancel" class="ibm-btn-cancel-sec" onclick="clearForm();ibmCommon.Overlays.hide('displayname_overlay');return false;" /></p>
+              </div>
+            </form>
+            <div class="ibm-overlay-rule"><hr /></div>
+            <div class="dw-overlay-legal"><p>Todas as informações enviadas são seguras.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ibm-footer"></div>
+  </div>
+  <!-- Display name OVERLAY ENDS HERE -->
+  <!-- OVERLAYS_END -->
+  
+  <!-- RATINGS START -->
+  <p class="ibm-no-print"><span class="atitle"><a name="iratings">Classificar este artigo</a></span></p>
+  <input id="art-rating" name="ratinga" type="hidden" value="0"/><div id="art-rating-module"></div>
+  <script language="JavaScript" type="text/javascript">
+    // <![CDATA[
+   // widget div id and article id as args
+   window.artRating.init('art-rating-module','art-rating-summary');
+// ]]>
+  </script>
+  <!-- RATINGS END -->
+  
+  <!-- INLINE_COMMENTS_START -->
+  <p class="ibm-no-print"><span class="atitle"><a name="icomments">Comentários</a></span></p>
+  <script language="JavaScript" type="text/javascript">
+    // <![CDATA[
+dwc = {};
+dwc.cmts = 'comentários';
+dwc.signInPreText = '';
+dwc.signIn = 'Conectar';
+dwc.or = 'or';
+dwc.register = 'registre-se';
+dwc.signInPostText = '';
+dwc.leaveCmt = 'para deixar um comentário.';
+dwc.view = 'Visualizar';
+dwc.totalCmts = 'Total de comentários';
+dwc.postYourCmt = 'Publique seu comentário';
+dwc.show = 'Exibir:';
+dwc.recentCmts = 'Comentários mais recentes';
+dwc.allCmts = 'Todos os comentários';
+dwc.tooLongCmt = 'Seu comentário excedeu o limite de 1000 caracteres';
+dwc.numCharsLeft = '<span id="charCount">{1}</span> caracteres restantes';
+dwc.reportAbuse = 'Relatar abuso';
+dwc.notifyMsg = 'Notificar-me quando um comentário for adicionado';
+dwc.htmlWarning = 'Observação: elementos HTML não são suportados nos comentários.'; 
+dwc.cmt = 'Comentário:';
+dwc.addCmts = 'Incluir comentários';
+dwc.addCmt = 'Incluir comentário';
+dwc.doNotErase = '- Adicione os comentários abaixo desta linha -'; 
+dwc.viewOrAddCmts = 'Visualizar ou incluir comentários';
+dwc.reportInapprCont = 'Relatar conteúdo inapropriado';
+dwc.reportInapprContLink = 'http://www.ibm.com/developerworks/forums/forum.jspa?forumID=1832';
+dwc.postingCmt = 'Postar comentário';
+dwc.noCmt = 'Nenhum comentário postado para esse artigo';
+dwc.netwkErr = 'Há um problema na recuperação dos comentários. Atualize a página mais tarde.';
+dwc.addACmt = 'Incluir um comentário';
+dwc.instructCmt = 'O campo indicado com um asterisco (<span class="ibm-required">*</span>) é necessário para completar essa transação.';
+dwc.btnPost = 'Postar';
+dwc.btnPostAnon = 'Postar anonimamente';
+dwc.btnClrCmt = 'Limpar comentário';
+dwc.btnCancel = 'Cancelar';
+dwc.showRecent = 'Mostrar {1} comentários mais recentes'; // {1} is the count to be substituted
+dwc.showNext = 'Mostrar próximos {1} comentários'; // {1} is the count to be substituted
+dwc.showAllCmts = 'Mostrar todos os comentários';
+dwc.enterCmt = 'Insira um comentário.';
+dwc.loginErr = 'Seu status de login não pode ser verificado neste ponto. Tente novamente mais tarde.';
+dwc.postErr = 'Seu comentário não pode ser postado neste momento. Tente novamente mais tarde.';
+dwc.postBy = 'Enviado por <strong>{1}</strong> em {2}'; // {1} is the author to be substituted; {2} is the date
+dwc.siteId = 80;
+dwc.lang = 'pt_BR';
+dwc.viperLang = 'pt_br';
+// ]]>
+  </script>
+  <div id="threadShow"></div>
+
+<!-- INLINE_COMMENTS_END -->
+
+  <p class="ibm-ind-link ibm-back-to-top"><a class="ibm-anchor-up-link" href="#ibm-pcon">Voltar para parte superior</a></p>
+
+<!-- Overlays -->
+</div>
+<!-- MAIN_COLUMN_CONTAINER_END -->
+
+<!-- Rating_Meta_BEGIN -->
+<!--Rating_Meta_BEGIN--><div class="metavalue">static.content.url=http://www.ibm.com/developerworks/js/artrating/</div><div class="metavalue">SITE_ID=80</div><div class="metavalue">Zone=Software livre</div><div class="metavalue">ArticleID=382646</div><div class="metavalue">ArticleTitle=O Futuro de PHP</div><div class="metavalue">publish-date=05062008</div><div class="metavalue">author1-email=mail@nathanagood.com</div><div class="metavalue">author1-email-cc=cappel@us.ibm.com</div><script language="javascript" type="text/javascript">document.write('<div class="metavalue">url='+location.href.replace(/</g, '%3C')+'</div>');</script><!--Rating_Meta_END-->
+<!-- Rating_Meta_END -->
+
+</div>
+<!-- MAIN_COLUMN_END-->
+
+<!-- RIGHT_COLUMN_BEGIN -->
+<div id="ibm-content-sidebar">
+
+<!-- RIGHT_COLUMN_CONTENT_BEGIN --> 
+<div class="ibm-container"><h2>Índice</h2><div class="ibm-container-body"><img alt="" height="1" width="1" src="//www.ibm.com/i/c.gif"/><ul class="ibm-bullet-list"><li><a class="ibm-feature-link" href="#N1005B">Novos Recursos do PHP V6 </a></li><li><a class="ibm-feature-link" href="#N100A3">Recursos do Web 2.0</a></li><li><a class="ibm-feature-link" href="#N100CB">Coisas Removidas</a></li><li><a class="ibm-feature-link" href="#N1026D">PHP V5.3</a></li><li><a class="ibm-feature-link" href="#N1027F">Resumo</a></li><li><a class="ibm-feature-link" href="#resources">Recursos</a></li><li><a class="ibm-feature-link" href="#author">Sobre o autor</a></li><li><a class="ibm-feature-link" href="#icomments">Comentários</a></li></ul></div></div>
+
+   
+<!-- add vbo include across all brazil articles per Renata request 4/14 -->
+  <div class="ibm-container">
+    <h2>Conhe&ccedil;a a IBM da sua cidade</h2>
+    <div class="ibm-container-body">
+      <img src="http://www.ibm.com/developerworks/br/i/brd_ci_map_270910.jpg" alt="" height="72"
+          width="188" border="0">
+        <p>A IBM est&aacute; mais perto do que voc&ecirc; imagina!</p>
+        <div class="ibm-rule"><hr>
+        </div>
+        <p class="ibm-ind-link">
+          <a class="ibm-forward-link" href="http://www.ibm.com/expressadvantage/br/map/index_map.phtml?CMP=VBO&amp;CT=DEVWRK&amp;CR=DEVWRK&amp;CM=W&amp;CN=mapa&amp;CD=2011-03-16&amp;COT=A&amp;CCY=BR">Saiba mais</a></p>
+    </div>
+  </div> 
+  
+
+
+<!-- Dig_Deeper -->
+
+<!-- High_Visibility_Offer -->
+
+<!-- Special_Offers -->
+
+<!-- RIGHT_COLUMN_CONTENT_END -->
+
+</div>
+<!-- RIGHT_COLUMN_END -->
+
+<!-- CONTENT_BODY_END -->
+</div>
+
+</div>
+<!-- CONTENT_END -->
+
+ <!-- END_IBM-PCON -->
+</div>
+
+<!-- FOOTER_BEGIN -->
+<div id="ibm-footer">
+	<!-- IBM footer container; disabled -->
+</div>
+
+<div id="ibm-page-tools-dw">
+	<div id="dw-footer-top-row">
+		<ul id="dw-foot-options">
+			<li id="dw-print"><a class="ibm-print-link" href="#">Imprimir esta página</a></li>
+		</ul>
+		<ul id="ibm-foot-options-dw">
+			<li id="dw-foot-0" class="dw-foot-0-br"><a href="#">Compartilhe esta página</a></li>
+			<li id="dw-foot-1"><a href="#">Siga o developerWorks</a></li>
+		</ul>
+	</div>
+	
+	<!-- TOP ROW SLIDER -->
+	<div id="dw-page-tools-menu">    
+		<div class="ibm-ribbon-pane-dw">
+			<div class="ibm-ribbon-section-dw">
+				<!-- Share this page -->			
+				<div class="dw-footer-columns">
+					<div class="dw-footer-col-3-1">
+						<h2>Compartilhe esta página:</h2>                      
+						<ul class="ibm-link-list">
+							<li><a id="dw-foot-0-0" class="ibm-facebook-link" href="#">Facebook</a></li>
+							<li><a class="ibm-linkedin-link" href="#">LinkedIn</a></li>
+							<li><a class="ibm-twitter-link" href="#">Twitter</a></li>
+						</ul>
+					</div>
+					<div class="dw-footer-col-3-2">
+						<ul class="ibm-link-list">
+							<li><a class="ibm-delicious-link" href="#">Delicious</a></li>
+							<li><a class="ibm-digg-link" href="#">Digg</a></li>
+							<!--<li><a class="ibm-stumbleupon" href="#">StumbleUpon</a></li>-->
+						</ul>
+					</div>
+					<div class="dw-footer-col-3-3">
+						<ul class="ibm-link-list">
+							<li><a class="ibm-email-link" href="#">Enviar esta página por e-mail</a></li>
+						</ul>
+					</div>
+					<div class="dw-footer-close">
+						<ul>
+							<li><div class="dw-footer-close-share"><a href="#"><img src="//dw1.s81c.com/i/c.gif" alt="Fechar [x]" width="20" height="10"/></a></div></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Follow developerWorks -->
+				<div class="dw-footer-columns">
+					<div class="dw-footer-col-1-1">
+						<h2>Siga o developerWorks:</h2>
+						<ul class="ibm-link-list">
+							<li><a id="dw-foot-1-0" class="ibm-twitter-link" href="http://twitter.com/soudw">Twitter</a></li>
+						</ul>
+					</div>
+					<div class="dw-footer-close">
+						<ul>
+							<li><div class="dw-footer-close-follow-br"><a href="#"><img src="//dw1.s81c.com/i/c.gif" alt="Fechar [x]" width="20" height="10"/></a></div></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="ibm-footer-module-dw">
+	<div class="dw-footer-columns">
+		<div class="dw-footer-col-6-1">
+			<ul>
+				<li><a href="http://www.ibm.com/developerworks/br/aboutdw/">Sobre</a></li>
+				<li><a href="https://www.ibm.com/developerworks/secure/feedback.jsp?domain=dwbrazil">Ajuda</a></li>
+				<li><a href="http://www.ibm.com/developerworks/br/aboutdw/contacts.html">Entre em contato conosco</a></li>
+				<!--<li><a href="https://www.ibm.com/developerworks/ideas">Submit content</a></li>-->
+			</ul>
+		</div>
+		<div class="dw-footer-col-6-2">
+			<ul>
+				<li><a href="http://www.ibm.com/developerworks/br/rss/">Feeds</a></li>
+				<!--<li><a href="https://www.ibm.com/developerworks/newsletter/">Newsletters</a></li>-->
+			</ul>
+		</div>
+		<div class="dw-footer-col-6-3">
+			<ul>
+				<li><a href="https://www.ibm.com/developerworks/community/report?lang=pt_br">Relatar abuso</a></li>
+				<li><a
+					href="https://www.ibm.com/developerworks/community/terms?lang=pt_br">Termos de uso</a></li>
+				<li><a href="http://www.ibm.com/privacy/br/pt/">Privacidade</a></li>
+			</ul>
+		</div>
+		<div class="dw-footer-col-6-4">
+			<ul>
+				<li><a href="http://www.ibm.com/accessibility/us/en/">Acessibilidade (Inglês)</a></li>		
+				<li><a href="http://www.ibm.com/br/university/?ca=AI&me=W&met=inli&re=br_dws_space">IBM Academic Initiative</a></li>
+				<li class="dw-footer-newline"><a href="http://www.ibm.com/br/isv/?ca=ISV&me=W&met=inli&re=br_dws_space">IBM PartnerWorld<br />Industry Network</a></li>
+			</ul>
+		</div>
+		<div class="dw-footer-col-6-5">
+		</div>
+		<div class="dw-footer-col-6-6">
+		</div>
+	</div>
+	<!-- Language selector no-script -->
+	<noscript>
+		<div id="dw-footer-selectlang">
+			<h2><a name="SELECTLANG">Selecione um idioma:</a></h2>
+			<ul>
+				<li><a href="http://www.ibm.com/developerworks/">English</a></li>
+				<li><a href="http://www.ibm.com/developerworks/cn/">中文</a></li>
+				<li><a href="http://www.ibm.com/developerworks/jp/">日本語</a></li>
+				<li><a href="http://www.ibm.com/developerworks/ru/">Русский</a></li>
+				<li><a href="http://www.ibm.com/developerworks/br/">Português (Brasil)</a></li>
+				<li><a href="http://www.ibm.com/developerworks/ssa/">Español</a></li>
+				<li><a href="http://www.ibm.com/developerworks/vn/">Việt</a></li>
+			</ul>
+		</div>
+	</noscript>
+</div><!-- FOOTER_END -->
+
+ <!-- END_IBM-TOP -->
+</div>
+ 
+ <!-- SCRIPTS_INCLUDE_BEGIN -->
+<!-- JQuery start -->
+<script type="text/javascript" language="JavaScript" src="//dw1.s81c.com/developerworks/js/jquery/cluetip98/jquery.hoverIntent.minified.js"></script>
+<script type="text/javascript" language="JavaScript" src="//dw1.s81c.com/developerworks/js/jquery/cluetip98/jquery.cluetip.js"></script>
+<!-- xM Masthead/Footer -->
+<script src="//dw1.s81c.com/developerworks/js/dw-mf/jquery.tools.min.js" type="text/javascript">//</script>
+<script src="//dw1.s81c.com/developerworks/js/dw-mf/jquery.jscroll.js" type="text/javascript">//</script>
+<script src="//dw1.s81c.com/developerworks/js/dw-mf/dw_v16.js" type="text/javascript">//</script>
+<script type="text/javascript" language="JavaScript" src="//dw1.s81c.com/developerworks/js/dw-mf/flash-detect.js"></script>
+<script type="text/javascript" language="JavaScript" src="//dw1.s81c.com/developerworks/js/dw-mf/dwsi.js"></script>
+<script type="text/javascript" language="JavaScript" src="/developerworks/js/dw-mf/showcomments.js">//</script>
+<script language="JavaScript" type="text/javascript">
+	// <![CDATA[
+ jQuery('threadShow').showComments('95%',5,'nCmts','icomments');
+// ]]>
+</script>
+<script type="text/javascript" language="JavaScript">
+	jQuery.noConflict();     
+	// Put all your code in your document ready area
+	jQuery(document).ready(function(jQuery) {
+	// Do jQuery stuff using jQuery 
+	jQuery('a.dwauthor').cluetip({
+		local: true,
+		showTitle: false,
+		positionBy: 'bottomTop',
+		sticky: true,	
+		mouseOutClose: true,
+		closeText: '<img src="//www.ibm.com/developerworks/js/jquery/cluetip98/i/x.gif" alt="Close" />',
+		arrows: false,
+		dropShadow: true,
+		cluetipClass: 'dwbasic'
+		});
+
+		rBHash = {};
+		rBHash['viperLang'] = 'pt_br';
+		rBHash['urlLang'] = 'br';
+
+		// si
+		initSI();
+		});
+</script>
+ <!-- JQuery end -->
+<!-- Overlay js -->
+<script language="JavaScript" src="//dw1.s81c.com/common/js/overlay.js" type="text/javascript"></script><!-- BEGIN: Use this section to set page specific variables for the Unica Page Tag -->
+<script language="JavaScript">var NTPT_PGEXTRA="ibmSkillLevel=3&ibmAdoptPhase=-&ibmRole=-&ibmCmaId=382646";</script>
+<!--END --><!-- SCRIPTS_INCLUDE_END -->
+
+<div id="ibm-metrics">
+<script src="//dw1.s81c.com/common/stats/stats.js" type="text/javascript">//</script>
+</div>
+
+</body>
+</html>

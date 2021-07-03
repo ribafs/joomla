@@ -1,0 +1,41 @@
+ACL ou Lista de Controle de Acessos
+
+Com este recurso o Joomla cria uma lista contendo as permissões de certos usuários, o que eles podem e o que não podem fazer no site.
+
+Um bom exemplo é criar um Nível de acesso, onde definimos um grupo de usuários e a que ele tem acesso.
+O Joomla já traz alguns grupos de usuários com suas permissões pré-definidas. Quando criamos um novo usuário, escolhemos o grupo a que ele pertencerá.
+Com isso duas permissões no site estarão definidas.
+Também podemos criar novos grupos e novos níveis de acesso.
+
+Um ótimo recurso é setar o nível de acesso de um certo usuário para um item de menu. Se colocarmos, por exemplo, que somente usuários Registrados poderão acessar este item de menu, então ele não aparece no site para o público. Somente usuários que fizerem login o verão.
+Assim podemos configurar itens de menu para diversos níveis de acesso existentes e criar outros.
+
+Vamos a um exemplo prático
+Quero que o usuário pedro tenha acesso ao item de menu Orçamento.
+Então criamos o usuário pedro:
+
+Usuários - Gerenciar - Criar Novo Usuário
+Nome - Pedro
+Nome de Usuário - pedro
+Senha - pedro
+Confirme a Senha - pedro
+E-mail - pedro@pedro.org
+
+Aba Grupos de Usuários atribuidos
+Publisher
+
+Salvar e Fechar
+
+O grupo publisher pertence ao Nível de Acesso tipo Special
+
+Agora vá até o item de menu Orçamento e abra-o
+Vá até a caixa Acesso no lado direito
+Selecione Special
+Salve
+
+Acesse o site e veja que o item de menu Orçamento não aparece para o público
+Faça o login com o usuário pedro
+Veja que logo que faz login o item de menu Orçamento aparece.
+
+Uma ótima maneira de controlar o acesso a certos itens e até para criar algo restrito para muitos, como aulas, etc.
+

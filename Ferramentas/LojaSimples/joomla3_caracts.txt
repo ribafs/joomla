@@ -1,0 +1,63 @@
+Joomla 3.2.3
+What made Joomla a better CMS in 2014, the final truth...
+
+Patrick Toulze Art Director, founder — Directeur artistique, fondateur at Graf Web & Marketing
+
+Old concepts can become facts and CMS get caught, as everything else in the same pattern. Obviously you need to take time to verify if they are myths or facts.
+
+I know and work with multiple CMS, like Concrete, Wordpress and obviously Joomla. I build ONLY with Joomla for my customers because I care.
+
+I don’t want to target Wordpress to be less or more but I want to put things straight in this old rivalry between 2 excellent CMS.
+
+JOOMLA OUT OF THE BOX
+
+• (3.3)
+— BETTER SECURITY with PHP 5.3.10
+
+— SEO FRIENDLIER WITH MICRODATA — Control the rich snippets for search engine. (Compare to WP!)
+
+— INTEGRATED CLOUD STORAGE (Amazon S3, Google Cloud Storage, Rackspace and Dropbox) — (Compare to WP!)
+
+— FRONT-END MODULE EDITING, not only contents, everything can be edited right in the fronted — (Compare to WP!)
+
+• New installation can included all needed pages types like; Blog, instructional articles, language switcher and more... Make a good web site right away. — (Compare to WP!)
+
+• MORE SECURITY with “TWO FACTOR AUTHENTICATION” - Widely use (Google, Microsoft, Banks …)
+Username/password + a time based secret key changed every 30 seconds — (Compare to WP!)
+
+• Login with language choice — (Compare to WP!)
+
+• (3.2) FOOL PROOF FEW CLICK INSTALL AND SETUP of a NEW MULTILINGUAL SITE with any languages — (Compare to WP!)
+
+• PERFECT MULTILINGUAL ONBOARD SYSTEM WITH EXCELLENT SEF. — (Compare to WP!)
+
+• TOP NOTCH SEO/SEF/LOCALIZED WEB SITE. Easily add all important metadata globally and/or by menus & content items — (The claim that WP do better SEO is one of those old myths)
+
+• JOOMLA ADMINISTRATION IS WELL DESIGN & organized with top notch ergonomic, same when reach by mobile devices. RESPONSIVE BACK AND FRONTEND (Again the “It’s easier to work with WP” is ridiculous. Go see yourself)
+
+• JOOMLA ADMINISTRATION CAN BE CUSTOMIZED easily - Work in tandem with Joomla ACL — (Compare to WP!)
+
+• FIND CONTENTS AND IMAGES EASILY with categorization, filters, images manager, folders. — (Compare to WP!)
+
+• EXCELLENT GRAINY BACKEND/FRONTEND ACL — (Compare to WP!)
+
+• ADVANCED SEARCH SYSTEM; fronted Search that can be customized to search specific categories and content. — (Compare to WP!)
+
+• COMPLETE ONE CLICK UPGRADE SYSTEM FOR THE CORE AND THIRD PARTY COMPONENTS. — (Compare to WP!)
+
+• SIMPLE FLEXIBLE INTERNAL STRUCTURE FOR THE DESIGNER AND OWNER ALIKE. Easily choose & switch templates, edit internal files (css,php…), create overrides, crop & resize logo and more...— (Compare to WP!)
+
+• ONBOARD REDIRECT MANAGER to redirect old (invalid) URLs to new working ones. Good for your search engine ranking. — (Compare to WP!)
+
+• VERSIONS CONTENT HISTORY; save any number of versions of articles. Compare 2 versions with visible changes and choose restore versions. Mark versions to never be deleted — Compare the html code — (Compare to WP!)
+
+• BANNERS MANAGER with all the options you need — (Compare to WP!)
+
+• EDITOR WITH CHOICE OF ADVANCED EDITION TOOLS — (Compare to WP!)
+
+• ACCESS AND INSTALLATION OF THIRD PARTY COMPONENT (THE JED) OFFICIAL JOOMLA EXTENSION DIRECTORY RIGHT IN THE ADMINISTRATION
+
+• THE BEST FOR THE LAST —> The best community of quality developers and friendly users alike that will support any newbie and advanced users alike — Try iT...
+
+This is Joomla in 2014 — I rest my case...
+

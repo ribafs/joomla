@@ -1,0 +1,59 @@
+Referências
+http://joomla.org 
+http://gantry.org
+https://www.youtube.com/watch?v=nXlbgooQ9Gc (este me serviu de base e tem várias aulas)
+http://leowgweb.com.br/blog/joomla 
+http://leowgweb.com.br/blog/joomla/conheca-o-gantry-5-um-framework-de-template-fantastico 
+http://tableless.com.br/gantry-5-desenvolvimento-de-templates-para-joomla-e-wordpress/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+tableless+(Tableless) 
+
+http://leowgweb.com.br/blog/joomla/voce-ja-ouviu-falar-do-joomla
+Introdução
+https://www.youtube.com/watch?v=H0RCz-ziJoo&list=PLT0iOmR-eKL6tAYBpNKFXTxHij-1JJej7&index=1 
+http://www.dailymotion.com/video/x304qhs 
+http://www.techfry.com/joomla/introductory-guide-to-gantry-5-framework 
+Instalando
+https://www.youtube.com/watch?v=zCH10qrxPSc&list=PLT0iOmR-eKL6tAYBpNKFXTxHij-1JJej7&index=2
+Administração do Joomla
+https://www.youtube.com/watch?v=Ny0KgUz5JH8&index=4&list=PLT0iOmR-eKL6tAYBpNKFXTxHij-1JJej7
+Menu Editor
+https://www.youtube.com/watch?v=DN_U_W7LT_c&index=5&list=PLT0iOmR-eKL6tAYBpNKFXTxHij-1JJej7
+Layout Manager
+https://www.youtube.com/watch?v=DN_U_W7LT_c&index=5&list=PLT0iOmR-eKL6tAYBpNKFXTxHij-1JJej7
+
+Bom artigo sobre a criação de artigo no Joomla
+https://docs.joomla.org/Help35:Content_Article_Manager_Edit
+
+Ótimo artigo sobre ACL
+http://joomlabaiano.com.br/artigos/6-lista-de-controle-de-acesso-ou-acl
+
+CCKs
+
+K2
+Seblod
+Zoo
+Cobalt
+
+
+Joomla Platform
+https://developer.joomla.org/manual/
+
+MVC atual
+https://developer.joomla.org/manual/chap-Joomla_Platform_Manual-MVC.html
+
+Componentes Joomla 3.x
+https://docs.joomla.org/Special:MyLanguage/J3.1:Developing_a_MVC_Component
+
+Módulo
+https://docs.joomla.org/Special:MyLanguage/J3.1:Creating_a_simple_module
+
+Plugin
+https://docs.joomla.org/Special:MyLanguage/J3.1:Creating_a_Plugin_for_Joomla
+https://docs.joomla.org/Special:MyLanguage/Portal:Plugin_Development
+
+Templates
+https://docs.joomla.org/Portal:Template_Development
+
+Languages
+https://docs.joomla.org/Special:MyLanguage/Language_Guidelines_for_3rd_Party_Extensions
+https://docs.joomla.org/Special:MyLanguage/Specification_of_language_files
+https://docs.joomla.org/Language_Metadata

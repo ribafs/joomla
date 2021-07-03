@@ -1,0 +1,33 @@
+/**
+* @package module kc_admin_quickicons
+* @copyright (C) 2010-2014 Keashly.ca Consulting - www.keashly.ca
+* @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
+* kc_admin_quickicons administration module is licensed under the http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+*
+*/
+
+1. Copyright and disclaimer
+---------------------------
+This application is opensource software released under the GPL.  Please
+see source code and the LICENSE file.
+
+
+2. Changelog
+------------
+This is a non-exhaustive changelog for kc_admin_quickicons administration module
+
+September 4 - 2014 - Version 3.2.0
+- added multi-language support
+
+June 3 - 2013 - Version 3.1.0
+- added new grid layout
+- fixed strict standard warnings
+- add target window for links
+
+November 24 - 2012 - Version 3.0.1
+- added back layout css file
+
+November - 18-2012 - Version 3.0.0
+- upgraded to be compatible with Joomla! 3.0
+- changed to location for custom icons to /administrator/modules/mod_kc_admin_quickicons/images or a sub-folder under that folder
+- removed the title.css as the new Joomla 3.0 template doesn't have a title postion setup.

@@ -1,0 +1,21 @@
+Como Excluir Artigo pelo Frontend
+
+Primeiro criar um usuário. Adicioná-lo a um grupo. Exemplo - publisher
+
+Depois acessar Sistema - Configuração Global
+Permissões 
+Selecionar o grupo. Exemplo: publisher
+Apagar - Permitido
+
+Logar com o usuário
+
+Criar um artigo e salvar
+Abrir o artigo
+Clicar no ícone de roldana à direita - Editar
+Estado - Na Lixeira
+Salvar
+
+Assim o artigo será excluído
+
+Ainda assim o usuário somente poderá apagar artigos criados por ele.
+

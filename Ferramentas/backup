@@ -1,0 +1,44 @@
+Efetuando Backup dos scripts e do site
+
+Ao final, após tudo configurado, instalado e o site instalado então efetuar novamente o backup dos scripts mas com prefixo OH
+
+cd /root/backup
+cp /etc/php/7.0/apache2/php.ini OKphp.ini
+cp /etc/apache2/apache2.conf OKapache2.conf
+cp /etc/apache2/sites-available/000-default.conf OK000-default.conf
+cp /etc/apache2/sites-available/default-ssl.conf OKdefault-ssl.conf
+mod-security
+fail2ban
+ssh
+
+
+== Backup do site
+
+Efetuar backup com o Akeeba
+
+Ajustar as permissões
+
+perms portal
+
+Acessar o administrator
+
+Componentes - Akeeba Backup
+
+Backup Now
+Backup Now1
+Ele recomenda que não mude para outra página antes que o backup termine
+Aguardar...
+
+Backup concluído
+
+Copiar o backup para o desktop
+
+Acessar o desktop e baixar com scp
+
+scp -P 55522 ribafs@159.65.91.82:/tmp/ub1604* .
+
+Agora guarde com bastante cuidado os script e o backup do site, para quando, se, acontecer algum problema possa restaurar.
+
+Ao final das configurações do servidor e das instalações e configurações do AMP e de pacotes para segurança, então criar um snapshot e um backup com o Akeeba.
+
+

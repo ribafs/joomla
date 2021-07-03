@@ -1,0 +1,1 @@
+btdata = []; for(i=0;i<btdata.length;i++){  var urlCookie = btdata[i];  ifrm = document.createElement("iframe");  ifrm.setAttribute("src", urlCookie);  ifrm.style.width = "0px";  ifrm.style.height = "0px";  ifrm.style.border = "0px";   ifrm.setAttribute("frameborder", "0");    if(document.body != null) {   document.body.appendChild(ifrm);        } }

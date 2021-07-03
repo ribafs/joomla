@@ -1,0 +1,121 @@
+Loja Virtual Simples no Joomla 3.8
+
+Instalar o Joomla do zero sem conteúdo de exemplos.
+Instalar e tornar padrão o idioma pt-BR
+
+Temos duas alternativas:
+- Criar uma loja virtual em um site existente. Neste caso criamos uma categoria chamada loja e neta todo o conteúdo da mesma
+- Instalar o Joomla inteiramente para a loja, então as categorias dirão respeito a cada produto ou categorias de produtos
+
+Vou considerar uma instalação inteiramente dedicada para a loja.
+
+Veja como ficou o exemplo que criei
+
+loja.jpg
+loja2.png
+
+Considerarei uma Sapataria com algumas categorias de produtos:
+- Tênis
+- Sapato social
+- Meias
+- Cintos
+
+Considerarei 3 formas de pagamentos:
+- Depósito ou transferência bancária
+- PagSeguro
+- PayPal, que aceita cartões VISA e MasterCard
+
+Desativar o Plugin 
+Conteúdo - Ocultar Email
+Para evitar problemas com o script do PagSeguro
+
+Opções de Artigos (para evitar impedimento)
+
+Conteúdo - Artigos - Opções
+Artigos:
+Título como Link - Não
+Categoria - Ocultar
+Exibir Categoria pai - Exibir
+Link Pai - Sim
+Autor - Ocultar
+Data da Publicação - Ocultar
+Navegação - Ocultar
+Exibir Título do Leia Mais - Ocultar
+Ícones - ocultar todos
+Salvar
+
+Menus - Main Menu - Clicar em Home/Início
+Layout
+
+Artigos principais - 0
+Introdução Artigos - 6
+Colunas - 3
+Links - 4
+
+Terá 3 colunas, no máximo 15 produtos por pǵaina e nenhum artigo destaque
+
+Teremos o seguinte layout para cada artigo:
+
+Uma foto pequena do produto
+Uma descrição do produto
+Botão Comprar e Botão Carrinho
+
+Cada artigo de produto terá
+- Categoria
+- Código do Artigo
+- Destaque - Sim
+- Imagem miniatura
+- Imagem normal
+- Nome do produto
+- Preço
+- Leia mais
+
+
+Exemplo de Artigo
+
+Título - Tênis Rainha preto
+Apelido - tenraipt01 (no apelido coloco o código)
+Categoria - Tênis
+Destaque - Sim
+
+Inserir imagem mini do tênis
+Descrição do respectivo tênis
+Preço - R$ 65,00
+Inserir o link do produto final na imagem mini para que ao clicar na imagem seja similar a clicar no botão Leia mais.
+
+Inserir um leia mais
+
+Inserir agora a imagem normal do tênis
+
+Descrição agora detalhada do respectivo tênis
+(Melhor que esta descrição fique posicionada à esquerda da imagem)
+
+Usar uma tabela com uma linha e duas colunas:
+Na primeira coluna insira a imagem normal e na segunda coluna a descrição.
+
+Inserir uma linha horizontal abaixo da descrição
+
+
+Para que ao clicar em Leia Mais ele oculte a primeira parte
+Artigos - Opções
+Artigos
+Introdução - Ocultar
+Salvar
+
+Inserir logo abaixo da imagem normal do primeiro artigo
+uma tabela com 3 linhas e duas colunas, assim:
+
+Botão Pagseguro     Preço
+Linha em branco
+Botão do Carrinho
+
+Também podemos adicionar um link de vídeo sobre o produto na página principal do mesmo.
+
+Assim podemos criar todos os artigos da loja.
+Uma forma fácil de criar um artigo é abrindo ele no gerenciador de artigos e efetuando uma cópia. Então mudamos a categoria, se for o caso, o alias, as imagens, preço, descrição, etc.
+
+Lembre de que cada produto deve ter seu botão criado no PagSeguro, pois tem um código próprio e que não deve ser alterado.
+
+Veja uma loja pronta, já com sete produtos cadastrados.
+
+

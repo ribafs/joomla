@@ -1,0 +1,7 @@
+Pesquisar duas marcas por um período
+
+http://www.google.com/trends
+
+entre com as marcas separadas por vírgula
+
+

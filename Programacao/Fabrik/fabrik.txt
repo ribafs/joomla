@@ -1,0 +1,480 @@
+Fabrik
+
+O Fabrik é um construtor de aplicativos para Joomla em forma de componentes.
+
+Download
+http://fabrikar.com/
+
+Ele também tem vários plugins adicionais que podem ser baixados
+
+Instalação
+
+Geralmente nas hospedagens compartilhadas eles já deixam os parâmetros do php prontos para a instalação, para não terem trabalho com suporte, o que não é vantagem em termos de segurança.
+Mas em servidores dedicados, servidores particulares ou tipo VPS precisará de ajustes
+Precisamos ajustar o php.ini para que aceite arquivos com 9MB, pois o fabrik 3.8.1 tem 8.5MB
+
+Caso tente instalar e o seu Joomla mostre:
+Tamanho máximo para envio: seja 2 ou 3M
+Talvez não instale nem receba nenhuma mensagem de erro
+
+Então edite o php.ini do servidor para 9M assim:
+
+upload_max_filesize = 32M
+post_max_size = 32M
+max_file_uploads = 50
+memory_limit = 256M
+max_execution_time = 240
+
+Reinicie o apache
+
+Tente instalar novamente e veja que agora consegue
+
+Após instalar é prudente voltar aos valores anteriores, para maior segurança
+
+upload_max_filesize = 2M
+post_max_size = 8M
+max_file_uploads = 20
+memory_limit = 128M
+max_execution_time = 30
+
+Instalar o plugin birthday
+http://fabrikar.com/download/details/36/2987-element-birthday
+
+Depois de instalar deve habilitar o plugin
+
+Recursos do Fabrik 3.8.1
+
+- listas - entidades, tabelas dos componentes
+- formulários - permite manipular dados pelo backend
+- grupos - agrupar tabelas
+- elementos - campos das tabelas
+- visualizações - 
+- pacotes (não disponível na versão 3.8)
+- conexões - conexão com o banco de dados
+- agendar - 
+
+Criar um componente do tipo agenda de contatos usando o Fabrik 3.8.1
+
+A instalação precisa ser direto no site onde vamos usar, pois não tem opção para exportar
+
+Componentes - Fabrik
+
+Listas - Criar nossa Agenda
+    Novo
+    Rótulo - Agenda
+    Mensagem de dados vazia - Ainda não existem contatos cadastrados!
+    Veja que existem várias abas para configuração acima e também à esquerda. Mas os default já atendem ao básico
+    Salvar e Fechar
+    Salvar e Fechar novamente
+
+Observe que logo que adicionamos uma lista ele cria automaticamente também um Formulário e um Grupo com o mesmo nome, no caso Agenda
+
+Elementos - Adicionar os campos da tabela
+    Veja que ele já adicionou os campos id e date_time
+
+    Veja que as validações dos campos estão à esquerda
+
+    Abaixo estou indicando apenas as propriedades que eu altero. Fique bem à vontade para exrimentar outras
+
+    Novo
+        Nome
+            Rótulo - Nome
+            Plugin - field
+            Grupo - Agenda
+                Avançado
+                    Max length - 55
+        Salvar e Novo
+
+        E-mail
+            Rótulo - E-mail
+            Nome - email
+            Plugin - field
+                Avançado
+                    Max length - 55
+        Salvar e Novo
+
+        Facebook
+            Rótulo - Facebook
+            Plugin - field
+                Avançado
+                    Max length - 55
+        Salvar e Novo
+
+        Aniversário
+            Rótulo - Aniversário
+            Nome - aniversario
+            Plugin - birthday
+                Labels
+                    Day label - Dia
+                    Month label - Mês
+                    Year label - Ano
+                Details
+                    822 (1. March)
+                List
+                    Date Format - Day Month (6 June)
+        Salvar e Novo
+
+        Calular
+            Rótulo - Celular
+            Plugin - field
+                Avançado
+                    Max length - 12
+        Salvar e Novo
+
+        Fixo
+            Rótulo - Fixo
+            Plugin - field
+                Avançado
+                    Max length - 12
+        Salvar e Novo
+
+        Endereço
+            Rótulo - Endereço
+            Nome - endereco
+            Plugin - field
+                Avançado
+                    Max length - 55
+        Salvar e Novo
+
+        Foto
+            Rótulo - Foto
+            Plugin - fileupload
+                Opções
+                    Upload Directory:* - /images/agenda/
+                    If existing image found? - Leave original file & increment new files name
+                Thumbnails
+                    Thumbnail directory - images/agenda/thumbs
+        Salvar e Novo
+
+        Observação
+            Rótulo - Observação
+            Nome - observacao
+            Plugin - textarea
+        Salvar e Fechar
+
+Observe que todos os campos criados estão desabilitados e não aparecem na lista/no site por padrão
+Então marque todos e clique no botão acima Exibir na Lista, caso queira que todos apareçam na lista no site
+Eu aqui deixei marcados apenas os campos: Nome, Facebook, Aniversário, Celular e Foto
+
+
+Em Home existe uma opção para instalar dados de exemplo. Podemos isntalar e depois clicar, em Home, em Resetar Fabrik para excluir e deixar como veio
+
+Exemplo
+Vamos criar uma lista para cadastrar Proposta de Adesão. Ao criar a lista lembre de renomear a tabela adicionando o prefixo das tabelas do Joomla
+
+Listas - Novo - similar à tabela
+Detalhes
+
+Rótulo - Proposta de Adesão
+Introdução - Criação de proposta de adesão ao curso online.
+Mensagem de dados vazia - Nenhuma proposta cadastrada ainda
+
+Dados
+Nome da tabela - jpt1m_proposta_de_adeso (veja o prefixo na combo Tabela de Banco de Dados)
+Salvar e Fechar
+Salvar e Fachar novamente
+
+Veja que ele automaticamente cria um formulário com o mesmo nome, cria um grupo e cria dois elementos, id e date_time.
+Então para cada tabela/lista temos um grupo e um formulário.
+
+Criar Novos Elementos/campos do formulário.
+
+Elementos - Novo
+Tótulo - Nome
+Plugin - field
+Grupo - Proposta de Adesão
+
+Aba Avançado
+Input Type - Text
+Max length - 55
+
+E-mail
+Plugin - field
+Avançado
+    Input - Email
+    Max length - 
+Formatação
+    Bootstrap class - input-large
+
+Data
+Plugin - date
+Date Formats
+    Armazenar data como - Horário local
+    Formato da lista - d/m/Y
+    Formato do Formulário - d/m/Y
+
+Telefone
+Plugin - field
+Avançado - Input type - Phone number
+
+Foto
+Plugin - fileupload
+Upload Directory - /images/agenda/
+If existing image found? - Leave original file and increment files's name
+Thumbnails
+    Create thumbnail - Sim
+    Thumbnail directory - images/agenda/thumbs
+Crop - Crop - Sim 
+    Cropped directory - images/agenda/crop
+
+Observação
+Plugin - textarea
+Avançado - WYS|WIG Editor - Sim/Não
+
+
+Salvar e Novo
+Rótulo - Tipo de Aluno
+Plugin - dropdown
+Grupo - Proposta de Adesão
+
+Sub Opções
+    1 - Aluno Padrão (este é o Padrão)
+    2 - Aluno Full
+
+Salvar e Novo
+Rótulo - Anexo
+Plugin - fileupload
+Grupo - Proposta de Adesão
+Para imagens ou arquivos de upload sempre mudar em
+Options - If existing image found? - Leave original file and & increment new file name
+
+Criar a pasta propostas em images e indicar no campo
+Upload Directory - /images/propostas/
+
+Salvar e Fechar
+
+Criar Item de Menu para uma nova proposta de adesão:
+
+Menus - Main Menu - Novo
+Título do Menu - Nova Proposta
+Tipo de Menu - Fabrik - Form
+Fabrik Form - Proposta de Adesão
+
+Salvar e Fechar
+Já podemos abrir o site/frontend e clicar em Nova Proposta para testar.
+
+Criar novo item de menu para listar as propostas existentes
+
+Título do Menu - Propostas
+Tipo de Item de Menu - Fabrik - List
+Fabrik List - Proposta de Adesão
+Salvar e Fechar
+
+Vá ao site e experimente clicar em Propostas
+Veja que aparece a que acabamos de criar, com recursos importantes abertos ao público, como editar.
+O que acontece é que algo assim não deve ficar aberto ao público mas restrito aos alunos cadastrados. Precisamos dizer ao Joomla quem tem acesso a que.
+Tanto o Fabrik tem recursos de controle de acesso quanto o próprio Joomla através dos itens de menu.
+Idealmente devemos criar um novo grupo de usuários com controle de acesso específico para o que desejamos.
+
+Observe que somente id e date_time aparecem no site.
+Precisamos dizer ao Fabrik para mostrar alguns campos e esconder outros e também que quando se clicar no link do arquivo anexado ele oferecer para download ao invés de exibir, pois atualmente quando clicamos ele exibe na tela.
+
+Acesse os elementos e observe que os 3 últimos elementos que criamos ficaram marcados para não exibir.
+Vamos exibir na tela os 3 últimos que criamos e ocultar id e date_time. Veja o resultado no site.
+
+Alterar as propriedades do elemento anexo:
+
+If existing image found? - Leave original file and increment new file's name.
+
+Aba Downloads
+Use Downliad Scripts - Both
+Salvar e Fechar
+
+Acesse o site e clique no link do anexo.
+
+Veja que aparece uma constante de idioma num botão ao invés do link do arquivo.
+
+A forma mais simples de resolver isso é criar uma Substituição para esta constante.
+Copiamos a constante do botão e vamos:
+
+Extensões - Idiomas
+Filtrar - Escolha Português do Brasil - Site
+Substituições - Novo
+Constante de Idioma - PLG_ELEMENT_FILEUPLOAD_DOWNLOAD
+Texto - Download
+Salvar e Fechar
+
+Vá ao site novamente e veja que agora aparece no lugar do anexo um botão de Download.
+
+Na listagem das propostas temos um CRUD completo com as opções: listagem, editar, novo, busca, faltando apenas Excluir.
+
+Esta listagem deve aparecer apenas para um usuário ou grupo administrativo e não para todos.
+
+Criar um novo elemento, que mostre para os alunos o status da sua proposta
+
+Elementos - Novo
+Rótulo - Estado
+Plugin - dropdown
+Grupo - Proposta de Adesão
+
+Sub opções
+    1 - Aguardando Aprovação (padrão)
+    2 - Aprovada
+    3 - Reprovada
+Salvar e Fechar
+
+Clicar para que seja mostrado no site
+
+Lembre que já temos um registro criado antes do campo status. 
+Edite a proposta no site e altere seu estado.
+
+Acesse Nova Proposta no site e veja que quem está preenchendo pode preencher uma proposta já aprovada, o que não tem sentido.
+Vamos esconder as demais opções deixando apenas Aguardando Aprovação.
+
+Acesse os elementos e edite o elemento estado.
+
+Acesso 
+    Form (add) - Special
+    Form (edit) - Special
+    Detalhes da visualização - Public
+
+Special - administrador, gerente ou super usuário
+
+Agora volte ao site e veja como ficou nossa combo de estado, apenas Aguardando Aprovação, sem outras opções.
+
+Caso faça login no site com um usuário do grupo special verá que a combo mostra as 3 opções e a lista também mostra a opção de excluir, CRUD completo.
+
+O Fabrik também permite restringir os campos/elementos, com requerido, tipo de dados, etc.
+
+Criar Grupo de Usuários para administrar as propostas
+
+Usuários - Gerenciador de Grupos
+Criar Novo Grupo - Admin Propostas
+Título - Admin Propostas
+Pai - Registered
+Salvar e Fechar
+
+Usuários - Gerenciador de Níveis de Acesso
+Criar Novo Nível de Acesso
+Título - Admin Propostas
+Grupos de usuários com acesso de visualização - Admin Propostas
+Salvar e Fechar
+
+Usuários - Gerenciar
+Criar Novo Usuário
+Nome - Admin Propostas
+Nome de Usuário - admin-propostas
+Senha e confirmar - admin-propostas
+E-mail - admin@ribafs.org
+Grupos de Usuários Atribuidos - Admin Propostas
+Salvar e Fechar
+
+Mudar nível de acesso do item de menu Propostas para Admin Propostas. Criar uma Nova Proposta é aberto ao público mas a listagem de Propostas é restrita apenas aos usuários do grupo Admin Propostas.
+
+Caso agora faça login com o usuário 'admin-propostas', e senha 'admin-propostas' poderá ver as Propostas, caso contrário nem mesmo com o super usuário poderá visualizar.
+
+Configurar um Módulo do Fabrik
+
+Quando instalamos o Fabrik ele cria duas instâncias de módulos, uma para formulário e outra para lista.
+
+Vamos abrir o de lista e mudar isso:
+Título - Propostas Solicitadas
+Estado - Publicado
+Atribuir Menu - Em todas as páginas (ou algo que deseje)
+Posição - position-3 (pode escolher algo que se adapte para você). Aqui ele mostra ao centro.
+Avançado
+    Lista - Proposta de adesão
+Acesso - Admin Propostas
+
+Criar um filtro para os elementos
+
+Módulos - Propostas Solicitadas
+Avançado
+
+Elementos - Nome, Tipo de Aluno, Anexo e Estado - close
+
+Prefiltros
+    Elementos   Condição    Valor   Tipo    Acesso
+OR  Estado      EQUALS      1       Texto   Admin Propostas close
+
+Teste no site e veja que são listados apenas os que estão com Aguardando Aprovação. Adicione novos e veja que somente estes serão listados.
+
+Alterar nível de acesso no Fabrik
+
+Elementos - estado
+Acesso
+    Form (add) - Admin Propostas
+    Form (edit) - Admin Propostas
+
+Criar um novo elemento 'usuário' para que cada usuário possa controlar somente os seus pedidos de adesão.
+
+Elementos - Novo
+Rótulo - Usuário
+Plugin - user
+
+Ocultar - Sim (oculto)
+
+Opções
+
+User Data - ID
+
+Salvar e Fechar
+
+Mudar o item de menu Nova Proposta para registrado. Somente quem se registra pode acessar, somente os alunos cadastrados, por exemplo.
+
+Criar dois novos usuários no grupo Registered:
+user1 e user2
+
+Criar um novo item de menu registered Minhas Solicitações e com um préfiltro para os registered usando Usuário(raw) oara {$my->id}.
+
+Dicas:
+- Quando criamos uma lista automaticamente são criados um formulário, um grupo e dois elementos: id e date_time
+- Cada elemento do form pertence a um grupo
+- Podemos ter mais de um grupo em um formulário, para agrupar elementos
+- Rótulo, introdução e a mensagem de vazio não são obrigatórios
+- Ao criar um grupo selecionar a qual formulário ele pertence
+- Interessante configurar o layout quando criando um grupo
+
+Relacionando duas tabelas
+
+Se tenho as tabelas pedidos e clientes, então na lista de pedidos tenho um campo clientes.
+No campo clientes da pedidos eu escolho um plugin do tipo databasejoin.
+Em Dados
+    Render as - Dropdown
+    Tabela - Clientes
+    Valor - nome ou id
+    Rótulo - nome
+
+Podemos adicionar query SQL.
+
+Obs.: para testar isso criar duas listas: clientes e pedidos
+clientes com apenas id date_time, nome e email.
+
+pedidos: id, date_time, title e valor
+
+
+Configurar o acesso à Agenda criada no Fabrik no site:
+
+- Componentes - Fabrik - Listas
+    - Agenda - Access à esquerda
+    - Selecione que grupos poderão ter acesso a que
+
+
+Existem plugins do tipo calc (calculado), onde podemos entrar código, cálculo e ao final um
+return $algo;
+
+Validação
+Também útil e importante é a Validação para elementos, que podemos adicionar várias em cada elemento.
+
+Víedo Tutoriais
+https://www.youtube.com/watch?v=OAp2fx02SKw
+https://www.youtube.com/watch?v=t8-1BSGvmG0
+https://www.youtube.com/watch?v=IYhvyoaeT_Q
+https://www.youtube.com/watch?v=0x5vRO1Ij2g
+https://www.youtube.com/watch?v=2Rm4txwVMyM
+https://www.youtube.com/watch?v=edqq784-pLY
+https://www.youtube.com/watch?v=fMC7vAbQg0I
+
+https://www.youtube.com/watch?v=XmbKQO97Uvc
+
+Tutoriais
+http://www.fabrikar.com/help/tutorials
+http://www.horizon-news.net/jdownloads//Telechargement/Fabrik-Tutorial-Master-Detail-JM-32-Version1.pdf
+http://www.e-cursosbrasil.com.br/cursoonline/fabrik/e-bookextensoesFeJ.pdf
+https://www.ostraining.com/blog/joomla/introduction-to-fabrik/
+https://www.ostraining.com/blog/joomla/4-tips-fabrik/
+https://pt.slideshare.net/robbieadair/building-custom-applications-with-fabrik?from_action=save
+https://www.ostraining.com/class/fabrik/
+http://www.waterincore.eu/dmdocuments/Fabrik_User_Manual_2_0_rev2.pdf
+
+

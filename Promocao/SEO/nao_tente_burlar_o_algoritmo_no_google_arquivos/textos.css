@@ -1,0 +1,68 @@
+@CHARSET "ISO-8859-1";.bold{font-weight:bold;}
+.italico{font-style:italic;}
+.txt10preto{font-family:arial;font-size:10px;color:#000000;text-decoration:none;}
+.txt11preto{font-family:arial;font-size:11px;color:#000000;text-decoration:none;}
+a.txt11preto, a.txt11preto:visited{font-family:arial;font-size:11px;color:#000000;text-decoration:none;}
+a.txt11preto:hover{font-family:arial;font-size:11px;color:#000000;text-decoration:underline;}
+.txt12preto, .txt12preto:visited{font-family:arial;font-size:12px;color:#000000;text-decoration:none;}
+a.txt12preto, a.txt12preto:visited{font-family:arial;font-size:12px;color:#000000;text-decoration:none;}
+a.txt12preto:hover{font-family:arial;font-size:12px;color:#000000;text-decoration:underline;}
+.txt13preto{font-family:arial;font-size:13px;color:#000000;text-decoration:none;}
+a.txt13preto, a.txt13preto:visited{color:#000000;text-decoration:none;}
+a.txt13preto:hover{color:#000;text-decoration:underline;}
+.txt13cinzaescuro{font-family:arial;font-size:13px;color:#707070;text-decoration:none;}
+a.txt13cinzaescuro, a.txt13cinzaescuro:visited{color:#707070;text-decoration:none;}
+a.txt13cinzaescuro:hover{color:#707070;text-decoration:underline;}
+.txt10branco{font-family:arial;font-size:10px;color:#FFFFFF;text-decoration:none;}
+.txt11branco{font-family:arial;font-size:11px;color:#FFFFFF;text-decoration:none;}
+.txt12branco{font-family:arial;font-size:12px;color:#FFFFFF;text-decoration:none;}
+.txt13branco{font-family:arial;font-size:13px;color:#FFFFFF;text-decoration:none;}
+.txt10cinza{font-family:arial;font-size:10px;color:#CCCCCC;text-decoration:none;}
+.txt11cinza{font-family:arial;font-size:11px;color:#CCCCCC;text-decoration:none;}
+.txt12cinza{font-family:arial;font-size:12px;color:#CCCCCC;text-decoration:none;}
+.txt13cinza{font-family:arial;font-size:13px;color:#CCCCCC;text-decoration:none;}
+.txt10branco{font-family:arial;font-size:10px;color:#FFFFFF;text-decoration:none;}
+.txt11branco{font-family:arial;font-size:11px;color:#FFFFFF;text-decoration:none;}
+.txt12branco{font-family:arial;font-size:12px;color:#FFFFFF;text-decoration:none;}
+.txt13branco{font-family:arial;font-size:13px;color:#FFFFFF;text-decoration:none;}
+.txt10verde{font-family:arial;font-size:10px;color:#027001;text-decoration:none;}
+.txt11verde{font-family:arial;font-size:11px;color:#027001;text-decoration:none;}
+.txt12verde{font-family:arial;font-size:12px;color:#027001;text-decoration:none;}
+.txt13verde{font-family:arial;font-size:13px;color:#027001;text-decoration:none;}
+.lnk11verde{font-family:arial, verdana;font-size:11px;color:#027001;text-decoration:none;}.lnk11verde:hover{text-decoration:underline;}
+.lnk12verde{font-family:arial, verdana;font-size:12px;color:#027001;text-decoration:none;}.lnk12verde:hover{text-decoration:underline;}
+.lnk13verde{font-family:arial;font-size:13px;color:#027001;text-decoration:none;}.lnk13verde:hover{text-decoration:underline;}
+.lnk14verde{font-family:arial;font-size:14px;color:#027001;text-decoration:none;}.lnk14verde:hover{text-decoration:underline;}
+.lnk11preto{font-family:arial;font-size:11px;color:#000000;text-decoration:none;}.lnk11preto:hover{text-decoration:underline;}
+.lnk12preto{font-family:arial;font-size:12px;color:#000000;text-decoration:none;}.lnk12preto:hover{text-decoration:underline;}
+.lnk13preto{font-family:arial;font-size:13px;color:#000000;text-decoration:none;}.lnk13preto:hover{text-decoration:underline;}
+.lnk14preto{font-family:arial;font-size:14px;color:#000000;text-decoration:none;}.lnk14preto:hover{text-decoration:underline;}
+.lnk10branco{font-family:arial;font-size:10px;color:#FFFFFF;text-decoration:none;}.lnk10branco:hover{text-decoration:underline;}
+.lnk11branco{font-family:arial;font-size:11px;color:#FFFFFF;text-decoration:none;}.lnk11branco:hover{text-decoration:underline;}
+.lnk12branco{font-family:arial;font-size:12px;color:#FFFFFF;text-decoration:none;}.lnk12branco:hover{text-decoration:underline;}
+.lnk13branco{font-family:arial;font-size:13px;color:#FFFFFF;text-decoration:none;}.lnk13branco:hover{text-decoration:underline;}
+.lnk14branco{font-family:arial;font-size:14px;color:#FFFFFF;text-decoration:none;}.lnk14branco:hover{text-decoration:underline;}
+.lnk10cinza{font-family:arial;font-size:10px;color:#CCCCCC;text-decoration:none;}.lnk10cinza:hover{text-decoration:underline;}
+.lnk11cinza{font-family:arial;font-size:11px;color:#CCCCCC;text-decoration:none;}.lnk11cinza:hover{text-decoration:underline;}
+.lnk12cinza{font-family:arial;font-size:12px;color:#CCCCCC;text-decoration:none;}.lnk12cinza:hover{text-decoration:underline;}
+.lnk13cinza{font-family:arial;font-size:13px;color:#CCCCCC;text-decoration:none;}.lnk13cinza:hover{text-decoration:underline;}
+.lnk14cinza{font-family:arial;font-size:14px;color:#CCCCCC;text-decoration:none;}.lnk14cinza:hover{text-decoration:underline;}
+.lnk12produtos{font-family:arial;font-size:12px;color:#009100;text-decoration:none;}.lnk12produtos:hover{color:#009100;text-decoration:underline;}
+.lnk12jovem{font-family:arial;font-size:12px;color:#e4b200;text-decoration:none;}.lnk12jovem:hover{color:#e4b200;text-decoration:underline;}
+.lnk12negocios{font-family:arial;font-size:12px;color:#006585;text-decoration:none;}.lnk12negocios:hover{color:#006585;text-decoration:underline;}
+.titulo_download{font-size:14px;color:#000;font-weight:bold;text-align:left;padding-left:20px;}
+.titulo_download b{color:#4f7b97;}
+.img_rnk{width:40px;padding-right:5px;}
+.posicao{font-family:arial;font-size:14px;color:#c74c3c;padding:3px;font-weight:bold;width:20px;}
+.download{font-family:arial;font-size:11px;color:#676666;text-align:left;padding-top:3px;padding-bottom:3px;}
+.download b{font-family:arial;font-size:11px;color:#000000;}
+.download a, .download a:visited{color:#000;text-decoration:none;}
+.download a:visited{color:#000;text-decoration:underline;}
+.total{font-family:arial;font-size:11px;color:#000000;padding-top:3px;padding-bottom:3px;text-align:right;}
+.img_rnk2{width:40px;background-color:#f8f8f8;padding-right:5px;}
+.posicao2{font-family:arial;font-size:14px;color:#c74c3c;padding:3px;font-weight:bold;background-color:#f8f8f8;width:20px;}
+.download2{font-family:arial;font-size:11px;color:#676666;text-align:left;background-color:#f8f8f8;padding-top:3px;padding-bottom:3px;}
+.download2 b{font-family:arial;font-size:11px;color:#000000;}
+.download2 a, .download2 a:visited{color:#000;text-decoration:none;}
+.download2 a:visited{color:#000;text-decoration:underline;}
+.total2{font-family:arial;font-size:11px;color:#000000;background-color:#f8f8f8;padding-top:3px;padding-bottom:3px;text-align:right;}

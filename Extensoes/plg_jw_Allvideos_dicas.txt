@@ -1,0 +1,30 @@
+Download
+http://www.joomlaworks.net/extensions/free/allvideos
+
+Configurar a pasta dos vídeos
+/images/audio
+/images/video
+
+Crie um novo artigo com as tags de abertura e fechamento
+
+{mp4}yourvideofilename(/mp4}
+
+Sendo que yourvideofilename.mp4 está na pastas /images/video
+
+Pode usar:
+{flv}, {wmv}, {youtube} e {vimeo}
+
+
+{youtube}inTas4CAls_egj200|150|1{/youtube}
+
+
+For example, an "autoplaying" YouTube video of 100x150 dimensions would be displayed adding this to a content item:
+{youtube}inTas4CAls_egj200|150|1{/youtube} - First in line is the file name, then the width, then height, and the final "1" indicates autoplay. If you don't want autoplay, make this a "0".
+
+Remoto de outro site:
+
+{mp3remote}http://www.filehosting.com/pixies_bonemachine.mp3{/mp3remote}
+{swfremote}http://www.filehosting.com/presentation.swf{/swfremote}
+{mp4remote}http://www.filehosting.com/nadasurf.mp4{/mp4remote}
+
+

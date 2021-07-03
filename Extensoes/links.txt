@@ -1,0 +1,36 @@
+https://docs.joomla.org/Archived:Vulnerable_Extensions_List
+
+Simple Adminer
+https://extensions.mediahof.de/downloads/simple-adminer.html
+
+Phoca Gallery
+https://www.phoca.cz/download/category/1-phoca-gallery-component
+
+https://github.com/ribafs/pensamento-do-dia
+
+https://github.com/ribafs/com_simplebackup
+
+https://github.com/ribafs/biblia-joomla
+
+https://github.com/ribafs/percurso-google/blob/master/mod_percurso_google.zip
+
+http://www.joomlaworks.net/extensions/free/allvideos
+
+http://www.joomlatune.com/jcomments-downloads.html
+
+http://extplorer.net/files
+
+https://huge-it.com/joomla-portfolio-gallery/
+
+https://www.joomlack.fr/en/download-joomla-extensions/view_category/19-slideshow-ck
+
+http://www.ratmilwebsolutions.com/category/10-encryption-configuration.html
+
+http://www.slabihoud.de/software/id4001.htm
+
+https://joomla.digital-peak.com/download/dpcalendar/dpcalendar-6-1-0
+
+https://www.joomlack.fr/en/component/dms/view_document/59-slideshow-ck
+
+https://huge-it.com/joomla-slideshow/
+

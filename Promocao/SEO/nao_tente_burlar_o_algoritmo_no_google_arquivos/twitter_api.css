@@ -1,0 +1,18 @@
+@CHARSET "ISO-8859-1";#container-twitter{width:300px;}
+#twitter_update_list{padding:0;margin:0;}
+#twitter_update_list li{font-family:verdana;font-size:12px;padding:10px;list-style-type:none;color:#333;background:#c1deee;margin-bottom:2px;text-align:left;}
+#twitter_update_list li a{font-family:verdana;font-size:11px;color:#0000FF;font-weight:normal;text-decoration:none;text-align:left;}
+#twitter_update_list li a:hover{color:#0000FF;border-bottom:1px dotted #FF0000;}
+#twitter-link{text-align:right;font-family:verdana;font-size:10px;background:url(http://img.olhardigital.uol.com.br/olhar2011/imagens/dot.gif) 100% 1px no-repeat;padding-right:50px;text-decoration:none;color:#3366FF;}
+#twitter-link:hover{text-decoration:underline;}
+#rss-link{text-align:right;font-family:verdana;font-size:10px;background:url(http://img.olhardigital.uol.com.br/olhar2011/imagens/ico_rss.gif) 0% 1px no-repeat;padding-left:13px;text-decoration:none;color:#3366FF;}
+#rss-link:hover{text-decoration:underline;}
+.lnk_infos_twitter_numero{font-family:arial;font-weight:normal;font-size:12px;color:#505050;text-decoration:none !important;height:40px;}
+.lnk_infos_twitter_numero span{font-family:arial;font-weight:bold;font-size:14px;color:#505050 !important;text-decoration:none !important;}
+.lnk_infos_twitter_numero:hover{color:#0000FF !important;}
+.nossos_followers{background-image:url(http://img.olhardigital.uol.com.br/olhar2011/imagens/titulos/boxes/twitter_b.jpg);background-repeat:no-repeat;height:158px;}
+.nossos_followers_2{background-image:url(http://img.olhardigital.uol.com.br/olhar2011/imagens/titulos/boxes/twitter_c.jpg);background-repeat:no-repeat;}
+.lnk_infos_twitter_numero_2{font-family:verdana;font-weight:normal;font-size:14px;color:#505050;text-decoration:none !important;}
+.lnk_infos_twitter_numero_2 span{font-family:verdana;font-weight:bold;font-size:16px;color:#505050 !important;text-decoration:none !important;}.lnk_infos_twitter_numero_2:hover{color:#0000FF !important;}
+.span_pro{font-family:arial;font-weight:bold;font-size:14px;color:#FFFFFF !important;text-decoration:none !important;}
+#seg{color:#505050;font-family:Verdana;font-size:14px;margin-bottom:3px;white-space:nowrap;text-align:center;}

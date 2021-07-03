@@ -1,0 +1,59 @@
+Projeto do Site
+
+- Preparação da infraestrutura:
+	- autenticação com o Apache
+	- SSL
+	- subdomínio no Apache e no DNS
+
+- Criação do usuário e do banco de dados
+- Instalação do Joomla e ajuste das permissões
+
+- Administração do Joomla
+	- Configurações iniciais
+		- URLs amigáveis e cia
+		- Ativar SSL somente no administrator (no caso de SSL auto-assinado)
+		- Ativar Compressão Gzip e Fuso Horário do Servidor
+    - Criar página de erro geral no raiz para capturar qualquer tipo de erro
+
+- Instalação e configurações do framework Helix 3 como template default
+	- disqus
+
+- Extensões Nativas
+    - Busca
+    - Contato
+    - Breadcrumbs
+    - Novidades
+    - Populares
+
+- Extensões de Terceiros
+    - Componente SimpleBackup
+    - Akeeba Backup
+    - Admin Tools
+    - eXtplorer
+    - Adminer
+    - Percurso do Google
+    - Pensamento do Dia
+    - Bíblia
+    - Component encrypt e outros sobre segurança
+
+    - Phoca Gallery com 3 galerias
+	- Itens de Menu:
+- Phoca Gallery
+ - Uma galeria
+ - Todas as galerias
+ - Outro tipo
+
+ - Phoca Downloads
+ - Categoria com PDFs
+ - Categoria com outro tipo de documentos
+
+
+Criação do Conteúdo
+
+- Categorias
+- Menus
+- Artigos
+
+Criação de Grupos e Níveis de Acesso de Usuários
+
+

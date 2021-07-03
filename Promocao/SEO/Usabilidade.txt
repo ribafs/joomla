@@ -1,0 +1,19 @@
+Logomarca - que seja bonita e bem representativa da empresa
+
+Acessibilidade e seus cuidados:
+	URLs amigáveis
+	Cuidado com:
+		Títulos
+		Conteúdo bem representativo do site e coerente
+		Palavras chaves do conteúdo
+		Usar texto alternativo em imagens e animações do flash
+
+
+Recursos que melhoram a navegabilidade do site
+- uso de categorias com sub-categorias
+- uso de menus laterais e de topo
+- paginação
+- novidades
+- populares
+- breadcrumbs
+- mapa do site

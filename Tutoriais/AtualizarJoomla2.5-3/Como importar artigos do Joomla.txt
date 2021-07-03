@@ -1,0 +1,36 @@
+Como importar artigos do Joomla 
+
+Olá pessoal, neste artigo vou mostrar pra vocês como podem fazer pra importar artigos do Joomla de versões mais antigas para mais recentes.
+
+As vezes o desenvolvedor só quer salvar os artigos e não o restante do site, ou então vai atualizar o Joomla e sabemos que do 1.5 para o 3.x é praticamente refazer o site. Então importar apenas os artigos é uma alternativa.
+
+Exportando artigos do Joomla
+
+Para exportar os artigos do Joomla você irá precisar de um instalar no seu Joomla a extensão J2XML:
+https://www.eshiol.it/component/ars/repository/j2xml-33/j2xml-33-3-3-20.html
+
+Se for Joomla 1.5 tem uma versão somente para 1.5, se for 2.5 ou 3.x tem outra versão.
+
+    Faça instalação do plugin pro Joomla 1.5;
+    Ative o plugin System - JC2XML plugin.
+    Vá em gerenciador de artigos e selecione os artigos que quer Exportar
+    OBS: o plugin permite exportar artigos, categorias e imagens, o ideal é fazer um por vez.
+    Clique em exportar e vai salvar um arquivo XML.
+
+Importando artigos no Joomla
+
+Agora vá no seu projeto com Joomla mais atual e faça instalação da versão do plugin J2XML Importer.
+
+    Depois de instalado vá em Componentes > J2XML
+    Clique no canto superior direito em Opções
+    Informe o que vai importar
+    Na aba avançado deixe marcado como SIM, isso vai fazer com que os artigos mantenham os mesmos IDs
+    Depois salve.
+    Agora selecione o arquivo XML exportado e clique em IMPORTAR.
+    Vai aparecer o relatório da importação.
+
+Feito isso ta importado seus artigos, espero que gostem, comentem abaixo!
+
+Renato Moreira
+http://wmonline.com.br/artigos/cms/joomla/como_importar_artigos_do_joomla/26-1-0-44
+

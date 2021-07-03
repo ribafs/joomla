@@ -1,0 +1,25 @@
+Criando uma tradução/language para o Componente Phoca Download para pt-br
+
+A tradução para pt-br que existe no site é para a versão 2.5 do Joomla e não está funcionando na versão atual do Joomla
+
+A tradução para pt-pt, de Portugual está funcionando e a adaptei para o odioma pt-br, pois o site tem os idiomas
+Inglês e Português do Brasil instalados.
+
+- Primeiro adaptei o install.xml
+Apenas sobrescrevendo todas as ocorrências de pt-PT com pt-BR.
+
+Podemos deixar o parâmetro
+
+version="2.5"
+
+Que irá funcionar, o que mostra que este não é o problema da tradução pt-BR que existe no site, existem outros problemas.
+
+- Agora vou converter todos os nomes dos arquivos nas duas pastas admin e frontend. onde tem pt-PT mudei para pt-BR
+
+- Agora é o momento de adaptar o conteúdo de cada arquivo para o Português do Brasil. Não fiz uma tradução rigorosa, apenas traduzi alguns temos que chamam muito a atenção, como ficheiro/arquivo, descarregar/download.
+
+- Após concluir empacotei novamente e instalei
+
+Tradução para pt-br – http://cursos.ribafs.org/down/joomla/pt-BR.com_phocadownload.j3.zip 
+
+

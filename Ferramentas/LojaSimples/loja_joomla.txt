@@ -1,0 +1,132 @@
+Loja Virtual no Joomla 2.5 sem Virtuemart
+
+Partindo das 3 vídeo aulas do Youtube:
+"Criando uma loja no joomla 1.7 com pagseguro aula 01" até 03
+
+- Criaremos um artigo grande como destaque contendo as miniaturas dos produtos
+- Quando clicado em uma miniatura o respectivo artigo do produto será aberto, contendo a imagem maior do produto, uma descrição abaixo, o preço e um link para o PagSeguro
+- Desativar o plugin
+Conteúdo - Ocultar Email - Desativar
+- Configurar artigos:
+Conteúdo - Gerenciador de Artigos - Opções
+Opções de Filtragem 
+	Super Users - Sem Filtragem
+Artigos
+	Título - Ocultar
+	Títulos como link - Não
+	Categoria - Ocultar
+	Introdução - Ocultar
+	Link da Categoria - Não
+
+	Autor - Ocultar
+	Exibir data de criação - Ocultar
+	Data de monificação - Ocultar
+	Data de publicação - Ocultar
+	Exibir navegação - Ocultar
+	Exibir Título no Leia Mais - Ocultar
+
+	Ícones - Ocultar
+	Ícones de impressão - Ocultar
+	Ícones de e-mail - Ocultar
+	Acessos - Ocultar
+
+Layout de Blog/Destaques
+Artigos principais - 0
+Introdução Artigos - 15
+Colunas			   - 3
+Links			   - 4
+
+Criar as categorias dos produtos:
+
+Promoções
+Esportes
+Musculação
+Novidades
+
+Em cada artigo o Apelido deve ser o código do produto. Exemplos: promo01, espor13, novid15
+
+Cada imagem de produto deve vir em dupla: uma imagem grande com come o código do produto e uma miniatura, com nome o código e min ao final: promo01min.jpg.
+Ao inserir as imagens entrar com uma descrição para cada uma.
+
+Ao inserir uma miniatura, a descrição e o preço, insira abaixo um Leia Mais que mostrará a imagem maior.
+Abaixo do Leia Mais a imagem em tamanho normal.
+Abaixo da imagem, melhor, ao lado, entrar com a descrição completa do produto.
+
+Abaixo inserir o botão do PagSeguro
+
+Acessar
+http://pagseguro.com.br
+
+Login
+
+Vender
+Manual de integração
+Documentação
+Botões de Pagamento
+Categorias - Roupas e Acessórios
+Identificação da fatura - promo01
+
+Ao final copiar o código:
+
+<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+<form target="pagseguro" action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post">
+<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+<input type="hidden" name="code" value="DD325B4BCECEC8B664191FA41ECD91F1" />
+<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+</form>
+<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+
+Botão Comprar - TESTAR
+<form target="pagseguro" method="post"
+action="https://pagseguro.uol.com.br/checkout/checkout.jhtml">
+  <input type="hidden" name="email_cobranca"
+  value="suporte@lojamodelo.com.br" />
+  <input type="hidden" name="tipo" value="CBR" />
+  <input type="hidden" name="moeda" value="BRL" />
+  <input type="hidden" name="item_id" value="12345" />
+  <input type="hidden" name="item_descr"
+  value="Descrição do item a ser vendido" />
+  <input type="hidden" name="item_quant" value="1" />
+  <input type="hidden" name="item_valor" value="100" />
+  <input type="hidden" name="frete" value="0" />
+  <input type="hidden" name="peso" value="0" />
+  <input type="image" name="submit"
+  src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/99x61-comprar-assina.gif"
+  alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+</form>
+
+Botão Ver Carrinho
+<form target="pagseguro" action="https://pagseguro.uol.com.br/security/webpagamentos/webpagto.aspx" method="post">
+<input type="hidden" name="email_cobranca" value="suporte@lojamodelo.com.br" />
+<input type="hidden" name="tipo" value="VER" />
+<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/99x61-carrinho-assina.gif" name="submit" alt="Visualizar carrinho de compras" />
+</form>
+
+Personalize seu código:
+input"email_cobranca": substitua o e-mail suporte@lojamodelo.com.br pelo seu e-mail cadastrado no PagSeguro.
+
+Para ver uma loja funcionando com carrinho PagSeguro, acesse nossa loja modelo.
+
+Trocar a imagem dos botões.
+
+Não cobrar frete.
+
+Adicionar uma tabela com
+
+6linhas e 3 colunas
+
+Na primeira célula entrar com o código do botão do pagseguro.
+
+Ficará assim:
+
+botão pagseguroprod1		descrição		preço
+
+botão pagseguroprod2		descrição		preço
+
+botão pagseguroprod3		descrição		preço
+
+botão carrinho			
+
+Colocar link também na imagem do produto.
+
+Abaixo mostrar uma vídeo-aula de demonstração do produto.

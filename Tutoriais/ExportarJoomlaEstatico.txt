@@ -1,0 +1,25 @@
+Exportando um site em Joomla para site estático
+
+E também para qualquer outro tipo de site, não somente com Joomla
+
+Criar o script
+
+wget.sh
+
+Contendo:
+
+wget \
+     --recursive \
+     --no-clobber \
+     --page-requisites \
+     --html-extension \
+     --convert-links \
+     --restrict-file-names=windows \
+     --no-parent \
+         $1
+
+Usando
+
+sh wget https://ribafs.me
+
+

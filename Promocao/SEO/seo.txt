@@ -1,0 +1,131 @@
+10 passos para indexar um site Joomla no Google
+
+    Categoria: tutorial joomla	
+    Publicado em Domingo, 25 Março 2012 18:17 
+    Acessos: 139 
+
+Depois de escolher o melhor template, as melhores extensões, os plugins, é hora de indexar as páginas do site no Google.
+
+É uma tarefa ingrata, já vou avisando. O Joomla não é muito bom nisso.
+
+Para começar baixe os seguintes programas:
+
+A – Xmap para montar o sitemap (vou explicar melhor depois).
+
+B – Um programa SEF para o Joomla. Os principais são AceSEF, sh404SEF e JoomSEF.
+
+Inscreva seu site em:
+
+C - Ferramentas para Webmasters do Google.
+
+D - Google Analytics.
+
+1 - Primeiríssima tarefa: na raiz do site alterar o arquivo htaccess.txt para .htaccess (atenção para o "ponto" antes do arquivo). Faça isso abrindo o htacess.txt em um editor de texto tipo Bloco de Notas -- Salvar como... Todos os arquivos -- Altere o nome do arquivo colocando um ponto antes do seu nome.
+
+2 - Inclua estas linhas no final do arquivo .htacess
+
+########## Begin - 3rd Party SEF Section
+############# Use this section if you are using a 3rd party (Non Joomla! core) SEF extension - e.g. OpenSEF, 404_SEF, 404SEFx, SEF Advance, etc
+#
+RewriteCond %{REQUEST_URI} ^(/component/option,com) [NC,OR] ##optional - see notes##
+RewriteCond %{REQUEST_URI} (/|\.htm|\.php|\.html|/[^.]*)$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*) index.php
+#
+########## End - 3rd Party SEF Section
+
+ 
+
+Agora é configurar o Joomla para que sejam criadas as URLs amigáveis, aquele endereço localizado na barra de um navegador qualquer.
+
+Para fazer isto vá no Joomla em -- Site –- Configuração Global -– Configuração de SEO –- Configurações de SEO.
+
+Habilite as primeiras duas opções.
+
+sef_conf1
+
+3 – Instale e habilite o programa de SEO para o Joomla.
+
+4 – Instale e habilite o Xmap.
+
+5 - Inclua seu site em "Ferramentas para Webmasters" no Google.
+
+6 - No Xmap você tem duas opções. À esquerda, escolha os menus das quais sairão os artigos.
+
+sef_conf2
+
+7 – À direita, clique em Options – Preferences – Exclude Menu Ids e escolha tudo o que não quiser indexar.
+
+Neste segunda opção está o endereço onde o Google irá buscar todos os artigos do seu site, com respectivos endereços: o XML Sitemap.
+
+HTML Sitemap se refere à página de sitemap do seu website.
+
+sef_conf3
+
+8 – Copie o endereço (XML Sitemap:) e cole nas Ferramentas para Webmaster do Google, em: Configuração do site –- Sitemaps.
+
+9 - Não se esqueça de colar este mesmo endereço na última linha do arquivo robots.txt, localizado no diretório raiz do seu site.
+
+Assim (exemplo):
+
+Sitemap: http://www.seusite.com.br/index.php?option=com_xmap&sitemap=1&view=xm
+
+Fazendo isso, o Google irá buscar suas páginas sempre neste endereço Sitemap, que é atualizado automaticamente, na medida em que você cria um novo artigo.
+
+Antes o Google vai direto no robots.txt. É por isso que você deve colocar o endereço do sitemap na última linha, com informei acima.
+
+10 - Para acompanhar seu site através do Google Analytics, os passos são:
+
+No Joomla, vá até Extensões -- Gerenciador de Módulos -- Novo -- HTML (mod_custom) -- De um nome qualquer e cole o código fornecido pelo Google Analytics no editor de texto.
+
+ATENÇÃO: coloque o código no editor de textos na opção sem a formatação. [show/hide]
+
+Pronto, agora é "só" configurar o programa SEO e o Xmap. No programa SEO não mude muita coisa no início.
+
+Vá testando com calma os seus recursos. Procure material na internet.
+
+E - o mais importante neste caso - vá conferindo através das Ferramentas para WebMasters do Google a indexação do seu site. Lá você tem todas as informações de indexação; os erros; etc.
+
+E, é claro, vá fazendo as correções necessárias.
+
+Boa Sorte!
+
+Leia mais em: 
+http://www.blogdopaz.com.br/web-design/10-passos-para-indexar-um-site-joomla-no-google#ixzz1q9b5owP1
+Under Creative Commons License: Attribution Non-Commercial No Derivatives
+
+
+ENGAJANDO SEUS VISITANTES
+E mantendo seu conteúdo atualizado, novo e interessante
+
+- Inicie um blog
+	- É a melhor forma de adicionar novo conteúdo para um site
+	- É prático para adicionar conteúdo
+- Adicionar seu Twitter, Facebook, G++, Linkedin etc
+- Adicionar um forum e uma lista de discussão com extensões (SFM e ...)
+- Adicionar questionários, enquetes e surveys
+- Adicionar comentários
+- Trocar o template ou apenas as cores de tempos em tempos
+ 
+
+SEF - Search Engine Friendly URLs
+Quando instalamos o Joomla ele não ativa o SEF por padrão. Nós precisamos configurar.
+SEF existe apenas em servidores Apache.
+
+Para configurar SEF siga os passos:
+- Servidor com Apache
+- Precisa tem o mod_rewrite habilitado
+- O servidor precisa estar permitindo sobrescrita do .htaccess
+- Configure $sef = 1; no configuration.php. Caso o servidor não esteja permitindo escrita dos arquivos precisamos configurar para que permita.
+- Renomear o arquivo htaccess.txt para .htaccess
+
+Ajustar a tag title da Homepage
+A tag title da homepage é uma das mais importantes do site.
+
+É importante ter conteúdo coerente e de acordo com o tema do site.
+Evitar a duplicação de conteúdo.
+
+É recomendado ter o uso da tag H1 uma vez na página.
+
+

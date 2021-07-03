@@ -1,0 +1,275 @@
+Instalação do Joomla
+
+docean
+
+cdd
+pwd
+/var/www/despertai
+
+sudo permsd
+
+wget https://downloads.joomla.org/cms/joomla3/3-9-24/Joomla_3-9-24-Stable-Full_Package.zip?format=zip
+mv Joomla_3-9-24-Stable-Full_Package.zip?format=zip j.zip
+unzip j.zip
+rm j.zip
+rm index.html
+
+ls -la
+
+Abrir o navegador com este virtualhost ou domínio
+
+http://despertai.net.br
+
+Joomla
+
+Após 
+
+= Configurações Principais
+
+Nome do Site * - Deseprtai a Consciência
+Descrição - Informações sobre o despertar da consciência.
+E-mail do administrador * - ribafs@gmail.com
+Nome do Administrador * - ribafs
+Senha do administrador - 
+Confirmar Senha do administrador - 
+Próximo
+
+= Configuração do Banco de Dados
+
+Nome do servidor * - localhost
+Nome de usuário * - desp_us
+Senha - 
+Nome do banco de dados * - desp_db
+Próximo
+
+= Finalização
+
+Instalar conteúdo de exemplo - Nenhum
+Instalar
+
+Remover o diretório installation no servidor
+
+rm -rf installation
+
+Clicar em Administrador
+
+username - ribafs
+password - 
+
+Logo após acessar recebo uma mensagem ao centro, com fundo vermelho
+
+Joomla ‎3.9.25 is available: Update Now
+
+Voltar ao servidor, para garantir rodar
+
+sudo permsd
+
+Então clicar no botão Update Now e aguardar
+
+Ele então me alerta
+
+Warning
+Before you update Joomla, ensure that the installed extensions are available for the new Joomla version.
+You are strongly advised to make a backup of your installation before you start updating.
+
+Realmente é prpudente realizar um backup completo do site usando o Akeeba Backup, mas como acabamos de instalar apenas rolamos a tela e clicamos em Install the Update
+
+Joomla Version Update Status
+
+Your site has been updated. Your Joomla version is now 3.9.25. 
+
+Após ler as mensagens
+
+Clicar em Never e em System - Control Panel
+
+Clicar em Read Messages
+
+Hide all messages
+
+Never
+
+= Para deixar de receber a mensagem, caso as continue recebendo:
+
+Joomla! would like your permission to collect some basic statistics.
+
+Extensions - Plugins
+
+Desabilite
+System - Joomla! Statistics
+
+
+Instalar o idioma pt-br
+
+Extensions - Manage - Install languages
+
+Digite 'br' na caixa de busca e tecle enter
+
+Clicar em Install em Portuguese Brazil
+
+Caso receba a mensagem abaixo
+
+Warning
+Access denied for user 'desp_us'@'localhost' to database 'desp_db'
+
+Isso indica falta de privilégios do user no banco. Para simplificar usarei como previsto, mudando
+
+mysql -uroot -p
+
+GRANT CREATE, INSERT, UPDATE, SELECT, DELETE, DROP, INDEX, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES ON `desp_db`.* TO `desp_us`@localhost IDENTIFIED BY 'senha';
+FLUSH PRIVILEGES;
+\q
+
+Acesso novamente o administrator e teclo F5 e repito os passos para instalar o idioma
+
+Agora temos dois idiomas instalados, o en-GB e o pt-BR, sendo o primeiro o default. Vamos tornar o pt-BR default tanto para o site quanto para o administrator.
+
+Extensions - Languages
+Clicar na estrelinha à direita de Português do Brasil
+Clicar na combo com Site e mudar para Administrator
+Clicar na estrelinha à direita de Português do Brasil
+
+Agora está tudo em pt-BR
+
+
+= Vamos instalar o framework Helix Ultimate
+
+Acess
+https://www.joomshaper.com/downloads/template/helixultimate
+E faça o download do template para seu desktop
+
+Extensões - Gerenciar - Instalar
+Role a tela e clique no botão Ou procurar pelo arquivo
+
+Caso receba a mensagem
+O arquivo selecionado não pode ser enviado, pois é maior que o tamanho máximo de envio.
+Indica que o template é maior que o default, 2MB. Então precisaremos editar o php.ini para aumentar o valor. Verificando aqui, vejo que ele tem 2.1 MB. Então aumentarei para 2.2M
+
+sudo nano /etc/php/7.4/apache2/php.ini
+
+upload_max_filesize = 3M
+
+Voltar ao administrator e tecler F5
+
+Ao tentar instalar novamente recebo a mensagem
+
+apres
+
+Agora consigo instalar
+
+Agora voltemos ao servidor e ajustemos as permissões
+
+sudo permsd
+
+== Veja
+
+Instalamos o framework Helix Ultimate, agora vamos torná-lo o template padrão e atribuir tudo ao mesmo:
+
+Extensões - Temas
+
+shaper_helixultimate - Padrão - Clicar na estrelinha à direita para torná-lo padrão
+
+Clicar em seu link shaper_helixultimate - Padrão para abri-lo
+
+Atribuir menu
+
+Inverter todas as seleções
+Salvar e fechar
+
+Clicar no link acima e à direita apra visualizar o site em outra aba
+
+
+Instalar o componente
+https://github.com/ribafs/com_simplebackup
+
+Instalar pela URL
+
+Acessar
+https://github.com/ribafs/com_simplebackup
+Clicar em Code
+Colocar o cursor do mouse sobre Download ZIP e clicar em Copiar Link
+
+Extensões - Gerenciar - Instalar
+Instalar a aprtir de uma URL (colar na caixa o link copiado)
+https://github.com/ribafs/com_simplebackup/archive/master.zip
+Clicar em Verificar e Instalar
+
+Testando
+
+Componentes - Backup Simples
+Enviar
+
+Clicar no links arquivos e baixar para seu desktop e guardar com cuidado
+
+Ele mantem uma cópia zipada no raiz do
+/var/www/deseprtai
+
+Sendo o zip dos arquivos em ;tmp
+O sql do banco em /var/www/despertai
+
+Repita o backup sempre que fizer algumas alteração no site, atualização, adição de conteúdo, etc.
+
+7SegurancaAMP/Joomla/joomla
+
+Ver 7SegurancaAMP
+
+Caso queira reforçar bastante a segurança do site em Joomla, após instalar todas as extensões,adicionar todo o conteúdo desejado (categprias, artigos, menus, etc) mudar os privilégios do user no banco para somente SELECT.
+
+mysql -uroot -p
+
+GRANT SELECT ON `desp_db`.* TO `desp_us`@localhost IDENTIFIED BY 'senha';
+FLUSH PRIVILEGES;
+\q
+
+Acessar o site e então o administrator
+
+Acessa normalmente. Precisamos liberar os demais privilégios quando formos instalar ou gerenciar extensõe e mesmo gerenciar conteúdos.
+
+mysql -uroot -p
+
+GRANT CREATE, INSERT, UPDATE, SELECT, DELETE, DROP, INDEX, ALTER, LOCK TABLES, CREATE TEMPORARY TABLES ON `desp_db`.* TO `desp_us`@localhost IDENTIFIED BY 'senha';
+FLUSH PRIVILEGES;
+\q
+
+
+Configurações Globais
+
+Renomear o arquivo
+
+cdd
+
+mv htaccess.txt .htaccess
+
+
+Configurações no Administrator
+
+Sistema - Configurações Globais
+
+Site
+
+Usar mod_rewrite - Sim
+Incluir nome do site no título - Depois
+Exibir meta tag de autor - Não
+Salvar
+
+Sistema
+Gerenciador de cache - APC
+Cache específico da plataforma - Sim
+
+Cache - Ligado (cache progressivo)
+Salvar
+
+Servidor
+
+Compressão Gzip - Sim
+Relatórios de erro - Nenhum
+Forçar HTTPS - Todo o site (mas ativar somente após configurar o Certbot)
+Fuso horário do site - America/Fortaleza
+
+
+Caso precise de ajuda para criar extensões para o Joomla 3
+
+Veja este livro free
+
+https://ribafs.github.io/livros/joomla-prog.html
+
+

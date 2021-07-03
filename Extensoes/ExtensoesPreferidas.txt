@@ -1,0 +1,102 @@
+Minhas Extensões Preferidas para Joomla 3
+Todas Free
+
+Galeria de Imagens
+
+Phoca Gallery
+https://www.phoca.cz/download/category/1-phoca-gallery-component
+Componente e Tradução
+
+Downloads
+https://www.phoca.cz/download/category/4-phoca-download-component
+
+Foruns
+
+- Kunema
+https://www.kunena.org/download
+
+- SMF
+https://download.simplemachines.org/
+
+Vídeos
+
+AllVideos
+https://www.joomlaworks.net/extensions/free/allvideos
+
+Chats
+
+Tawk
+https://joombooking.com/extensions/plugins/product/52-tawk-to-plugin.html
+
+ChatBro
+https://extensions.joomla.org/extensions/extension/communication/chat/chatbro-website-user-chat/
+
+CustomerlCare Live Chat
+https://extensions.joomla.org/extensions/extension/communication/live-support-hosted/customericare-live-chat-software/
+
+Social Chat
+https://www.iacopo-guarneri.me/index.php/download/category/11-social-chat
+
+OnWebChat
+https://www.onwebchat.com/joomla-plugin.php
+
+Gerenciador de Arquivos
+
+eXtplorer
+http://extplorer.net/files
+
+Agenda/Calendário
+
+iCagenda
+https://icagenda.joomlic.com/
+Tradução
+https://icagenda.joomlic.com/resources/translations
+
+Effrit
+http://effrit.com/joomla
+
+Segurança
+
+http://www.joomlaserviceprovider.com/downloads/jsecurelite.html
+https://www.akeebabackup.com/products/admin-tools.html
+
+Backup
+
+SimpleBackup
+https://github.com/ribafs/com_simplebackup
+
+AkeebaBackup
+https://www.akeebabackup.com/products/akeeba-backup.html
+
+Comentários e Redes Sociais
+
+Disqus
+https://www.joomlaworks.net/extensions/free/disqus-comments-for-joomla
+
+OrdaSoft
+http://ordasoft.com/joomla-social-comments-and-sharing-module.html
+
+Mapas de Sites
+https://www.joomlashack.com/joomla-extensions/osmap/
+
+Mapas do Goomla
+https://thegrue.org/joomla/extensions/
+
+Menus Responsives
+
+https://www.joomlack.fr/en/joomla-extensions/maximenu-ck
+https://thegrue.org/joomla/extensions/
+
+Tradução de Site
+https://www.blackdale.com/index.php/extensions/multitrans
+
+Formulário de Contato
+http://joomladrive.com/index.php/extensions/jdrive-horizontal-contact-form
+https://creative-solutions.net/joomla/creative-contact-form
+
+SlideShow
+https://www.joomlack.fr/en/joomla-extensions/slideshow-ck
+
+PopUp
+http://www.demo2.ari-soft.com/joomla-magnific-popup.html?_
+

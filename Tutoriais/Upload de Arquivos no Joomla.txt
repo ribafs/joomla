@@ -1,0 +1,25 @@
+Controlando Upload de Arquivos no Joomla 3.6.2
+
+Configurar PHP
+
+upload_max_filesize = 128M;
+post_max_size = 32;
+
+nano /etc/php5/apache2/php.ini
+
+Configurar o Gerenciador de Mídia
+
+Sistema - Configuração Global
+Mídia - Componente - Tamanho Máximo (em MB) - 128
+
+Editor JCE
+
+Sistema - Configuração Global
+JCE Administration
+General Options - Salvar e Fechar
+Editor Profiles
+Default
+Editor Parameters
+Filesystem - Upload file size (KB) - 131072
+
+

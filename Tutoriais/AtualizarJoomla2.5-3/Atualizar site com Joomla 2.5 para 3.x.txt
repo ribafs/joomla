@@ -1,0 +1,66 @@
+Atualizar site com Joomla 2.5 para 3.x
+
+As novas funcionalidades do Joomla 3 são ótimas, mas isso também acarreta um trabalho extra para atualizar os sites existentes, para desfrutarem das novas funcionalidades e também para os tornar seguros.
+
+As principais diferenças entre o Joomla 2.5 e o 3.5 são:
+
+Joomla 3.5	                                            Joomla 2.5
+- Joomla 3.5 usa Bootstrap.                            Joomla 2.5 não usa Bootstrap
+O Bootstrap torna seu site em Joomla responsive, ficando legal em dispositivos como desktop, tablets e celulares, etc. 	 
+- Joomla 3.5 usa jQuery 	                            Joomla 2.5 não usa jQuery
+- Joomla 3.5 requer PHP 7 	                            Joomla 2.5 funcionará com PHP 5.2.4+. 
+- Joomla 3.5 requer MYSQL 5.5.3+ 	                    Joomla 2.5 funcionará com MYSQL 5.0.4+
+- Joomla 3.5 permite que adicione módulos para artigos.	Joomla 2.5 não permite que adicione módulos para artigos
+
+Precisamos tomar alguns cuidados ao efetuar o upgrade do Jomla:
+
+- Efetuar todo o processo em computador local e ao final efetuar backup para exportar para o servidor
+- Efetuar um backup completo do site, arquivos e banco de dados (sugestão: https://github.com/ribafs/com_simplebackup)
+- Verificar a existência de compatibilidades das extensões usadas com a nova versão do Joomla antes de efetuar o upgrade
+- Verificar a compatibilidade do template do 2.5 com o novo 3.5 ou superior
+
+Realmente existe a necessidade de atualizar o site com 2.5 ou 1.5?
+
+Alguns motivos para atualizar:
+- Criar novas funcionalidades para o site
+- Alterar o design e a navegação
+- Tornar o site fácil de usar em mobiles
+- Tornar o site amigável em termos de SEO
+- Melhorar a segurança do site
+- Para usar as melhorias de algumas extensões de terceiros, pois algumas somente suportam as últimas versões
+
+Boas características do Joomla 3.5:
+
+- Joomla 3.5 suporta PHP7 e o PHP 7 executa duas vezes mais rápido que o 5.6, melhorando a performance das aplicações.
+- O suporte a drag and drop de imagens do Joomla 3.5
+- Possibilidade de inserir módulos em artigos do 3.5
+
+Passos para atualizar o site com Joomla 2.5 para o Joomla 3.x
+
+- Backup completo do site, banco e arquivos e guarde bem guardado, de preferência mais de uma cópia.
+- Logo em seguida faça o restore em micro local para se certificar que não houve problema no backup.
+- Primeiro atualize para a última 2.5, que é a 2.5.28 (baixe sempre do site oficial do Joomla)
+- Com a 2.5.28 atualizar para a 3.5.1, assim:
+    - Componentes - Joomla! Update
+    - Options
+    - Update Server - Short Term Support
+    - Salve e feche
+- Clique em Instalar e atualizar - atualizará em duas etapas, primeiro para a versão 3.5.1 e depois para a última (3.7.5 agora)
+
+Extensões - Gerenciamento - Atualização - Limpar o Cache
+
+Após o processo, caso haja necessidade verifique erros no banco de dados:
+Extensões - Gerenciamento - Banco de dados - Corrigir erros
+
+Agora instale a última versão, que hoje é a 3.7.5
+
+Testando aqui em uma instalação limpa do Joomla 2.5.28 ele atualizou sem problema para o 3.5.1 e depois deste para o 3.7.5.
+
+Após a atualização do Joomla para a última versão então experimente todas as extensões de terceiros instaladas, inclusive o template.
+Caso haja necessidade, geralmente haverá, então atualize cada uma das extensões que precisem de atualização.
+
+Referências:
+https://www.joomdev.com/blog/entry/how-to-upgrade-joomla-2-5-to-3-x
+https://docs.joomla.org/Joomla_2.5_to_3.x_Step_by_Step_Migration/pt-br
+https://www.cloudaccess.net/joomla-knowledgebase/108-joomla-3-1/maintenance/1107-upgrading-from-joomla-2-5-to-3.html
+

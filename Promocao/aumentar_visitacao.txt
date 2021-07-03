@@ -1,0 +1,78 @@
+Recebido do suporte do serviço - 
+
+ 	 Olá Ribamar FS
+
+Se você quer que o seu site seja um sucesso, você precisa ter um bom número de visitas.
+A boa notícia é que não é necessário gastar uma fortuna para atrair novos visitantes para o seu site, apenas prepare-se para passar algumas horas trabalhando no conteúdo e lembre-se que o aumento de visitas não ocorre da noite para o dia.
+O poder da Meta Tag
+
+Para que o seu site adquira melhor posicionamento nos mecanismos de busca é importante que você utilize as meta tags:
+
+1) Title (Título);
+2) Description (Descrição);
+3) Keywords (Palavras Chave);
+
+Otimizando o Global Site Meta no Joomla:
+
+1- Acesse o Painel de Controle do seu site; (Veja como acessar o Painel de Controle)
+2- Clique em Global Configuration;
+3- Em “Metadata Settings” altere o conteúdo dos campos:
+
+    * Global Site Meta Description: nesse campo você deverá digitar a descrição do seu site; Essa descrição irá aparecer nos mecanismos de busca, por isso recomendamos que o número máximo de caracteres seja de 200.
+
+Google
+
+    * Global Site Meta Keywords: nesse campo você deverá digitar as palavras que são mais freqüentes no seu site. Essas palavras não serão exibida nos mecanismos de busca, porém elas são um dos fatores que definem o posicionamento do site. Recomendamos que você insira ao menos 5 palavras.
+
+4- Clique no botão “Save”;
+
+Após isso será exibida uma mensagem com fundo azul informando que as alterações foram realizadas com sucesso:
+
+detalhes da confirmacao
+
+Utilize o Meta Tag Analyzer Tool (http://www.1fish.info/component/option,com_jumi/Itemid,54/fileid,5/) para verificar se o seu site está corretamente otimizado.
+
+Leia também “Adicionando um artigo no Joomla” onde explico detalhadamente como otimizar um artigo.
+Qual o papel do H1, H2 e H3?
+
+H1, H2 e H3 são tags para formatação de texto. Mecanismos de busca observam atentamente o conteúdo inserido nos títulos. Por exemplo, o título mais importante da página deve está inserido dentro da tag
+, o segundo mais importante na tag
+e assim por diante.
+
+ 
+
+Antigamente meta tags eram fundamentais para o posicionamento do site em mecanismos de buca. Hoje em dia o que determina o posicionamento de um site é o conteúdo das páginas e o número de back-links (sites com links para o seu site).
+
+Atualmente o papel da meta tag é exibir uma breve descrição sobre o conteúdo do seu site nos mecanismos de busca. Não espere um aumento milagroso no Page Rank do site só porcausa das meta tags.
+Como otimizar títulos de artigos publicados no Joomla:
+
+1. Clique em menu “Content” -> “Article Manager”;
+2. Clique no botão “New”;
+3. Na próxima tela preencha os campos:
+
+    * Title: titulo do artigo;
+    * Section: escolha uma seção para o artigo;
+    * Category: escolha uma categoria para o artigo;
+    * Published: marque a opção “yes” para publicar o artigo;
+    * Front Page: marque a opção “yes” para o artigo ser exibido na home page do seu site;
+
+4. Digite o primeiro título do artigo, selecione e clique em “Format” -> “Heading1″; Siga o mesmo procedimento para os demais titulos.
+
+heading
+
+5. Clique no botão “Save” e visualize o resultado do seu trabalho clicando em “Preview” no canto superior;
+
+preview
+
+Dúvidas e sugestões sobre novos artigos serão muito bem vindas. Conte-nos qual a sua dúvida e escreveremos um tutorial ilustrado explicando a solução.
+
+LEIA TAMBÉM
+
+    * Alterando o posicionamento de módulos no Joomla - http://1fish.info/blogs/blog/2009/07/13/alterando-o-posicionamento-de-modulos-no-joomla/
+    * Adicionando um artigo no Joomla - http://1fish.info/blogs/blog/2009/07/10/adicionando-um-artigo-no-joomla/
+    * Otimizando o seu Joomla! site - http://1fish.info/blogs/blog/2009/04/15/otimizando-o-seu-joomla-site/
+    * Template: personalizando o header - http://1fish.info/blogs/blog/2009/06/23/template-personalizando-o-header/
+
+
+
+ 

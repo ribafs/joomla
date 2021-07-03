@@ -1,0 +1,110 @@
+This is the version that will bring Joomla up-to-speed with the mobile revolution that is taking over the web.
+
+Joomla 2.5 is a wonderful version of Joomla and will be supported until 2014. 
+
+Yes, the plan is to allow people to upgrade from 2.5 to 3.0 directly from the administrator area of their site. Remember though, you don't need to do that until 2013 or 2014.
+
+The Admin and Site Templates will be completely redone.
+
+Joomla 3 core will include jQuery in noConflict mode. Mootools will still be included, so existing extensions that rely on Mootools will continue to work as before. Work is underway to use jQuery for all core JavaScript functionality. If this is ready in time, it will be included for version 3.0.
+
+Core frontend and admin outputs will change to use Bootstrap, and some layouts may change more substantially.
+
+There are important changes to the Platform, including the removal of deprecated items, the renaming of legacy classes, and new deprecations. There are also changes to core tables including removal of unused fields in the database. Core content tables will continue to increase standardization to enable progressive enhancement as planned platform packages are introduced.
+
+PHP 5.3.1 will be the minimum supported version and official support for some older browsers will be dropped.
+
+All core tables will be Innodb and that should be considered the default engine.
+
+Start developing the UI for your extensions with the all-new, Bootstrap-powered JUI. Currently the latest branch is ‘template6’:
+https://github.com/Joomla3-Admin-template/joomla-cms/tree/template6
+
+Changes will primarily impact components and modules, but plugins that render or that have complex interfaces may also need some work.
+
+As I stated in the similar thread "Bootstrapping Frontend Component Views":
+Now that we're officially using Bootstrap for Joomla 3.0, lots of devs are diving into using it for their component views. This is very awesome, but we need to start talking about conventions, design patterns, standards and best practices now, so we don't end up right back where we are today in Joomla where everything looks and feels completely isolated and different.
+
+We'll eventually create official docs on the wiki, but let's start the conversation here.
+
+The admin usage of Bootstrap should have more strict standards and conventions than the frontend, since there is a GUI and the goal is to make all components intuitive and familiar now that we have enough core UI options. 
+
+Hi Folks,
+
+With the Joomla! 3.0 release right around the corner (exactly a month away) one area that users will definitely need (especially with all the design and layout changes) is Help Screens.
+I've already started on this with http://docs.joomla.org/Help30:Content_Article_Manager
+
+There's lots of other screens that need done though, if I counted correctly there's about 68 Help Screens for Joomla! 3.0.
+The easiest way to see the list of Help Screens, and review what needs done still, is to log in to the admin on a Joomla! 3 (at this point alpha2) install, and navigate to the Help -> Joomla! Help page.  You'll see a complete list of the Help Screens on the left hand side.
+
+A lot of the actual functionality of each screen and it's page remains the same from 2.5, but each one needs a good review and update to get new screenshots, and adjust language so it makes sense with the new administrator template.
+
+Most of the screens are short - using the 2.5 screen equivalent as a starting point, they can probably be completed in an hour or two.  So if everyone in this groups just grabs a single help screen, we'll be just about done! - Feel free to grab more than one if you want too ;)
+
+We may see some additional (smaller) additions to the Joomla! 3.0 package before it's release, but with the new graphics overhaul in place, the biggest modifications are already available, and with only 1 month to go until a launch, we've got a lot of work to do! :)
+
+TIPS:
+
+    The easiest way to edit a page is to open it from the Joomla!3 administrator interface - at the bottom of the window you'll see some copyright info, as well as a link to that page's location in docs.joomla.org - most pages are blank at this point, so start creating!
+    Remember, these screens are not tutorials per se - they are simply explanations of each element on the page
+    Make sure you add the appropriate categories to the bottom of the new article so we can track them, and add the <noinclude> tags as well so they don't show up on the actual Help screen (just open an existing 2.5 help screen for an example ;) )
+    All screenshots need to be less than 690px wide - the Help popup window opens at 700px with a 5px margin on each side.
+    the 2.5 page equivalents are good starting places to get structure, and content from - just make sure to review each screenshot and line to make sure it makes sense in the new version
+    Need help with Wiki syntax? - check out a great guide here  http://www.mediawiki.org/wiki/Help:Formatting - at the bottom of that page is links to other resource pages for working with links, files, lists, and tables.
+
+
+Thanks again to everyone that works on the documentation!
+
+Respectfully,
+Jon Neubauer
+
+
+
+How does the transition from Joomla 2.5 to Joomla 3.0?
+Traduzir mensagem para português  
+Hi Alex,
+
+The core Joomla 2.5 component "Joomla! Update" will handle migrating the
+Joomla core from 2.5 to 3.0.  There's a setting within the component's
+options to go from a LTS version to STS version (e.g. 2.5 to 3.0).  So
+that will part will be easy thanks to the people who contributed to the
+updater and Joomla 3 :) Users just have to make sure that their
+environment meets the requirements of the Joomla 3 core (also that they
+have Magic Quotes GPC to off on their server)
+http://www.joomla.org/technical-requirements.html
+
+The only other part is making sure Joomla extensions on the 2.5 site are
+Joomla 3 compatible.  The trickiest part will likely be the templates, as
+the core layouts have changed.
+
+As always, it's recommended to backup your sites and to test on a test
+server first.  This is a must.
+
+Also, please note that Joomla 2.5 will be supported for another year, so
+there's no rush at all to migrate.
+
+In summary, make appropriate backups (just in case) and test on a test
+site first.  The Joomla core will be a "one-click" update, but extensions
+need to be tested for Joomla 3 compatibility.  Joomla 2.5 will be
+supported for another year, so there's no rush to update.
+
+Hope this helps!
+
+Kind regards, 
+
+
+
+Todas as versões do Joomla
+
+http://joomlacode.org/gf/project/joomla/frs/
+
+
+Alguns artigos:
+http://magazine.joomla.org/issues/issue-feb-2012/item/673-roadmap-for-a-great-Joomla-3-UX
+http://www.joomla.org/announcements/release-news/5460-joomla-3-0-beta1-released.html
+http://magazine.joomla.org/issues/Issue-Sept-2012/item/858-developers-joomla-3-update
+http://community.joomla.org/blogs/community/1594-developers-joomla-3-is-coming.html
+
+Quem quizer testar a última:
+https://github.com/joomla/joomla-cms
+
+

@@ -1,0 +1,11 @@
+Botões de Pagamento
+Efetuar login
+https://pagseguro.uol.com.br/integracao/botoes_de_pagamento.jhtml;jsessionid=cFfnmE0XrDFkGoBPg6Kl0A**.ps1
+
+Paypal parametros
+http://www.jcursos.com.br/index.php?option=com_payplans&view=plan&task=login&plan_id=5
+
+Pagamento Digital
+http://bcash.com.br/desenvolvedores/modulos/
+
+

@@ -1,0 +1,28 @@
+Dowmload
+http://www.phoca.cz/download/category/1:phoca-gallery-component
+
+Baixar o componente e o idioma pt-br
+
+1) Instalar ambos
+Componentes - Phoca Gallery
+Categoria - Novo - Título
+
+Diretório de album - Selecionar diretório - (apenas marcar o diretório na seta verde)
+Salvar e Fechar
+
+2) Imagens
+Múltiplal adição
+Selecionar o diretório à direita/abaixo
+Carregamento múltiplo
+Start Upload (abaixo)
+Salvar e Fechar
+
+3) Criar o item de menu
+Menus - Hydrogen Theme (ou Main Menu) - Adicionar item de menu
+
+- digitar Título
+- clicar em Selecionar 
+	- clicar em Phoca Gallery Módulo de Imagem
+	- Geralmente a primeira opção
+- Clique na combo Selecionar categoria e selecione a galeria
+Confira no site

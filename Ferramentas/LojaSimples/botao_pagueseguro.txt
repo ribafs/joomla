@@ -1,0 +1,34 @@
+Botões do PagSeguro
+Todos apenas para testes, nenhum é válido, lembre disso
+
+Botão de pagamento do PagSeguro
+https://pagseguro.uol.com.br/integracao/botoes_de_pagamento.jhtml
+
+Botão do Tênis
+<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+<form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post">
+<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+<input type="hidden" name="code" value="F2015D8EE2E2250884DE2F95E38BD44D" />
+<input type="hidden" name="iot" value="button" />
+<input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-assina.gif" target="_blank" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+</form>
+<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+
+Botão do Sapato
+<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+<form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post">
+<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+<input type="hidden" name="code" value="EE27A994E3E3B8EDD4877F8EDA8045BA" />
+<input type="hidden" name="iot" value="button" />
+<input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+</form>
+<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+
+Para cada novo produto gerar o código do botão no site acima do Pagseguro
+
+Carrinho do PagSeguro (trocar o e-mail)
+https://pagseguro.uol.com.br/v2/guia-de-integracao/carrinho-de-compras.html
+
+<a  href="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=view" target="_blank">  
+    <img src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/99x61-carrinho-assina.gif" alt="Ver carrinho"/>  
+</a>  

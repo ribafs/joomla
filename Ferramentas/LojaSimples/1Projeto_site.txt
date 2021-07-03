@@ -1,0 +1,165 @@
+Projeto
+
+Projeto
+Do bd
+Do app
+Do site
+
+Criaremos um pequeno site para uma sapataria, chamada “Sapataria Dando no Pé”. O site será uma loja virtual simples, apenas mostrando parte do estoque da sapataria (não vende). Criaremos o site localmente para testes usando o Wamp ou o Xampp e somente quando satisfeitos então o enviaremos para o servidor.
+
+O site conterá:
+- Instalar e habilitar o idioma Português do Brasil
+- gerenciador de backups (criar primeiro backup logo de início e depois frequentemente)
+- Categorias, artigos e itens de menu (um de Destaque)
+- formulário de login
+- plugin para redes sociais
+- breadcrumbs
+- busca interna
+- novidades
+- populares
+- contato
+- mapa do site
+- gerenciador de arquivos
+- pensamento do dia
+Entre outros
+
+Ativar o mod_rewrite
+Torna as URLs menores e mais fáceis de memorizar.
+
+Configuração Global
+Usar mod_rewrite do Apache – Sim
+Depois devemos renomear o arquivo htaccess.txt do raiz do Joomla para .htaccess. 
+No Windows não podemos renomear este arquivo diretamente. 
+Use o Winrar e compacte o htaccess.txt. 
+Depois abra o htaccess.rar e renomeie o htaccess.txt para .htaccess 
+Agora descompacte o htaccess.rar, que expandirá o .htmccess sem problema.
+
+Obs.: tome cuidado com esta configuração. Caso o servidor não tenha o mod_rewrite habilitado você perderá o controle sobre o site. O Xampp vem com ele ativado, mas faça um backup antes.
+
+Recomendações
+Como o mod_rewrite altera as URLs é indicado configurá-lo logo no início.
+Assim como o template, também é indicado que o troquemos para o template definitivo como uma das primeiras providências.
+
+Ativando no Wamp – Ícone – Apache – Apache modules, clique no mod_rewrite e restart tudo
+
+Downloads
+https://www.joomla.org/download.html – baixar a versão 3.4.4 ou superior
+
+
+Uma prudente recomendação é a de antes de arregaçar as mangas para a criação do site ou portal, antes sentarmos e realizar um planejamento do que iremos fazer. Com uma bos descrição, falando dos detalhes. 
+Devemos iniciar o projeto antes de iniciar qualquer etapa de construção do portal.
+
+O projeto é uma etapa do desenvolvimento web que tem grande importância, pois nessa fase descrevemos como será o projeto para que essa descrição nos sirva de rumo. A descrição deve ser tão mais elaborada quanto mais importante for o site ou aplicativo. 
+
+Simplificando devemos ter uma noção exata do que iremos fazer, para evitar retrabalho futuro.
+
+Aqui abordaremos apenas pequenos cuidados que devemos tomar, com a intenção de ajudar a formar o hábito de se elaborar sempre um projeto antes de iniciar um site ou aplicativo. Caso esteja com um projeto importante, então procure por mais detalhadas informações e faça algo a altura do seu projeto, caso contrário poderá se arrepender bastante depois.
+
+Também os itens de menus que corresponderão às seções, categorias ou artigos.
+Citar os módulos a serem usados, os componentes, plugins e templates entre outros.
+
+O projeto deve levar em conta a hospedagem onde irá ficar o portal, quais os recursos e flexibilidades existentes e se de fato suporta bem o Joomla na versão atual; o domínio ou subdomínio que irá usar; o preço final de elaboração do portal (se for ocaso) e as condições de pagamento; assim como o prazo estimado de conclusão.
+
+Muitos outros cuidados que cada projeto pode exigir e que devemos ficar atentos.
+
+Ao final desse trabalho é muito útil criar uma relação resumida das atividades e elaborar um diagrama (o OpenOffice Draw é uma boa alternativa) com as seções, categorias, artigos e menus e outros detalhes para que isso sirva de bússola durante a criação do portal.
+
+Também vale lembrar que devemos criar ou usar uma logomarca existente e lembrar de encaixar bem no template.
+
+Para isso uma boa ou várias conversas com o cliente que nos contratou é vital. Coleta de informações, visitas a sites existentes, documentos escritos, etc.
+
+Lembre: um bom projeto evita retrabalho.
+
+
+Conteúdo do Site 
+
+Ao preparar o conteúdo do site devemos nos preocupar com sua coerência e devemos selecionar criteriosamente as palavras dos textos dos links. 
+
+
+Recomendações do Rasmus Lerdorf
+
+Rasmus Lerdorf, é ninguém menos que o criador do PHP. Não é somente por ser o criador do PHP que devemos fazer o que ele recomenda, mas analise suas recomendações com senso crítico e veja se são coerentes. Algo importante que li em certa entrevista com ele foi a declaração de que um dos objetivos na criação do PHP foi de que deveria ser simples, fácil de entender. Acho que isso foi um dos motivos para a grande popularidade atual do PHP.
+
+
+Veja abaixo algumas recomendações do criador do PHP, Rasmus Lerdorf.
+
+Recomendações do Rasmus Lerdorf e Outras Recomendações para Desenvolvimento Web.
+
+- Usar programação procedural e OO somente quando claramente necessário.
+- Idéia errada: tudo de procedural é ruim e tudo de OO é bom.
+- Evite o uso de frameworks, pois tornam muito complexa a criação de aplicativos como também engessam a manutenção.
+- Somente se você sempre construir exatamente o mesmo estilo de aplicativo é que então pode criar um framework.
+- Seu tempo é melhor gasto criando uma infraestrutura básica ideal para qualquer tamanho de projeto e reusar pequenos componentes.
+- Separe bem as camadas, HTML é HTML, PHP é PHP.
+- Evite estruturas monolíticas, sempre modularizando sua programação, criando funções sempre que for o caso ou reusando pedaços de código.
+- Tente limitar em 5 ou menos os includes de uma requisição
+- Não exagere com OO, use somente quando necessário
+- Use uma camada de abstração de bancos de dados
+- Tudo tem um custo
+- Fique de olho nas suas expressões regulares
+- Caso use MVC, use com cuidado e critério, não tem problema com esse padrão de projeto, o problema é com os frameworks.
+- Você deve quebrar grandes problemas em módulos pequenos.
+- Mantenha o design simples e limpo:
+- HTML deve parecer com HTML (evite templates complexos)
+- Mantenha o código PHP em views extremamente simples: chamadas de funções, simples laços e substituição de variáveis deve ser tudo de que você precisa
+- Segurança:
+- Validação da entrada de dados
+- Sempre que possível evite camadas e outras complexidades para tornar o código mais fácil de auditar
+- Desempenho:
+- Evite include_once e require_once
+- Permaneça usando o estilo procedural e use OO somente quando realmente caracterizado
+
+
+Evitar em Sites ou Aplicativos, especialmente em Sites:
+
+- Mudanças no layout que façam o visitante se perder
+- Carga inesperada (pesado)
+- Lentidão exagerada
+- Falha de hardware ou no servidor: falta de espaço, banda ou banco fora
+- DRY - Don't Repeat Yourself - Evitar repetição.
+
+Original em inglês: http://toys.lerdorf.com/archives/38-The-no-framework-PHP-MVC-framework.html
+ 
+
+Cinco Bons Hábitos de Programação em PHP
+
+Além de possibilitar que você construa código de forma mais produtiva, esses hábitos podem ajudá-lo a construir código sustentável para o tempo de vida de um aplicativo. Qualquer código escrito provavelmente passará a maior parte de seu tempo de vida em manutenção; a manutenção do aplicativo é uma grande despesa. Estabelecer bons hábitos de codificação aprimorarão os fatores de design, como modularidade, e seu código será mais fácil de entender e, portanto, mais fácil e mais barato de manter.
+
+1. Use boa nomenclatura.
+2. Faça blocos menores.
+3. Documente seu código.
+4. Trate das condições de erro.
+5. Nunca copie e cole (ao invés crie uma função). 
+
+Fonte: http://www.ibm.com/developerworks/br/library/os-php-5goodhabits/ 
+
+
+Outras Recomendações para o Projeto
+
+- Categorias
+- Artigos
+- Menus e itens de menus
+- Etensões nativas
+- Extensões de terceiros
+- Templates
+- Verifique os direitos autorais de todo o conteúdo do site:
+- Textos dos artigos
+- Imagens (manipule o tamanho e a qualidade)
+- Áudios e vídeos
+- Não esqueça de citar o autor e seu site
+- Mostre sempre a licença do seu conteúdo
+- Use link para a index no logo do site
+- Simplifique sempre que puder
+- Mantenha o site com navegação intuitiva (use o breaadcrumbs e categorias)
+- Mantenha um form de contato além de endereço, telefones e e-mails de contato
+- Mantenha uma página sobre Você ou a Empresa
+- Redirecionar mensagens de erro para página com mensagem de esclarecimento/desculpas e form de contato
+- Atenção às meta-tags para maior visibilidade do seu site, assim como cada página deve ter um título com H1 ou H2
+- Não abra automaticamente músicas ou vídeos, deixe um link ou botão ao invés
+- Use um tamanho de página que atenda à maioria (1024x768 atualmente) e não use redimensionamento
+- As páginas mais importantes devem ter mais cuidado com a acessibilidade
+- Cuidado, pois alguns gráficos poderão roubar a festa desviando a atenção de algo mais importante
+- Faça backup regularmente
+
+Aadaptado do site http://ribafs.16mb.com - Aplicativos em PHP - Projeto
+

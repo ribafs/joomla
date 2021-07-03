@@ -1,0 +1,13 @@
+LINKS e SEO
+
+Quando criamos um link para um site externo em um artigo estmos indicando este site para o Google e passando pontos para ele.
+Se o site for relacionado com o nosso artigo está tudo bem, o Google irá dar pontos para nosso site e para o outro.
+Mas se o site do link não tiver relação com nosso artigo o Google entenderá que apenas estamos indicando indevidamente o site e nos dará ponto negativo e ao site.
+Se pretendemos linkar e ainda assim não ser prejudicados podemos usar o atributo rel:
+
+<a href="http://site.com.br" target="_blank" title="Site de destino" rel="nofollow">Site do Link</a>
+
+Assim o Google não pensará que estamos tentando promover o site.
+
+Em geral não devemos usar o nofollow, mas sim indicar realmente sites relacionados aos nossos artigos para melhor pontuar nossos artigos.
+

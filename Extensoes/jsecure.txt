@@ -1,0 +1,11 @@
+
+Se selecionar
+Pass Key URL e entrar uma palavra, deverá acessar o administrator com esta palavra assim:
+
+http://localhost/joomla/administrator/?palavra
+
+Não use espaços nem caracteres especiais na palavra.
+E então o jsecure ocultará o administrator e somente permitirá o acesso via
+http://localhost/joomla/administrator/?palavra
+
+

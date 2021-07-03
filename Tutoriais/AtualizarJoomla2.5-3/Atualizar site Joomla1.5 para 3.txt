@@ -1,0 +1,20 @@
+Atualização de site com Joomla 1.5 para Joomla 3.x
+
+Aqui o faremos em três etapas:
+- Do 1.5 para o 2.5
+- Do 2.5 para o 3.5.1
+- Finalmente do 3.5.1 para o 3.7.5 ou superior
+
+Isso será feito em um servidor local antes de ser feito no servidor em produção.
+
+Assegure-se de que o seu servidor local tem o devido suporte ao Joomla 3.x:
+https://downloads.joomla.org/technical-requirements
+
+Antes de atualizar para o 2.5 atualize o 1.5 para a última versão estável, que é a 1.5.26, que pode ser baixada daqui:
+https://downloads.joomla.org/cms/joomla15/1-5-26
+
+Em meus testes instalei o 1.5.26 limpo, baixado do site oficial.
+
+Veja detalhes na página abaixo:
+https://docs.joomla.org/S:MyLanguage/Joomla_1.5_to_3.x_Step_by_Step_Migration
+

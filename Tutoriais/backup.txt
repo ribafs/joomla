@@ -1,0 +1,15 @@
+Crie um banco chamado sapataria
+
+Importe o arquivo *.sql para o banco acima
+
+Crie um diretório sapataria no diretório web
+
+Descompacte o *.zip para o diretório acima
+
+Edite o arquivo sapataria\configuration.php e ajuste as linhas abaixo:
+
+	Linha do banco, ajustando nome, senha e servidor
+	public $log_path = 'C:\\wamp\\www\\sapataria/logs';
+	public $tmp_path = 'C:\\wamp\\www\\sapataria/tmp';
+
+Melhor é criar um pacote do tipo quick start contendo o instalador do Joomla.

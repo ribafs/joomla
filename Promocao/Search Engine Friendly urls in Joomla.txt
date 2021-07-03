@@ -1,0 +1,59 @@
+Search Engine Friendly urls in Joomla
+Hide Table of Contents for Paceville.com - The Coding
+
+   1. Customizing Joomla 1.5
+   2. Adding AJAX to Joomla 1.5 with jQuery
+   3. Adding custom columns/fields to Joomla article, section and user
+   4. Hardening the Joomla hacks
+   5. Hijacking controllers and views in Joomla
+   6. Search Engine Friendly urls in Joomla
+   7. Facebook style information box with jQuery
+   8. Image manipulation and watermarking in PHP with GD2
+   9. Joomla! 1.5x Customization - Book review and general Joomla discussion
+  10. Mailing with Joomla’s JMail
+  11. Lost Flirts - a Joomla 1.5 component from scratch
+  12. Facebook style photo tagging with jQuery, Ajax and Joomla
+  13. Controlling form tabbing with jQuery
+  14. Facebook style chat with jQuery and Joomla
+  15. JQuery Joomla chat, adding online/offline and friendlist
+
+
+I just realized how to accomplish SEF urls in Joomla, first go Global Configuration -> Site and set all the SEO radio buttons to Yes.
+
+Now to link to an article in your PHP / HTML code you need to set an alias for it when you create it, then you could do like this in the code:
+
+   1. <a href="<?php echo JRoute::_('index.php?option=com_content&view=article&id='.$article->id.'-'.$article->alias) ?>">
+   2.   <h2><?php echo $article->title ?></h2>
+   3. </a>
+
+Exemplos:
+<?php echo JRoute::_('index.php?option=example&task=view'); ?>
+
+$link = JRoute::_( 'index.php?option=com_hello>controller=hello>task=edit>cid[]='. $row->id );
+
+Not much to it!
+
+Update: Don’t take anything for granted when it comes to Joomla. I just created a section listing of articles and suddenly the read more links link to a 404, wonderful…
+
+So first I have to make sure I fetch the teasers like this:
+
+   1. SELECT cont.*, cat.alias AS cat_alias, sect.alias AS sect_alias FROM jos_content cont
+   2. LEFT JOIN jos_categories AS cat ON cont.catid = cat.id
+   3. LEFT JOIN jos_sections AS sect ON cont.sectionid = sect.id 
+   4. WHERE cont.$id_type = {$this->getArr['id']} 
+   5. AND cont.alias NOT LIKE 'contact%' ORDER BY cont.created DESC LIMIT $offset , $limit
+
+That way we can define a echoContLink function which is responsible for outputting the read more URLs:
+
+   1. function echoContLink($article){
+   2.     if($article->catid == 1)
+   3.         $this->echoBlogLink($article->created_by);
+   4.     else{
+   5.         if(!empty($article->cat_alias) && !empty($article->sect_alias))
+   6.             echo "{$article->sect_alias}/{$article->cat_alias}/".$article->id.'-'.$article->alias;
+   7.         else
+   8.             echo JRoute::_('index.php?option=com_content&view=article&id='.$article->id.'-'.$article->alias);
+   9.     }
+  10. }
+
+If we don’t have either of cat_alias and sect_alias we do it the normal broken way (Joomla default). If we have them we use them to create the URL. Needless to say all of this breaks down if SEFs are not turned on in the Joomla backend.

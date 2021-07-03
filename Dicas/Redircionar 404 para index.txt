@@ -1,0 +1,19 @@
+Redircionar 404 para index
+
+Add ao .htaccess
+
+DirectoryIndex index.php
+ErrorDocument 404 http://ribafs.org/portal/
+
+
+----------
+Gerado para .htaccess
+
+Order deny,allow
+RewriteEngine  on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?ribafs.org/.*$ [NC]
+RewriteRule \.(gif|jpg|png|mp3|mpg|avi|mov)$ - [F]  
+RewriteCond   %{REQUEST_URI} !-U
+RewriteRule   ^(.+)          http://ribafs.org/portal//$1
+DirectoryIndex index.php

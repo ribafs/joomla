@@ -1,0 +1,152 @@
+@CHARSET "ISO-8859-1";body{font-family:verdana;font-size:12px;color:#000000;padding:0;margin:0;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/body/bg_corpo.png') center 100px no-repeat;background-attachment:fixed;}
+p{text-align:left;padding:0;margin:0;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+.bt_alterar_fonte_up{position:absolute;display:block;width:27px;height:26px;padding:0;margin:0 0 0 25px;background:url(http://img.olhardigital.uol.com.br/olhar2011/imagens/bg_alterar_font_size.png) -26px 0 no-repeat;}
+.bt_alterar_fonte_up:hover{background:url(http://img.olhardigital.uol.com.br/olhar2011/imagens/bg_alterar_font_size.png) -26px -26px no-repeat;}
+.bt_alterar_fonte_down{position:absolute;display:block;width:27px;height:26px;padding:0;margin:0 0 0 0;background:url(http://img.olhardigital.uol.com.br/olhar2011/imagens/bg_alterar_font_size.png) 0 0 no-repeat;}
+.bt_alterar_fonte_down:hover{background:url(http://img.olhardigital.uol.com.br/olhar2011/imagens/bg_alterar_font_size.png) 0 -26px no-repeat;}
+.bt_alterar_fonte_up2{display:block;width:27px;height:26px;padding:0;margin:0 0 0 0px;background:url(http://img.olhardigital.uol.com.br/olhar2011/imagens/bg_alterar_font_size.png) -26px 0 no-repeat;}
+.bt_alterar_fonte_up2:hover{background:url(http://img.olhardigital.uol.com.br/olhar2011/imagens/bg_alterar_font_size.png) -26px -26px no-repeat;}
+.bt_alterar_fonte_down2{display:block;width:27px;height:26px;padding:0;margin:0 0 0 0;background:url(http://img.olhardigital.uol.com.br/olhar2011/imagens/bg_alterar_font_size.png) 0 0 no-repeat;}
+.bt_alterar_fonte_down2:hover{background:url(http://img.olhardigital.uol.com.br/olhar2011/imagens/bg_alterar_font_size.png) 0 -26px no-repeat;}
+a.a-btn{zoom:1;background:#ddd url(http://img.olhardigital.uol.com.br/olhar2011/imagens/bg/bg-btn.gif) repeat-x scroll 0 0;cursor:pointer;text-shadow:1px 1px 0 #fff!important;border-color:#ddd #ddd #ccc!important;border-style:solid;border-width:1px!important;text-decoration:none;padding:4px 8px 5px;line-height:14px;font-size:11px;font-family:"lucida grande",helvetica,tahoma,arial;display:inline-block;_display:inline;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;}
+a.a-btn,a.a-btn:visited{color:#333!important;}a.a-btn:hover,a.a-btn:focus{text-decoration:none;border-color:#999 #999 #888!important;color:#000;outline:none;}a.a-btn:active{background-image:none;outline:none;}:focus{-moz-outline-style:none;}a.a-btn-m{font-size:15px;font-family:"helvetica neue",arial,sans-serif;padding:5px 15px 6px;line-height:20px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;background-position:0 -200px;}
+#botoes_controle a{line-height:13px;}
+#botoes_controle{float:right;padding:5px 12px 0 5px;_padding:5px 0 0 5px;}
+.menuCategory{position:relative;margin:0 0 0 0;}
+.menuCategory ul{width:800px;position:absolute;top:0;left:-20px;}
+.menuCategory li{list-style:none;float:left;}
+.menuCategory li a{background:url(http://img.olhardigital.uol.com.br/olhar2011/imagens/menu_video.png) no-repeat;display:block;height:25px;text-indent:-9999px;}
+.menuCategory .v1 a{width:223px;background-position:0 0;}
+.menuCategory .v2 a{width:159px;background-position:-223px 0;}
+.menuCategory .v3 a{width:158px;background-position:-381px 0;}
+.menuCategory .v4 a{width:158px;background-position:-539px 0;}
+.menuCategory .v5 a{width:158px;background-position:-697px 0;}
+.menuCategory .v6 a{width:233px;background-position:-855px 0;}
+.menuCategory .v7 a{width:158px;background-position:-697px 0;}
+.menuCategory .v1 a:hover{background-position:0 -26px;}
+.menuCategory .v2 a:hover{background-position:-223px -26px;}
+.menuCategory .v3 a:hover{background-position:-381px -26px;}
+.menuCategory .v4 a:hover{background-position:-539px -26px;}
+.menuCategory .v5 a:hover{background-position:-697px -26px;}
+.menuCategory .v6 a:hover{background-position:-855px -26px;}
+.menuCategory .v7 a:hover{background-position:-697px -26px;}
+.titulos_secao{font-family:arial, verdana;font-size:16px;color:#666666;text-align:left;text-decoration:none;padding:6px 0 2px 5px;margin:25px 0 5px 0;border-bottom:1px solid #ccc;background:#f1f1f1;}
+.titulos_secao2{font-family:arial, verdana;font-size:16px;color:#666666;text-align:left;text-decoration:none;padding:6px 0 2px 5px;margin:5px 0 0 0;width:495px
+border-bottom:1px solid #ccc;background:#f1f1f1;}
+.titulos_top_secao_pagina{font-family:tahoma, arial, verdana;font-size:11px;font-weight:bold;color:#666666;text-align:left;text-decoration:none;padding:5px 0 5px 0;margin:25px 0 10px 0;border-bottom:1px solid #999999;text-transform:uppercase;}
+.titulos_top_secao_pagina a, .titulos_top_secao_pagina a:visited{font-family:tahoma, arial, verdana;font-size:11px;color:#666666;text-decoration:none;}
+.titulos_top_secao_pagina a:hover{font-family:tahoma, arial, verdana;font-size:11px;color:#666666;text-decoration:underline;}
+.publicidade{color:#999999;font-size:12px;font-family:arial;padding:0;margin:0;}
+.listaCrua{list-style:none;padding:0;margin:0;}.listaCrua li{margin:0 0 3px 0;}
+.input_sombreado{border:1px solid #999999;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background:#ffffff url(http://img.olhardigital.uol.com.br/olhar2011/imagens/sombra_input.gif) no-repeat top left;padding:3px 5px;margin:3px 0;font-size:12px;font-family:verdana;}
+.icons{float:right;margin:0;width:125px;}
+.icons li{list-style:none;}
+.icons li a{background-image:url(http://img.olhardigital.uol.com.br/olhar2011/imagens/icones/icons.png);background-repeat:no-repeat;display:block;width:auto;height:18px;padding:5px 0 0 32px;color:#FFF;font-size:12px;margin:2px 0;font-weight:bold;text-decoration:none;}
+.icons .iconFaleConosco a{background-position:-30px 0;}
+.icons .iconFacebook a{background-position:-30px -30px;}
+.icons .incoTwitter a{background-position:-30px -60px}
+.icons .incoPodcasts a{background-position:-30px -90px}
+.icons .incoRss a{background-position:-30px -120px}
+.icons .iconOrkut a{background-position:-30px -272px}
+.icons.iconsAlt{text-indent:-9999px;width:170px;border:none;}
+.icons.iconsAlt li{float:left;width:22px;margin:0 3px;height:28px;}
+.icons.iconsAlt .incoRss{margin-right:0;}
+.ie6 .icons li a{background-image:url(http://img.olhardigital.uol.com.br/olhar2011/imagens/icones/icons.gif);background-repeat:no-repeat;}
+.icons.iconsAlt .iconFaleConosco a:hover,
+.icons .iconFaleConosco a{background-position:0 0;}
+.icons.iconsAlt .iconFacebook a:hover,
+.icons .iconFacebook a{background-position:0 -26px;}
+.icons.iconsAlt .incoTwitter a:hover,
+.icons .incoTwitter a{background-position:0 -52px;}
+.icons.iconsAlt .incoPodcasts a:hover,
+.icons .incoPodcasts a{background-position:0 -78px;}
+.icons.iconsAlt .incoRss a:hover,
+.icons .incoRss a{background-position:0 -104px;}
+.icons.iconsAlt .iconOrkut a:hover,
+.icons .iconOrkut a{background-position:0 -260px;}
+.icons.iconsAlt .iconOrkut a,
+.icons .iconOrkut a:hover{background-position:0 -286px;}
+.icons.iconsAlt .iconFaleConosco a,
+.icons .iconFaleConosco a:hover{background-position:0 -130px;}
+.icons.iconsAlt .iconFacebook a,
+.icons .iconFacebook a:hover{background-position:0 -156px;}
+.icons.iconsAlt .incoTwitter a,
+.icons .incoTwitter a:hover{background-position:0 -182px}
+.icons.iconsAlt .incoPodcasts a,
+.icons .incoPodcasts a:hover{background-position:0 -208px;}
+.icons.iconsAlt .incoRss a,
+.icons .incoRss a:hover{background-position:0 -234px;}
+.tags{margin-bottom:20px;text-align:center;}
+.tags strong{font-size:14px;display:block;color:#333;margin-bottom:10px;}
+.tags a{font-weight:bold}
+.tags .t1{font-size:8px;color:#660;}
+.tags .t2{font-size:9px;color:#606;}
+.tags .t3{font-size:10px;color:#066;}
+.tags .t4{font-size:11px;color:#616;}
+.tags .t5{font-size:12px;color:#661;}
+.tags .t6{font-size:14px;color:#266;}
+.tags .t7{font-size:16px;color:#626;}
+.tbl_topo{padding:0;margin:0;width:100%;height:120px;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/header/bg_home.jpg') no-repeat center top;}
+.tbl_topo_produtos{padding:0;margin:0;width:100%;height:120px;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/header/bg_produtos.jpg') no-repeat center top;}
+.tbl_topo_negocios{padding:0;margin:0;width:100%;height:120px;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/header/bg_negocios.jpg') no-repeat center top;}
+.tbl_topo_jovem{padding:0;margin:0;width:100%;height:120px;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/header/bg_jovem.jpg') no-repeat center top;}
+.tbl_menu_topo{padding:0;margin:0;height:25px;}
+.lblBuscar{background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/bg/busca_bg_label.png') 0 0 no-repeat;padding:7px 16px 6px 17px;color:#FFF;font-family:arial;font-size:15px;font-weight:bold;}
+.inputBuscar{background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/bg/busca_bg_center.png') 0 0;border:none;border-bottom:1px solid #000;background-color:transparent;display:block;padding:7px 0 7px 5px;width:200px;margin:0 0 0 0;font-family:arial;font-size:13px;font-weight:bold;color:#333;outline:none;}
+.btBuscar{display:block;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/bg/busca_botao.png') 0 0 no-repeat;width:52px;height:31px;text-decoration:none;text-indent:-9999;}
+.lnk_produtos{display:block;width:112px;height:32px;margin:0;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/header/menu/bg.png') 0 0 no-repeat;color:#FFFFFF;font-family:verdana;font-weight:bold;font-size:13px;text-decoration:none;text-align:center;padding:2px 0 0 0;}
+.lnk_produtos:hover{margin:0;text-align:center;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/header/menu/bg.png') 0 -36px no-repeat;}
+.lnk_negocios{display:block;width:100px;height:32px;margin:0;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/header/menu/bg.png') -112px 0 no-repeat;color:#FFFFFF;font-family:verdana;font-weight:bold;font-size:13px;text-decoration:none;text-align:center;padding:2px 0 0 0;}
+.lnk_negocios:hover{margin:0;text-align:center;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/header/menu/bg.png') -112px -36px no-repeat;}
+.lnk_jovem{display:block;width:88px;height:32px;margin:0;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/header/menu/bg.png') -212px 0 no-repeat;color:#FFFFFF;font-family:verdana;font-weight:bold;font-size:13px;text-decoration:none;text-align:center;padding:2px 0 0 0;}
+.lnk_jovem:hover{margin:0;text-align:center;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/header/menu/bg.png') -212px -36px no-repeat;}
+.tbl_corpo{padding:0;margin:0;width:975px;border:0;}
+.miniAbaSecao_off{border:1px solid #ccc;border-left:0;background:#f4f4f4;border-left:0;padding:5px 10px 5px 10px;font-family:verdana;font-size:11px;font-style:italic;color:#333;white-space:nowrap;}
+.miniAbaSecao_off:hover{background:#e2e2e2;padding:5px 10px 5px 10px;font-family:verdana;font-size:11px;font-style:italic;color:#333;white-space:nowrap;cursor:pointer;}
+.miniAbaSecao_on{border:1px solid #ccc;border-bottom:0;border-left:0;background:#FFFFFF;padding:5px 10px 5px 10px;font-family:verdana;font-size:11px;font-style:italic;color:#333;white-space:nowrap;}
+.titulo_secao_menu_principal{font-family:verdana;font-size:18px;color:#333333;padding:0 0 5px 0;margin:0;text-align:left;}
+.titulo_secao_menu_principal a, .titulo_secao_menu_principal a:visited{font-family:verdana;font-size:18px;color:#333333;text-decoration:none;}
+.titulo_secao_menu_principal a:hover{font-family:verdana;font-size:18px;color:#333333;text-decoration:underline;}
+.titulo_secao_menu_produtos{font-family:verdana;font-size:18px;color:#009900;padding:0 0 5px 0;margin:0;text-align:left;}
+.titulo_secao_menu_negocios{font-family:verdana;font-size:18px;color:#00647c;padding:0 0 5px 0;margin:0;text-align:left;}
+.titulo_secao_menu_jovem{font-family:verdana;font-size:18px;color:#d6b10a;padding:0 0 5px 0;margin:0;text-align:left;}
+.item_menu{display:block;width:120px;margin:0;padding:2px 0 2px 3px;font-family:arial, verdana;font-size:12px;color:#333333;text-decoration:none;text-align:left;border-bottom:1px dotted #DDDDDD;}
+.item_menu:hover{background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/icones/seta_cinza.gif') 115px center no-repeat #fbfbfb;}
+.bt_menu_servicos_produtos{display:block;width:155px;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/bg/bg_bt_produtos.png') repeat-x;color:#FFFFFF;font-family:verdana;font-weight:bold;font-size:13px;text-decoration:none;text-align:left;margin:0 0 3px 0;padding:5px 0 5px 10px;}
+.bt_menu_servicos_produtos:hover{text-decoration:underline;}
+.bt_menu_servicos_negocios{display:block;width:155px;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/bg/bg_bt_negocios.png') repeat-x;color:#FFFFFF;font-family:verdana;font-weight:bold;font-size:13px;text-decoration:none;text-align:left;margin:0 0 3px 0;padding:5px 0 5px 10px;}
+.bt_menu_servicos_negocios:hover{text-decoration:underline;}
+.bt_menu_servicos_jovem{display:block;width:155px;margin:0;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/bg/bg_bt_jovem.png') repeat-x;color:#FFFFFF;font-family:verdana;font-weight:bold;font-size:13px;text-decoration:none;text-align:left;margin:0 0 3px 0;padding:5px 0 5px 10px;}
+.bt_menu_servicos_jovem:hover{text-decoration:underline;}
+.titulo_menu_servicos_contato{font-family:verdana;font-size:18px;color:#333333;padding:0 0 5px 0;margin:0;text-align:left;}
+.lnkChamadaDestaque{display:block;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/bg_item_destaque_off.png') 0 0 no-repeat;text-align:left;font-family:arial, verdana;font-size:12px;padding:8px 4px 8px 6px;margin:0;color:#000;text-decoration:none;height:35px;}
+.lnkChamadaDestaque:hover{color:#FFF;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/bg_item_destaque_on.png') 0 0 no-repeat;text-decoration:none;height:35px;}
+.lnkChamadaDestaque_selecionado{display:block;text-align:left;font-family:arial, verdana;font-size:12px;padding:8px 4px 8px 6px;margin:0;color:#FFF;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/bg_item_destaque_on.png') 0 0 no-repeat;text-decoration:none;height:35px;}
+.titulo_area_destaque_colunistas, .titulo_area_destaque_podcasts{font-family:arial, verdana;font-size:24px;text-weight:bold;text-decoration:none;padding:0;margin:0;color:#FF0000;}
+.titulo_area_destaque_produtos{font-family:arial, verdana;font-size:24px;text-weight:bold;text-decoration:none;padding:0;margin:0;color:#009900;}
+.titulo_area_destaque_negocios{font-family:arial, verdana;font-size:24px;text-weight:bold;text-decoration:none;padding:0;margin:0;color:#00647c;}
+.titulo_area_destaque_jovem{font-family:arial, verdana;font-size:24px;text-weight:bold;text-decoration:none;padding:0;margin:0;color:#d6b10a;}
+.titulo_area_destaque_olhar2011{font-family:arial, verdana;font-size:24px;text-weight:bold;text-decoration:none;padding:0;margin:0;color:#000;}
+.lnk_lista_noticias_home{display:block;padding:1px 0 1px 10px;white-space:nowrap;color:#666;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/icones/seta_cinza.gif') left center no-repeat;font-family:arial;font-size:14px;font-weight:normal;text-align:left;text-decoration:none;}
+.lnk_lista_noticias_home:hover{font-family:arial;font-size:14px;font-weight:normal;text-align:left;background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/icones/seta_verde.gif') left center no-repeat;color:#009900;text-decoration:underline;}
+.lnk_assinar_news_home{font-family:verdana;font-size:14px;color:#FFFFFF;text-decoration:none;text-align:left;}
+.lnk_assistir_rede_tv{font-family:verdana;font-size:14px;color:#FFFFFF;text-decoration:none;text-align:left;}
+.container_rodape{background:url('http://img.olhardigital.uol.com.br/olhar2011/imagens/bg/rodape.jpg') center bottom no-repeat #000000;height:195px;width:100%;padding:15px 0 0 0;margin:30px 0 0 0;text-align:center;}
+.tbl_rodape{width:950px;}
+.tbl_rodape td{text-align:left;vertical-align:top;}
+.uol{background:url(http://img.olhardigital.uol.com.br/olhar2011/imagens/bg/fundo_uol.jpg) top repeat-x;height:24px;}
+.wp{font-family:verdana;font-size:11px;color:#000;text-decoration:none;text-align:left;background:url(http://img.olhardigital.uol.com.br/olhar2011/imagens/bg/fnd_wp.gif);padding:4px;}
+.wp strong{font-family:verdana;font-size:14px;color:#000;}
+.wp a, .wp a:visited{color:#000;text-decoration:none;}
+.wp a:hover{color:#000;text-decoration:underline;}
+.wp img{float:right;margin-left:5px;}
+.wpinfo{font-family:verdana;font-size:11px;color:#000;text-align:right;padding-top:3px;padding-right:5px;}
+.wpinfo a, .wpinfo a:visited{color:#000;text-decoration:none;}
+.wpinfo a:hover{color:#000;text-decoration:underline;}
+.wp2{font-family:verdana;font-size:11px;color:#000;text-decoration:none;text-align:left;padding:4px;}
+.wp2 strong{font-family:verdana;font-size:14px;color:#000;}
+.wp2 a, .wp2 a:visited{color:#000;text-decoration:none;}
+.wp2 a:hover{color:#000;text-decoration:underline;}
+.conteudo{width:500px;margin-left:150px;position:absolute;}

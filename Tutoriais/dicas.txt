@@ -1,0 +1,8 @@
+Ocultar a tag generator do HTML do site
+
+Inserir esta linha:
+
+$this->setMetaData('generator','');
+
+Logo abaixo da linha:
+defined('_JEXEC') or die;
